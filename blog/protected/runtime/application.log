@@ -1,0 +1,503 @@
+2013/11/28 15:37:04 [error] [exception.CException] exception 'CException' with message 'Property "User.salt" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(145): CComponent->__get('salt')
+#1 D:\php\goperblog.loc\blog\protected\models\User.php(105): CActiveRecord->__get('salt')
+#2 D:\php\goperblog.loc\blog\protected\components\UserIdentity.php(12): User->validatePassword('demo')
+#3 D:\php\goperblog.loc\blog\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 D:\php\goperblog.loc\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#5 D:\php\goperblog.loc\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\php\goperblog.loc\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\php\goperblog.loc\blog\protected\controllers\SiteController.php(94): CModel->validate()
+#8 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\php\goperblog.loc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('login')
+#13 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=site/login
+HTTP_REFERER=http://goperblog.loc/blog/index.php?r=site/login
+---
+2013/11/28 15:42:56 [error] [exception.CException] exception 'CException' with message 'Property "User.salt" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(145): CComponent->__get('salt')
+#1 D:\php\goperblog.loc\blog\protected\models\User.php(105): CActiveRecord->__get('salt')
+#2 D:\php\goperblog.loc\blog\protected\components\UserIdentity.php(12): User->validatePassword('demo')
+#3 D:\php\goperblog.loc\blog\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 D:\php\goperblog.loc\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#5 D:\php\goperblog.loc\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\php\goperblog.loc\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\php\goperblog.loc\blog\protected\controllers\SiteController.php(94): CModel->validate()
+#8 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\php\goperblog.loc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('login')
+#13 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=site/login
+HTTP_REFERER=http://goperblog.loc/blog/index.php?r=site/login
+---
+2013/11/29 10:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('post')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=post
+---
+2013/11/29 10:27:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "1".' in D:\php\goperblog.loc\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(270): CController->missingAction('1')
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('1')
+#2 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/1')
+#3 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php?r=page/1
+---
+2013/11/29 10:30:02 [error] [php] require(): Filename cannot be empty (D:\php\goperblog.loc\framework\web\CBaseController.php:130)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\zii\widgets\CListView.php(291): PageController->renderFile()
+#1 D:\php\goperblog.loc\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\php\goperblog.loc\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\php\goperblog.loc\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\php\goperblog.loc\framework\web\CBaseController.php(173): CListView->run()
+#6 D:\php\goperblog.loc\blog\protected\views\page\index.php(20): PageController->widget()
+#7 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require()
+#8 D:\php\goperblog.loc\framework\web\CBaseController.php(95): PageController->renderInternal()
+#9 D:\php\goperblog.loc\framework\web\CController.php(869): PageController->renderFile()
+#10 D:\php\goperblog.loc\framework\web\CController.php(782): PageController->renderPartial()
+#11 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(119): PageController->render()
+#12 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#13 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): PageController->runAction()
+#15 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): PageController->filterAccessControl()
+#18 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\php\goperblog.loc\framework\web\CController.php(265): PageController->runActionWithFilters()
+#21 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): PageController->run()
+#22 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 D:\php\goperblog.loc\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=page/index
+in D:\php\goperblog.loc\blog\protected\views\page\index.php (20)
+in D:\php\goperblog.loc\blog\protected\controllers\PageController.php (119)
+in D:\php\goperblog.loc\blog\index.php (13)
+2013/11/29 10:35:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\php\goperblog.loc\framework\web\CController.php:336
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/view')
+#10 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/index.php?r=page/view&alias=one
+---
+2013/11/29 10:35:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\php\goperblog.loc\framework\web\CController.php:336
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/view')
+#10 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/index.php?r=page/view&alias=one
+---
+2013/11/29 10:41:56 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'alias=:alias')
+#1 D:\php\goperblog.loc\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(65): CActiveRecord->find(Array, Array)
+#4 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(51): PageController->loadModel('one')
+#5 [internal function]: PageController->actionIndex('one')
+#6 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('index')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=page/index&alias=one
+---
+2013/11/29 10:42:31 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'alias=:alias')
+#1 D:\php\goperblog.loc\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(65): CActiveRecord->find(Array, Array)
+#4 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(51): PageController->loadModel('one')
+#5 [internal function]: PageController->actionIndex('one')
+#6 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('index')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=page/index&alias=one
+---
+2013/11/29 10:42:44 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'alias=:alias')
+#1 D:\php\goperblog.loc\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(65): CActiveRecord->find(Array, Array)
+#4 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(51): PageController->loadModel('one')
+#5 [internal function]: PageController->actionIndex('one')
+#6 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('index')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=page/index&alias=one
+---
+2013/11/29 10:43:39 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'alias=:num')
+#1 D:\php\goperblog.loc\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(65): CActiveRecord->find(Array, Array)
+#4 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(51): PageController->loadModel('one')
+#5 [internal function]: PageController->actionIndex('one')
+#6 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('index')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=page/index&alias=one
+---
+2013/11/29 10:44:24 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'alias=one')
+#1 D:\php\goperblog.loc\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(65): CActiveRecord->find(Array)
+#4 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(51): PageController->loadModel('one')
+#5 [internal function]: PageController->actionIndex('one')
+#6 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('index')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=page/index&alias=one
+---
+2013/11/29 10:45:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'alias=one')
+#1 D:\php\goperblog.loc\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(65): CActiveRecord->find(Array)
+#4 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(51): PageController->loadModel('one')
+#5 [internal function]: PageController->actionIndex('one')
+#6 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('index')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=page/index&alias=one
+---
+2013/11/29 10:48:21 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'alias=:num')
+#1 D:\php\goperblog.loc\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(66): CActiveRecord->find(Array, Array)
+#4 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(51): PageController->loadModel('one')
+#5 [internal function]: PageController->actionIndex('one')
+#6 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('index')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=page/index&alias=one
+---
+2013/11/29 10:49:51 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'name=:val')
+#1 D:\php\goperblog.loc\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(66): CActiveRecord->find(Array, Array)
+#4 D:\php\goperblog.loc\blog\protected\controllers\PageController.php(51): PageController->loadModel('one')
+#5 [internal function]: PageController->actionIndex('one')
+#6 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('index')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/index')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php?r=page/index&alias=one
+---
+2013/12/02 09:36:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in D:\php\goperblog.loc\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(270): CController->missingAction('contact')
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/contact')
+#3 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php?r=page/contact
+---
+2013/12/02 09:36:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in D:\php\goperblog.loc\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(270): CController->missingAction('contact')
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/contact')
+#3 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php?r=page/contact
+---
+2013/12/02 09:36:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in D:\php\goperblog.loc\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(270): CController->missingAction('contact')
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/contact')
+#3 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php?r=page/contact
+---
+2013/12/02 09:37:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in D:\php\goperblog.loc\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(270): CController->missingAction('contact')
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/contact')
+#3 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php?r=page/contact
+---
+2013/12/02 09:38:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in D:\php\goperblog.loc\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(270): CController->missingAction('contact')
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('page/contact')
+#3 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php?r=page/contact
+---
+2013/12/02 09:42:46 [error] [php] Undefined variable: model (D:\php\goperblog.loc\blog\protected\views\contact\index.php:18)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): ContactController->renderFile()
+#1 D:\php\goperblog.loc\framework\web\CController.php(782): ContactController->renderPartial()
+#2 D:\php\goperblog.loc\blog\protected\controllers\ContactController.php(26): ContactController->render()
+#3 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): ContactController->actionIndex()
+#4 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\goperblog.loc\framework\web\CController.php(286): ContactController->runAction()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): ContactController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): ContactController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=contact
+in D:\php\goperblog.loc\blog\protected\views\contact\index.php (18)
+in D:\php\goperblog.loc\blog\protected\controllers\ContactController.php (26)
+in D:\php\goperblog.loc\blog\index.php (13)
+2013/12/02 10:11:48 [error] [php] Undefined variable: form (D:\php\goperblog.loc\blog\protected\views\contact\index.php:32)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): ContactController->renderFile()
+#1 D:\php\goperblog.loc\framework\web\CController.php(782): ContactController->renderPartial()
+#2 D:\php\goperblog.loc\blog\protected\controllers\ContactController.php(37): ContactController->render()
+#3 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): ContactController->actionIndex()
+#4 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\goperblog.loc\framework\web\CController.php(286): ContactController->runAction()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): ContactController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): ContactController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=contact
+in D:\php\goperblog.loc\blog\protected\views\contact\index.php (32)
+in D:\php\goperblog.loc\blog\protected\controllers\ContactController.php (37)
+in D:\php\goperblog.loc\blog\index.php (13)
+2013/12/02 10:13:34 [error] [php] Undefined variable: form (D:\php\goperblog.loc\blog\protected\views\contact\index.php:32)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): ContactController->renderFile()
+#1 D:\php\goperblog.loc\framework\web\CController.php(782): ContactController->renderPartial()
+#2 D:\php\goperblog.loc\blog\protected\controllers\ContactController.php(48): ContactController->render()
+#3 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): ContactController->actionIndex()
+#4 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\goperblog.loc\framework\web\CController.php(286): ContactController->runAction()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): ContactController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): ContactController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=contact
+in D:\php\goperblog.loc\blog\protected\views\contact\index.php (32)
+in D:\php\goperblog.loc\blog\protected\controllers\ContactController.php (48)
+in D:\php\goperblog.loc\blog\index.php (13)
+2013/12/02 10:15:39 [error] [php] Undefined variable: form (D:\php\goperblog.loc\blog\protected\views\contact\index.php:32)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): ContactController->renderFile()
+#1 D:\php\goperblog.loc\framework\web\CController.php(782): ContactController->renderPartial()
+#2 D:\php\goperblog.loc\blog\protected\controllers\ContactController.php(48): ContactController->render()
+#3 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): ContactController->actionIndex()
+#4 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\goperblog.loc\framework\web\CController.php(286): ContactController->runAction()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): ContactController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): ContactController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=contact
+in D:\php\goperblog.loc\blog\protected\views\contact\index.php (32)
+in D:\php\goperblog.loc\blog\protected\controllers\ContactController.php (48)
+in D:\php\goperblog.loc\blog\index.php (13)
+2013/12/02 10:19:34 [error] [php] Undefined variable: form (D:\php\goperblog.loc\blog\protected\views\contact\index.php:32)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): ContactController->renderFile()
+#1 D:\php\goperblog.loc\framework\web\CController.php(782): ContactController->renderPartial()
+#2 D:\php\goperblog.loc\blog\protected\controllers\ContactController.php(48): ContactController->render()
+#3 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): ContactController->actionIndex()
+#4 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\goperblog.loc\framework\web\CController.php(286): ContactController->runAction()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): ContactController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): ContactController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=contact
+in D:\php\goperblog.loc\blog\protected\views\contact\index.php (32)
+in D:\php\goperblog.loc\blog\protected\controllers\ContactController.php (48)
+in D:\php\goperblog.loc\blog\index.php (13)
+2013/12/02 10:19:58 [error] [php] Undefined variable: form (D:\php\goperblog.loc\blog\protected\views\contact\index.php:32)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): ContactController->renderFile()
+#1 D:\php\goperblog.loc\framework\web\CController.php(782): ContactController->renderPartial()
+#2 D:\php\goperblog.loc\blog\protected\controllers\ContactController.php(48): ContactController->render()
+#3 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): ContactController->actionIndex()
+#4 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\goperblog.loc\framework\web\CController.php(286): ContactController->runAction()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): ContactController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): ContactController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=contact
+in D:\php\goperblog.loc\blog\protected\views\contact\index.php (32)
+in D:\php\goperblog.loc\blog\protected\controllers\ContactController.php (48)
+in D:\php\goperblog.loc\blog\index.php (13)
+2013/12/02 10:22:49 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.name" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\helpers\CHtml.php(2529): CComponent->__get('name')
+#1 D:\php\goperblog.loc\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(ContactForm), 'name')
+#2 D:\php\goperblog.loc\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(ContactForm), 'name', Array)
+#3 D:\php\goperblog.loc\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(ContactForm), 'name', Array)
+#4 D:\php\goperblog.loc\blog\protected\views\site\contact.php(42): CActiveForm->textField(Object(ContactForm), 'name')
+#5 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require('D:\php\goperblo...')
+#6 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\php\goperblo...', Array, true)
+#7 D:\php\goperblog.loc\framework\web\CController.php(869): CBaseController->renderFile('D:\php\goperblo...', Array, true)
+#8 D:\php\goperblog.loc\framework\web\CController.php(782): CController->renderPartial('contact', Array, true)
+#9 D:\php\goperblog.loc\blog\protected\controllers\SiteController.php(65): CController->render('contact', Array)
+#10 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#11 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\php\goperblog.loc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('contact')
+#15 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#16 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\goperblog.loc\blog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog/index.php?r=site/contact
+HTTP_REFERER=http://goperblog.loc/blog/index.php?r=contact
+---
