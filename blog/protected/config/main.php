@@ -19,8 +19,9 @@ return array(
 	),
 
 	'modules'=>array(
+        // наша админка
+        'admin',
 		// uncomment the following to enable the Gii tool
-		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'123',
