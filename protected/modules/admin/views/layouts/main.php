@@ -23,16 +23,15 @@
         <div class="container" id="page">
 
             <div id="header">
-                <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+                <div id="logo">Админка::<?php echo CHtml::encode(Yii::app()->name); ?></div>
             </div><!-- header -->
 
             <div id="mainmenu">
                 <?php
                 $this->widget('ext.zii.widgets.Menu', array(
                     'items' => array(
-                        
                         array('label' => 'Главная', 'url' => array('/admin/')),
-
+                        array('label' => 'Страницы', 'url' => array('/admin/page')),
                         array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                     ),
                 ));

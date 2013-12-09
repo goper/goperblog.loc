@@ -26,13 +26,14 @@
             array(
                 'class'=>'bootstrap.widgets.TbMenu',
                 'items'=>array(
-                    array('label'=>'Home', 'url'=>'/blog/'),
-                    array('label'=>'Контакты', 'url'=>'/blog/contact'),
+                    array('label'=>'Home', 'url'=>'/'),
+                    array('label'=>'Контакты', 'url'=>'/contact'),
                     array('label'=>'Dropdown', 'url'=>'#', 'items'=>array(
                         array('label'=>'Action', 'url'=>'#'),
                         array('label'=>'Another action', 'url'=>'#'),
                         array('label'=>'Something else here', 'url'=>'#'),
                     )),
+                    array('label'=>'Вход', 'url'=>'/site/login'),
                     array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                 ),
             ),
