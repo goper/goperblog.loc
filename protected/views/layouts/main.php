@@ -19,7 +19,7 @@
     <?php $this->widget('bootstrap.widgets.TbNavbar', array(
         'type'=>'inverse', // null or 'inverse'
         'brand'=> false,
-        'brandUrl'=>'/blog/',
+        'brandUrl'=>'/',
         'fixed' => false,
         //'collapse'=>true, // requires bootstrap-responsive.css
         'items'=>array(

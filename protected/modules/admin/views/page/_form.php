@@ -31,13 +31,21 @@
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'content'); ?>
-	</div>
 
-	<div class="row">
+
+    <div class="row">
+    <?php echo $form->labelEx($model,'content'); ?>
+    <?php $this->widget('application.extensions.ckeditor.CKEditor', array(
+        'model'=>$model,
+        'attribute'=>'content',
+        'language'=>'ru',
+        'editorTemplate'=>'full', )); ?>
+
+    <?php echo $form->error($model,'content'); ?>
+</div>
+
+
+<div class="row">
 		<?php echo $form->labelEx($model,'alias'); ?>
 		<?php echo $form->textField($model,'alias'); ?>
 		<?php echo $form->error($model,'alias'); ?>

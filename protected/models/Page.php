@@ -25,10 +25,10 @@ class Page extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('title, name, content', 'safe'),
+            array('title, name, content, alias', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, title, name, content', 'safe', 'on' => 'search'),
+            array('id, title, name, content, alias', 'safe', 'on' => 'search'),
         );
     }
 
@@ -49,8 +49,9 @@ class Page extends CActiveRecord {
         return array(
             'id' => 'ID',
             'title' => 'Title',
-            'name' => 'Name',
-            'content' => 'Content',
+            'name' => 'Название',
+            'content' => 'Контент',
+            'alias' => 'Алиас'
         );
     }
 

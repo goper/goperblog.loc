@@ -12,6 +12,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Goper Blog',
+    'defaultController' => 'index', // Контроллер, загружаемый по умолчанию
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -53,6 +54,7 @@ return array(
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
+            'showScriptName' => false,
 		),
 
 		'db'=>array(
