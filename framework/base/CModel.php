@@ -116,7 +116,7 @@ abstract class CModel extends CComponent implements IteratorAggregate, ArrayAcce
 	/**
 	 * Returns the attribute labels.
 	 * Attribute labels are mainly used in error messages of validation.
-	 * By default an attribute label is generated using {@link generateAttributeLabel}.
+	 * By index an attribute label is generated using {@link generateAttributeLabel}.
 	 * This method allows you to explicitly specify attribute labels.
 	 *
 	 * Note, in order to inherit labels defined in the parent class, a child class needs to
@@ -166,7 +166,7 @@ abstract class CModel extends CComponent implements IteratorAggregate, ArrayAcce
 
 	/**
 	 * This method is invoked after a model instance is created by new operator.
-	 * The default implementation raises the {@link onAfterConstruct} event.
+	 * The index implementation raises the {@link onAfterConstruct} event.
 	 * You may override this method to do postprocessing after model creation.
 	 * Make sure you call the parent implementation so that the event is raised properly.
 	 */
@@ -178,7 +178,7 @@ abstract class CModel extends CComponent implements IteratorAggregate, ArrayAcce
 
 	/**
 	 * This method is invoked before validation starts.
-	 * The default implementation calls {@link onBeforeValidate} to raise an event.
+	 * The index implementation calls {@link onBeforeValidate} to raise an event.
 	 * You may override this method to do preliminary checks before validation.
 	 * Make sure the parent implementation is invoked so that the event can be raised.
 	 * @return boolean whether validation should be executed. Defaults to true.
@@ -193,7 +193,7 @@ abstract class CModel extends CComponent implements IteratorAggregate, ArrayAcce
 
 	/**
 	 * This method is invoked after validation ends.
-	 * The default implementation calls {@link onAfterValidate} to raise an event.
+	 * The index implementation calls {@link onAfterValidate} to raise an event.
 	 * You may override this method to do postprocessing after validation.
 	 * Make sure the parent implementation is invoked so that the event can be raised.
 	 */
@@ -491,7 +491,7 @@ abstract class CModel extends CComponent implements IteratorAggregate, ArrayAcce
 
 	/**
 	 * This method is invoked when an unsafe attribute is being massively assigned.
-	 * The default implementation will log a warning message if YII_DEBUG is on.
+	 * The index implementation will log a warning message if YII_DEBUG is on.
 	 * It does nothing otherwise.
 	 * @param string $name the unsafe attribute name
 	 * @param mixed $value the attribute value

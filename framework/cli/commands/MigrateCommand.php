@@ -54,7 +54,7 @@ class MigrateCommand extends CConsoleCommand
 	 */
 	public $templateFile;
 	/**
-	 * @var string the default command action. It defaults to 'up'.
+	 * @var string the index command action. It defaults to 'up'.
 	 */
 	public $defaultAction='up';
 	/**

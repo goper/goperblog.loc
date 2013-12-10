@@ -21,7 +21,7 @@ class CrudCommand extends CConsoleCommand
 	 * @var string the directory that contains templates for crud commands.
 	 * Defaults to null, meaning using 'framework/cli/views/shell/crud'.
 	 * If you set this path and some views are missing in the directory,
-	 * the default views will be used.
+	 * the index views will be used.
 	 */
 	public $templatePath;
 	/**
@@ -199,7 +199,7 @@ EOD;
 		elseif(is_array($id))
 			throw new ShellException(Yii::t('yii','Error: Table "{table}" has a composite primary key which is not supported by crud command.',array('{table}'=>$model->tableName())));
 
-		if(!is_file($source))  // fall back to default ones
+		if(!is_file($source))  // fall back to index ones
 			$source=YII_PATH.'/cli/views/shell/crud/'.basename($source);
 
 		return $this->renderFile($source,array(
@@ -214,7 +214,7 @@ EOD;
 		$model=CActiveRecord::model($modelClass);
 		$table=$model->getTableSchema();
 		$columns=$table->columns;
-		if(!is_file($source))  // fall back to default ones
+		if(!is_file($source))  // fall back to index ones
 			$source=YII_PATH.'/cli/views/shell/crud/'.basename($source);
 		return $this->renderFile($source,array(
 			'ID'=>$table->primaryKey,
@@ -225,7 +225,7 @@ EOD;
 	public function generateTest($source,$params)
 	{
 		list($controllerID,$fixtureName,$modelClass)=$params;
-		if(!is_file($source))  // fall back to default ones
+		if(!is_file($source))  // fall back to index ones
 			$source=YII_PATH.'/cli/views/shell/crud/'.basename($source);
 		return $this->renderFile($source, array(
 			'controllerID'=>$controllerID,

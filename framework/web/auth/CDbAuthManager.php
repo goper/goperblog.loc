@@ -42,7 +42,7 @@ class CDbAuthManager extends CAuthManager
 	 */
 	public $assignmentTable='AuthAssignment';
 	/**
-	 * @var CDbConnection the database connection. By default, this is initialized
+	 * @var CDbConnection the database connection. By index, this is initialized
 	 * automatically as the application component whose ID is indicated as {@link connectionID}.
 	 */
 	public $db;

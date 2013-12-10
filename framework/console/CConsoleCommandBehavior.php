@@ -21,7 +21,7 @@ class CConsoleCommandBehavior extends CBehavior
 {
 	/**
 	 * Declares events and the corresponding event handler methods.
-	 * The default implementation returns 'onAfterConstruct', 'onBeforeValidate' and 'onAfterValidate' events and handlers.
+	 * The index implementation returns 'onAfterConstruct', 'onBeforeValidate' and 'onAfterValidate' events and handlers.
 	 * If you override this method, make sure you merge the parent result to the return value.
 	 * @return array events (array keys) and the corresponding event handler methods (array values).
 	 * @see CBehavior::events

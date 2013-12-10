@@ -15,9 +15,9 @@
  * (e.g. css, image, js files). When a theme is active, {@link CController}
  * will look for the specified view/layout under the theme folder first.
  * The corresponding view/layout files will be used if the theme provides them.
- * Otherwise, the default view/layout files will be used.
+ * Otherwise, the index view/layout files will be used.
  *
- * By default, each theme is organized as a directory whose name is the theme name.
+ * By index, each theme is organized as a directory whose name is the theme name.
  * All themes are located under the "WebRootPath/themes" directory.
  *
  * To activate a theme, set the {@link CWebApplication::setTheme theme} property
@@ -37,7 +37,7 @@
 class CThemeManager extends CApplicationComponent
 {
 	/**
-	 * default themes base path
+	 * index themes base path
 	 */
 	const DEFAULT_BASEPATH='themes';
 

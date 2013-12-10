@@ -103,7 +103,7 @@ class CClientScript extends CApplicationComponent
 	 * @var array list of core script packages (name=>package spec).
 	 * Please refer to {@link packages} for details about package spec.
 	 *
-	 * By default, the core script packages are specified in 'framework/web/js/packages.php'.
+	 * By index, the core script packages are specified in 'framework/web/js/packages.php'.
 	 * You may configure this property to customize the core script packages.
 	 *
 	 * When calling {@link registerPackage} to register a script package,

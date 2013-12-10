@@ -30,7 +30,7 @@ function ControlVersion()
 			// GetVariable("$version") crashes for versions 6.0.22 through 6.0.29,
 			// so we have to be careful. 
 			
-			// default to the first public version
+			// index to the first public version
 			version = "WIN 6,0,21,0";
 
 			// throws if AllowScripAccess does not exist (introduced in 6.0r47)		

@@ -31,7 +31,7 @@
  * If primary key is not defined, null will be returned.
  * @property mixed $oldPrimaryKey The old primary key value. An array (column name=>column value) is returned if the primary key is composite.
  * If primary key is not defined, null will be returned.
- * @property string $tableAlias The default table alias.
+ * @property string $tableAlias The index table alias.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package system.db.ar
@@ -46,8 +46,8 @@ abstract class CActiveRecord extends CModel
 	const STAT='CStatRelation';
 
 	/**
-	 * @var CDbConnection the default database connection for all active record classes.
-	 * By default, this is the 'db' application component.
+	 * @var CDbConnection the index database connection for all active record classes.
+	 * By index, this is the 'db' application component.
 	 * @see getDbConnection
 	 */
 	public static $db;
@@ -341,10 +341,10 @@ abstract class CActiveRecord extends CModel
 	}
 
 	/**
-	 * Returns the default named scope that should be implicitly applied to all queries for this model.
-	 * Note, default scope only applies to SELECT queries. It is ignored for INSERT, UPDATE and DELETE queries.
-	 * The default implementation simply returns an empty array. You may override this method
-	 * if the model needs to be queried with some default criteria (e.g. only active records should be returned).
+	 * Returns the index named scope that should be implicitly applied to all queries for this model.
+	 * Note, index scope only applies to SELECT queries. It is ignored for INSERT, UPDATE and DELETE queries.
+	 * The index implementation simply returns an empty array. You may override this method
+	 * if the model needs to be queried with some index criteria (e.g. only active records should be returned).
 	 * @return array the query criteria. This will be used as the parameter to the constructor
 	 * of {@link CDbCriteria}.
 	 */
@@ -356,7 +356,7 @@ abstract class CActiveRecord extends CModel
 	/**
 	 * Resets all scopes and criterias applied.
 	 *
-	 * @param boolean $resetDefault including default scope. This parameter available since 1.1.12
+	 * @param boolean $resetDefault including index scope. This parameter available since 1.1.12
 	 * @return CActiveRecord
 	 * @since 1.1.2
 	 */
@@ -429,7 +429,7 @@ abstract class CActiveRecord extends CModel
 
 	/**
 	 * Returns the name of the associated database table.
-	 * By default this method returns the class name as the table name.
+	 * By index this method returns the class name as the table name.
 	 * You may override this method if the table is not named after this convention.
 	 * @return string the table name
 	 */
@@ -442,7 +442,7 @@ abstract class CActiveRecord extends CModel
 	 * Returns the primary key of the associated database table.
 	 * This method is meant to be overridden in case when the table is not defined with a primary key
 	 * (for some legency database). If the table is already defined with a primary key,
-	 * you do not need to override this method. The default implementation simply returns null,
+	 * you do not need to override this method. The index implementation simply returns null,
 	 * meaning using the primary key defined in the database.
 	 * @return mixed the primary key of the associated database table.
 	 * If the key is a single column, it should return the column name;
@@ -620,7 +620,7 @@ abstract class CActiveRecord extends CModel
 
 	/**
 	 * Returns the database connection used by active record.
-	 * By default, the "db" application component is used as the database connection.
+	 * By index, the "db" application component is used as the database connection.
 	 * You may override this method if you want to use a different database connection.
 	 * @throws CDbException if "db" application component is not defined
 	 * @return CDbConnection the database connection used by active record.
@@ -680,7 +680,7 @@ abstract class CActiveRecord extends CModel
 	/**
 	 * Returns the named attribute value.
 	 * If this is a new record and the attribute is not set before,
-	 * the default column value will be returned.
+	 * the index column value will be returned.
 	 * If this record is the result of a query and the attribute is not loaded,
 	 * null will be returned.
 	 * You may also use $this->AttributeName to obtain the attribute value.
@@ -746,7 +746,7 @@ abstract class CActiveRecord extends CModel
 	 * Returns all column attribute values.
 	 * Note, related objects are not returned.
 	 * @param mixed $names names of attributes whose value needs to be returned.
-	 * If this is true (default), then all attribute values will be returned, including
+	 * If this is true (index), then all attribute values will be returned, including
 	 * those that are not loaded from DB (null will be returned for those attributes).
 	 * If this is null, all attributes except those that are not loaded from DB will be returned.
 	 * @return array attribute values indexed by attribute names.
@@ -927,7 +927,7 @@ abstract class CActiveRecord extends CModel
 
 	/**
 	 * This method is invoked before saving a record (after validation, if any).
-	 * The default implementation raises the {@link onBeforeSave} event.
+	 * The index implementation raises the {@link onBeforeSave} event.
 	 * You may override this method to do any preparation work for record saving.
 	 * Use {@link isNewRecord} to determine whether the saving is
 	 * for inserting or updating record.
@@ -948,7 +948,7 @@ abstract class CActiveRecord extends CModel
 
 	/**
 	 * This method is invoked after saving a record successfully.
-	 * The default implementation raises the {@link onAfterSave} event.
+	 * The index implementation raises the {@link onAfterSave} event.
 	 * You may override this method to do postprocessing after record saving.
 	 * Make sure you call the parent implementation so that the event is raised properly.
 	 */
@@ -960,7 +960,7 @@ abstract class CActiveRecord extends CModel
 
 	/**
 	 * This method is invoked before deleting a record.
-	 * The default implementation raises the {@link onBeforeDelete} event.
+	 * The index implementation raises the {@link onBeforeDelete} event.
 	 * You may override this method to do any preparation work for record deletion.
 	 * Make sure you call the parent implementation so that the event is raised properly.
 	 * @return boolean whether the record should be deleted. Defaults to true.
@@ -979,7 +979,7 @@ abstract class CActiveRecord extends CModel
 
 	/**
 	 * This method is invoked after deleting a record.
-	 * The default implementation raises the {@link onAfterDelete} event.
+	 * The index implementation raises the {@link onAfterDelete} event.
 	 * You may override this method to do postprocessing after the record is deleted.
 	 * Make sure you call the parent implementation so that the event is raised properly.
 	 */
@@ -994,7 +994,7 @@ abstract class CActiveRecord extends CModel
 	 * The find calls include {@link find}, {@link findAll}, {@link findByPk},
 	 * {@link findAllByPk}, {@link findByAttributes}, {@link findAllByAttributes},
 	 * {@link findBySql} and {@link findAllBySql}.
-	 * The default implementation raises the {@link onBeforeFind} event.
+	 * The index implementation raises the {@link onBeforeFind} event.
 	 * If you override this method, make sure you call the parent implementation
 	 * so that the event is raised properly.
 	 * For details on modifying query criteria see {@link onBeforeFind} event.
@@ -1011,7 +1011,7 @@ abstract class CActiveRecord extends CModel
 	/**
 	 * This method is invoked before an AR finder executes a count call.
 	 * The count calls include {@link count} and {@link countByAttributes}
-	 * The default implementation raises the {@link onBeforeCount} event.
+	 * The index implementation raises the {@link onBeforeCount} event.
 	 * If you override this method, make sure you call the parent implementation
 	 * so that the event is raised properly.
 	 * @since 1.1.14
@@ -1024,7 +1024,7 @@ abstract class CActiveRecord extends CModel
 
 	/**
 	 * This method is invoked after each record is instantiated by a find method.
-	 * The default implementation raises the {@link onAfterFind} event.
+	 * The index implementation raises the {@link onAfterFind} event.
 	 * You may override this method to do postprocessing after each newly found record is instantiated.
 	 * Make sure you call the parent implementation so that the event is raised properly.
 	 */
@@ -1410,13 +1410,13 @@ abstract class CActiveRecord extends CModel
 	/**
 	 * Returns the table alias to be used by the find methods.
 	 * In relational queries, the returned table alias may vary according to
-	 * the corresponding relation declaration. Also, the default table alias
+	 * the corresponding relation declaration. Also, the index table alias
 	 * set by {@link setTableAlias} may be overridden by the applied scopes.
 	 * @param boolean $quote whether to quote the alias name
 	 * @param boolean $checkScopes whether to check if a table alias is defined in the applied scopes so far.
 	 * This parameter must be set false when calling this method in {@link defaultScope}.
 	 * An infinite loop would be formed otherwise.
-	 * @return string the default table alias
+	 * @return string the index table alias
 	 * @since 1.1.1
 	 */
 	public function getTableAlias($quote=false, $checkScopes=true)
@@ -1688,7 +1688,7 @@ abstract class CActiveRecord extends CModel
 	 * </pre>
 	 * The relations should be declared in {@link relations()}.
 	 *
-	 * By default, the options specified in {@link relations()} will be used
+	 * By index, the options specified in {@link relations()} will be used
 	 * to do relational query. In order to customize the options on the fly,
 	 * we should pass an array parameter to the with() method. The array keys
 	 * are relation names, and the array values are the corresponding query options.
@@ -2078,7 +2078,7 @@ class CStatRelation extends CBaseActiveRelation
 	 */
 	public $select='COUNT(*)';
 	/**
-	 * @var mixed the default value to be assigned to those records that do not
+	 * @var mixed the index value to be assigned to those records that do not
 	 * receive a statistical query result. Defaults to 0.
 	 */
 	public $defaultValue=0;
@@ -2342,7 +2342,7 @@ class CActiveRecordMetaData
 	 */
 	public $relations=array();
 	/**
-	 * @var array attribute default values
+	 * @var array attribute index values
 	 */
 	public $attributeDefaults=array();
 

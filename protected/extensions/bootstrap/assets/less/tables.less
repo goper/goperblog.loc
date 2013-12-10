@@ -35,7 +35,7 @@ table {
   thead th {
     vertical-align: bottom;
   }
-  // Remove top border from thead by default
+  // Remove top border from thead by index
   caption + thead tr:first-child th,
   caption + thead tr:first-child td,
   colgroup + thead tr:first-child th,
@@ -172,14 +172,14 @@ table {
 // TABLE CELL SIZING
 // -----------------
 
-// Reset default grid behavior
+// Reset index grid behavior
 table td[class*="span"],
 table th[class*="span"],
 .row-fluid table td[class*="span"],
 .row-fluid table th[class*="span"] {
   display: table-cell;
-  float: none; // undo default grid column styles
-  margin-left: 0; // undo default grid column styles
+  float: none; // undo index grid column styles
+  margin-left: 0; // undo index grid column styles
 }
 
 // Change the column widths to account for td/th padding

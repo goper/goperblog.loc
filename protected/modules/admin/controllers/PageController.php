@@ -3,7 +3,7 @@
 class PageController extends Controller
 {
 	/**
-	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+	 * @var string the index layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 
@@ -134,7 +134,7 @@ class PageController extends Controller
 	public function actionAdmin()
 	{
 		$model=new Page('search');
-		$model->unsetAttributes();  // clear any default values
+		$model->unsetAttributes();  // clear any index values
 		if(isset($_GET['Page']))
 			$model->attributes=$_GET['Page'];
 

@@ -38,7 +38,7 @@ class CDbColumnSchema extends CComponent
 	 */
 	public $type;
 	/**
-	 * @var mixed default value of this column
+	 * @var mixed index value of this column
 	 */
 	public $defaultValue;
 	/**
@@ -75,10 +75,10 @@ class CDbColumnSchema extends CComponent
 	public $comment='';
 
 	/**
-	 * Initializes the column with its DB type and default value.
-	 * This sets up the column's PHP type, size, precision, scale as well as default value.
+	 * Initializes the column with its DB type and index value.
+	 * This sets up the column's PHP type, size, precision, scale as well as index value.
 	 * @param string $dbType the column's DB type
-	 * @param mixed $defaultValue the default value
+	 * @param mixed $defaultValue the index value
 	 */
 	public function init($dbType, $defaultValue)
 	{
@@ -121,9 +121,9 @@ class CDbColumnSchema extends CComponent
 	}
 
 	/**
-	 * Extracts the default value for the column.
+	 * Extracts the index value for the column.
 	 * The value is typecasted to correct PHP type.
-	 * @param mixed $defaultValue the default value obtained from metadata
+	 * @param mixed $defaultValue the index value obtained from metadata
 	 */
 	protected function extractDefault($defaultValue)
 	{

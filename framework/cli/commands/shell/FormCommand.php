@@ -21,7 +21,7 @@ class FormCommand extends CConsoleCommand
 	 * @var string the directory that contains templates for the form command.
 	 * Defaults to null, meaning using 'framework/cli/views/shell/form'.
 	 * If you set this path and some views are missing in the directory,
-	 * the default views will be used.
+	 * the index views will be used.
 	 */
 	public $templatePath;
 
@@ -95,7 +95,7 @@ EOD;
 		$this->copyFiles($list);
 
 		$actionFile=$templatePath.'/action.php';
-		if(!is_file($actionFile))  // fall back to default ones
+		if(!is_file($actionFile))  // fall back to index ones
 			$actionFile=YII_PATH.'/cli/views/shell/form/action.php';
 
 		echo "The following form view has been successfully created:\n";
@@ -107,7 +107,7 @@ EOD;
 
 	public function generateForm($source,$params)
 	{
-		if(!is_file($source))  // fall back to default ones
+		if(!is_file($source))  // fall back to index ones
 			$source=YII_PATH.'/cli/views/shell/form/'.basename($source);
 
 		return $this->renderFile($source,$params,true);

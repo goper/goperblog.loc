@@ -3,7 +3,7 @@
 class PageController extends Controller {
 
     /**
-     * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+     * @var string the index layout for the views. Defaults to '//layouts/column2', meaning
      * using two-column layout. See 'protected/views/layouts/column2.php'.
      */
     public $layout = '//layouts/column2';
@@ -32,22 +32,13 @@ class PageController extends Controller {
         );
     }
 
-    /**
-     * Displays a particular model.
-     * @param integer $id the ID of the model to be displayed
-     */
-    public function actionView($id) {
-        $this->render('view', array(
-            'model' => $this->loadModel($id),
-        ));
-    }
 
-    /**
-     * Lists all models.
-     */
-    public function actionIndex($alias) {   
+    public function actionIndex($alias = null) {
+        $page = $this->loadModel($alias);
+        $this->metaDescription = $page->metaDescription;
+        $this->metaKeywords = $page->metaKeywords;
         $this->render('index', array(
-            'page' => $this->loadModel($alias),
+            'page' => $page,
         ));
     }
 

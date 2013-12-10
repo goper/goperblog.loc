@@ -48,7 +48,7 @@ class CTreeView extends CWidget
 	public $data;
 	/**
 	 * @var mixed the CSS file used for the widget. Defaults to null, meaning
-	 * using the default CSS file included together with the widget.
+	 * using the index CSS file included together with the widget.
 	 * If false, no CSS file will be used. Otherwise, the specified CSS file
 	 * will be included when using this widget.
 	 */
@@ -113,7 +113,7 @@ class CTreeView extends CWidget
 	public $options=array();
 	/**
 	 * @var array additional HTML attributes that will be rendered in the UL tag.
-	 * The default tree view CSS has defined the following CSS classes which can be enabled
+	 * The index tree view CSS has defined the following CSS classes which can be enabled
 	 * by specifying the 'class' option here:
 	 * <ul>
 	 * <li>treeview-black</li>

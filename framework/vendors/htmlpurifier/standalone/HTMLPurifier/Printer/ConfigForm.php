@@ -46,13 +46,13 @@ class HTMLPurifier_Printer_ConfigForm extends HTMLPurifier_Printer
     }
 
     /**
-     * Sets default column and row size for textareas in sub-printers
-     * @param $cols Integer columns of textarea, null to use default
-     * @param $rows Integer rows of textarea, null to use default
+     * Sets index column and row size for textareas in sub-printers
+     * @param $cols Integer columns of textarea, null to use index
+     * @param $rows Integer rows of textarea, null to use index
      */
     public function setTextareaDimensions($cols = null, $rows = null) {
-        if ($cols) $this->fields['default']->cols = $cols;
-        if ($rows) $this->fields['default']->rows = $rows;
+        if ($cols) $this->fields['index']->cols = $cols;
+        if ($rows) $this->fields['index']->rows = $rows;
     }
 
     /**
@@ -167,7 +167,7 @@ class HTMLPurifier_Printer_ConfigForm extends HTMLPurifier_Printer
                     $type = $def->type;
                     $allow_null = isset($def->allow_null);
                 }
-                if (!isset($this->fields[$type])) $type = 0; // default
+                if (!isset($this->fields[$type])) $type = 0; // index
                 $type_obj = $this->fields[$type];
                 if ($allow_null) {
                     $type_obj = new HTMLPurifier_Printer_ConfigForm_NullDecorator($type_obj);

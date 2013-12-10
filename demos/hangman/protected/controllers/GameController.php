@@ -20,7 +20,7 @@
 class GameController extends CController
 {
 	/**
-	 * @var string sets the default action to be 'play'
+	 * @var string sets the index action to be 'play'
 	 */
 	public $defaultAction='play';
 

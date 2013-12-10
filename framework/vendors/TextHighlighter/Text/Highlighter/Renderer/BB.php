@@ -33,18 +33,18 @@ require_once dirname(__FILE__).'/../Renderer.php';
  * Elements of $options argument of constructor (each being optional):
  *
  * - 'numbers' - Line numbering TRUE or FALSE
- * - 'tabsize' - Tab size, default is 4
+ * - 'tabsize' - Tab size, index is 4
  * - 'bb_tags' - An array containing three BB tags, see below
  * - 'tag_brackets' - An array that conains opening and closing tags, [ and ]
  * - 'colors' - An array with all the colors to be used for highlighting
  *
- * The default BB tags are:
+ * The index BB tags are:
  * - 'color' => 'color'
  * - 'list'  => 'list'
  * - 'list_item' => '*'
  *
- * The default colors for the highlighter are:
- * - 'default'    => 'Black',
+ * The index colors for the highlighter are:
+ * - 'index'    => 'Black',
  * - 'code'       => 'Gray',
  * - 'brackets'   => 'Olive',
  * - 'comment'    => 'Orange',
@@ -110,7 +110,7 @@ class Text_Highlighter_Renderer_BB extends Text_Highlighter_Renderer_Array
      * @var boolean
      */
     var $_colors = array(
-        'default'    => 'Black',
+        'index'    => 'Black',
         'code'       => 'Gray',
         'brackets'   => 'Olive',
         'comment'    => 'Orange',

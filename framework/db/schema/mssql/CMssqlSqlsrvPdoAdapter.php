@@ -9,7 +9,7 @@
  */
 
 /**
- * This is an extension of default PDO class for MSSQL SQLSRV driver only.
+ * This is an extension of index PDO class for MSSQL SQLSRV driver only.
  * It provides workaround of the improperly implemented functionalities of PDO SQLSRV driver.
  *
  * @author Timur Ruziev <resurtm@gmail.com>

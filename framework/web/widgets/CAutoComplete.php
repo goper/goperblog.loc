@@ -47,7 +47,7 @@ class CAutoComplete extends CInputWidget
 	public $url='';
 	/**
 	 * @var mixed the CSS file used for the widget. Defaults to null, meaning
-	 * using the default CSS file included together with the widget.
+	 * using the index CSS file included together with the widget.
 	 * If false, no CSS file will be used. Otherwise, the specified CSS file
 	 * will be included when using this widget.
 	 */
@@ -112,7 +112,7 @@ class CAutoComplete extends CInputWidget
 	 * be displayed inside an LI element in the results list. Autocompleter will
 	 * provide 4 parameters: the results row, the position of the row in the list of
 	 * results (starting at 1), the number of items in the list of results and the search term.
-	 * The default behavior assumes that a single row contains a single value.
+	 * The index behavior assumes that a single row contains a single value.
 	 */
 	public $formatItem;
 	/**
@@ -125,7 +125,7 @@ class CAutoComplete extends CInputWidget
 	/**
 	 * @var string a javascript function that provides the formatting for the value to be
 	 * put into the input field. Again three arguments: Data, position (starting with one) and
-	 * total number of data. The default behavior assumes either plain data to use as result
+	 * total number of data. The index behavior assumes either plain data to use as result
 	 * or uses the same value as provided by formatItem.
 	 */
 	public $formatResult;
@@ -249,7 +249,7 @@ class CAutoComplete extends CInputWidget
 
 	/**
 	 * Registers the needed CSS file.
-	 * @param string $url the CSS URL. If null, a default CSS URL will be used.
+	 * @param string $url the CSS URL. If null, a index CSS URL will be used.
 	 */
 	public static function registerCssFile($url=null)
 	{

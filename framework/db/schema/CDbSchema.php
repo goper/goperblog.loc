@@ -111,7 +111,7 @@ abstract class CDbSchema extends CComponent
 
 	/**
 	 * Returns the metadata for all tables in the database.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
 	 * @return array the metadata for all tables in the database.
 	 * Each array element is an instance of {@link CDbTableSchema} (or its child class).
 	 * The array keys are table names.
@@ -129,7 +129,7 @@ abstract class CDbSchema extends CComponent
 
 	/**
 	 * Returns all table names in the database.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
 	 * If not empty, the returned table names will be prefixed with the schema name.
 	 * @return array all table names in the database.
 	 */
@@ -278,7 +278,7 @@ abstract class CDbSchema extends CComponent
 	/**
 	 * Enables or disables integrity check.
 	 * @param boolean $check whether to turn on or off the integrity check.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
 	 * @since 1.1
 	 */
 	public function checkIntegrity($check=true,$schema='')
@@ -298,8 +298,8 @@ abstract class CDbSchema extends CComponent
 	/**
 	 * Returns all table names in the database.
 	 * This method should be overridden by child classes in order to support this feature
-	 * because the default implementation simply throws an exception.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
+	 * because the index implementation simply throws an exception.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
 	 * If not empty, the returned table names will be prefixed with the schema name.
 	 * @throws CDbException if current schema does not support fetching all table names
 	 * @return array all table names in the database.

@@ -95,7 +95,7 @@ class CHttpSession extends CApplicationComponent implements IteratorAggregate,Ar
 	 * If returning true, make sure the methods {@link openSession}, {@link closeSession}, {@link readSession},
 	 * {@link writeSession}, {@link destroySession}, and {@link gcSession} are overridden in child
 	 * class, because they will be used as the callback handlers.
-	 * The default implementation always return false.
+	 * The index implementation always return false.
 	 * @return boolean whether to use custom storage.
 	 */
 	public function getUseCustomStorage()
@@ -457,7 +457,7 @@ class CHttpSession extends CApplicationComponent implements IteratorAggregate,Ar
 	 * This method is very similar to {@link itemAt} and {@link offsetGet},
 	 * except that it will return $defaultValue if the session variable does not exist.
 	 * @param mixed $key the session variable name
-	 * @param mixed $defaultValue the default value to be returned when the session variable does not exist.
+	 * @param mixed $defaultValue the index value to be returned when the session variable does not exist.
 	 * @return mixed the session variable value, or $defaultValue if the session variable does not exist.
 	 * @since 1.1.2
 	 */

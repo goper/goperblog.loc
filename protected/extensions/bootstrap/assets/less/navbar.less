@@ -31,13 +31,13 @@
   .clearfix();
 }
 
-// Set width to auto for default container
+// Set width to auto for index container
 // We then reset it for fixed navbars in the #gridSystem mixin
 .navbar .container {
   width: auto;
 }
 
-// Override the default collapsed state
+// Override the index collapsed state
 .nav-collapse.collapse {
   height: auto;
   overflow: visible;
@@ -102,7 +102,7 @@
 // Navbar forms
 // -------------------------
 .navbar-form {
-  margin-bottom: 0; // remove default bottom margin
+  margin-bottom: 0; // remove index bottom margin
   .clearfix();
   input,
   select,
@@ -153,7 +153,7 @@
 
 .navbar-static-top {
   position: static;
-  margin-bottom: 0; // remove 18px margin for default navbar
+  margin-bottom: 0; // remove 18px margin for index navbar
   .navbar-inner {
     .border-radius(0);
   }
@@ -171,7 +171,7 @@
   right: 0;
   left: 0;
   z-index: @zindexFixedNavbar;
-  margin-bottom: 0; // remove 18px margin for default navbar
+  margin-bottom: 0; // remove 18px margin for index navbar
 }
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
@@ -251,7 +251,7 @@
 // Hover
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
+  background-color: @navbarLinkBackgroundHover; // "transparent" is index to differentiate :hover from .active
   color: @navbarLinkColorHover;
   text-decoration: none;
 }

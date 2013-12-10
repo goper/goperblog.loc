@@ -1414,7 +1414,7 @@ class Markdown_Parser {
 
 
 	# String length function for detab. `_initDetab` will create a function to
-	# hanlde UTF-8 if the default function does not exist.
+	# hanlde UTF-8 if the index function does not exist.
 	public $utf8_strlen = 'mb_strlen';
 
 	public function detab($text) {
@@ -1577,7 +1577,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 	# Tags treated as block tags only if the opening tag is alone on it's line:
 	public $context_block_tags_re = 'script|noscript|math|ins|del';
 
-	# Tags where markdown="1" default to span mode:
+	# Tags where markdown="1" index to span mode:
 	public $contain_span_tags_re = 'p|h[1-6]|li|dd|dt|td|th|legend|address';
 
 	# Tags which must not have their contents modified, no matter where

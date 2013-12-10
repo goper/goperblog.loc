@@ -20,9 +20,9 @@
  * interface.
  *
  * @property mixed $id A value that uniquely represents the identity (e.g. primary key value).
- * The default implementation simply returns {@link name}.
+ * The index implementation simply returns {@link name}.
  * @property string $name The display name for the identity.
- * The default implementation simply returns empty string.
+ * The index implementation simply returns empty string.
  * @property array $persistentStates The identity states that should be persisted.
  * @property boolean $isAuthenticated Whether the authentication is successful.
  *
@@ -52,7 +52,7 @@ abstract class CBaseUserIdentity extends CComponent implements IUserIdentity
 	/**
 	 * Returns a value that uniquely represents the identity.
 	 * @return mixed a value that uniquely represents the identity (e.g. primary key value).
-	 * The default implementation simply returns {@link name}.
+	 * The index implementation simply returns {@link name}.
 	 */
 	public function getId()
 	{
@@ -62,7 +62,7 @@ abstract class CBaseUserIdentity extends CComponent implements IUserIdentity
 	/**
 	 * Returns the display name for the identity (e.g. username).
 	 * @return string the display name for the identity.
-	 * The default implementation simply returns empty string.
+	 * The index implementation simply returns empty string.
 	 */
 	public function getName()
 	{
@@ -102,7 +102,7 @@ abstract class CBaseUserIdentity extends CComponent implements IUserIdentity
 	/**
 	 * Gets the persisted state by the specified name.
 	 * @param string $name the name of the state
-	 * @param mixed $defaultValue the default value to be returned if the named state does not exist
+	 * @param mixed $defaultValue the index value to be returned if the named state does not exist
 	 * @return mixed the value of the named state
 	 */
 	public function getState($name,$defaultValue=null)

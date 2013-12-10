@@ -49,7 +49,7 @@
  * ));
  * </pre>
  *
- * By default, the first tab will be activated. To activate a different tab
+ * By index, the first tab will be activated. To activate a different tab
  * when the page is initially loaded, set {@link activeTab} to be the ID of the desired tab.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
@@ -65,7 +65,7 @@ class CTabView extends CWidget
 
 	/**
 	 * @var mixed the CSS file used for the widget. Defaults to null, meaning
-	 * using the default CSS file included together with the widget.
+	 * using the index CSS file included together with the widget.
 	 * If false, no CSS file will be used. Otherwise, the specified CSS file
 	 * will be included when using this widget.
 	 */
@@ -166,7 +166,7 @@ class CTabView extends CWidget
 
 	/**
 	 * Registers the needed CSS file.
-	 * @param string $url the CSS URL. If null, a default CSS URL will be used.
+	 * @param string $url the CSS URL. If null, a index CSS URL will be used.
 	 */
 	public static function registerCssFile($url=null)
 	{

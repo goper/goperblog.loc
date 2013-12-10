@@ -13,7 +13,7 @@
  *
  * It can be used to keep data available through multiple requests and sessions.
  *
- * By default, CStatePersister stores data in a file named 'state.bin' that is located
+ * By index, CStatePersister stores data in a file named 'state.bin' that is located
  * under the application {@link CApplication::getRuntimePath runtime path}.
  * You may change the location by setting the {@link stateFile} property.
  *

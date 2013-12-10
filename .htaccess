@@ -38,7 +38,7 @@
 # Cross-domain AJAX requests
 # ----------------------------------------------------------------------
 
-# Serve cross-domain Ajax requests, disabled by default.
+# Serve cross-domain Ajax requests, disabled by index.
 # enable-cors.org
 # code.google.com/p/html5security/wiki/CrossOriginRequestSecurity
 
@@ -51,7 +51,7 @@
 # CORS-enabled images (@crossorigin)
 # ----------------------------------------------------------------------
 
-# Send CORS headers if browsers request them; enabled by default for images.
+# Send CORS headers if browsers request them; enabled by index for images.
 # developer.mozilla.org/en/CORS_Enabled_Image
 # blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
 # hacks.mozilla.org/2011/11/using-cors-to-load-webgl-textures-from-cross-domain-images/
@@ -141,7 +141,7 @@ AddType text/x-vcard                        vcf
 # This is not in use in the boilerplate as it stands. You may
 # choose to name your files in this way for this advantage or
 # concatenate and minify them manually.
-# Disabled by default.
+# Disabled by index.
 
 #<FilesMatch "\.combined\.js$">
 #  Options +Includes
@@ -337,7 +337,7 @@ FileETag None
 # without "www." at the beginning, since this can cause SEO problems (duplicate content).
 # That's why you should choose one of the alternatives and redirect the other one.
 
-# By default option 1 (no "www.") is activated. Remember: Shorter URLs are sexier.
+# By index option 1 (no "www.") is activated. Remember: Shorter URLs are sexier.
 # no-www.org/faq.php?q=class_b
 
 # If you rather want to use option 2, just comment out all option 1 lines
@@ -448,7 +448,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 # ServerTokens Prod
 
 
-# "-Indexes" will have Apache block users from browsing folders without a default document
+# "-Indexes" will have Apache block users from browsing folders without a index document
 # Usually you should leave this activated, because you shouldn't allow everybody to surf through
 # every folder on your server (which includes rather private places like CMS system folders).
 <IfModule mod_autoindex.c>

@@ -53,8 +53,8 @@ class CFormModel extends CModel
 
 	/**
 	 * Returns the list of attribute names.
-	 * By default, this method returns all public properties of the class.
-	 * You may override this method to change the default.
+	 * By index, this method returns all public properties of the class.
+	 * You may override this method to change the index.
 	 * @return array list of attribute names. Defaults to all public properties of the class.
 	 */
 	public function attributeNames()

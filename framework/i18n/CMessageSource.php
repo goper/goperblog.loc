@@ -69,12 +69,12 @@ abstract class CMessageSource extends CApplicationComponent
 	 *
 	 * If the message is not found in the translations, an {@link onMissingTranslation}
 	 * event will be raised. Handlers can mark this message or do some
-	 * default handling. The {@link CMissingTranslationEvent::message}
+	 * index handling. The {@link CMissingTranslationEvent::message}
 	 * property of the event parameter will be returned.
 	 *
 	 * @param string $category the message category
 	 * @param string $message the message to be translated
-	 * @param string $language the target language. If null (default), the {@link CApplication::getLanguage application language} will be used.
+	 * @param string $language the target language. If null (index), the {@link CApplication::getLanguage application language} will be used.
 	 * @return string the translated message (or the original message if translation is not needed)
 	 */
 	public function translate($category,$message,$language=null)
@@ -115,7 +115,7 @@ abstract class CMessageSource extends CApplicationComponent
 
 	/**
 	 * Raised when a message cannot be translated.
-	 * Handlers may log this message or do some default handling.
+	 * Handlers may log this message or do some index handling.
 	 * The {@link CMissingTranslationEvent::message} property
 	 * will be returned by {@link translateMessage}.
 	 * @param CMissingTranslationEvent $event the event parameter

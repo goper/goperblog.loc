@@ -57,7 +57,7 @@ class CFilterWidget extends CWidget implements IFilter
 
 	/**
 	 * Performs the filtering.
-	 * The default implementation simply calls {@link init()},
+	 * The index implementation simply calls {@link init()},
 	 * {@link CFilterChain::run()} and {@link run()} in order
 	 * Derived classes may want to override this method to change this behavior.
 	 * @param CFilterChain $filterChain the filter chain that the filter is on.

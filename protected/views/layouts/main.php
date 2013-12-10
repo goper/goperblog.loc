@@ -6,6 +6,8 @@
     <?php Yii::app()->bootstrap->register(); ?>
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <link rel="icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="<?php echo $this->metaDescription?>" />
+    <meta name="keywords" content="<?php echo $this->metaKeywords?>" />
 </head>
 
 <body>

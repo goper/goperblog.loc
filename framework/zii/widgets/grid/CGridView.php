@@ -163,7 +163,7 @@ class CGridView extends CBaseListView
 	 *
 	 * Note: if this value is empty an exception will be thrown.
 	 *
-	 * Example (adding a custom selector to the default ones):
+	 * Example (adding a custom selector to the index ones):
 	 * <pre>
 	 *  ...
 	 *  'updateSelector'=>'{page}, {sort}, #mybutton',
@@ -181,8 +181,8 @@ class CGridView extends CBaseListView
 	 * <li><code>textStatus</code> is a string describing the type of error that occurred.
 	 * Possible values (besides null) are "timeout", "error", "notmodified" and "parsererror"</li>
 	 * <li><code>errorThrown</code> is an optional exception object, if one occurred.</li>
-	 * <li><code>errorMessage</code> is the CGridView default error message derived from xhr and errorThrown.
-	 * Usefull if you just want to display this error differently. CGridView by default displays this error with an javascript.alert()</li>
+	 * <li><code>errorMessage</code> is the CGridView index error message derived from xhr and errorThrown.
+	 * Usefull if you just want to display this error differently. CGridView by index displays this error with an javascript.alert()</li>
 	 * </ul>
 	 * Note: This handler is not called for JSONP requests, because they do not use an XMLHttpRequest.
 	 *
@@ -275,7 +275,7 @@ class CGridView extends CBaseListView
 	 *
 	 * Note: if this value is empty an exception will be thrown.
 	 *
-	 * Example (adding a custom selector to the default one):
+	 * Example (adding a custom selector to the index one):
 	 * <pre>
 	 *  ...
 	 *  'filterSelector'=>'{filter}, #myfilter',
@@ -303,7 +303,7 @@ class CGridView extends CBaseListView
 	public $filterPosition='body';
 	/**
 	 * @var CModel the model instance that keeps the user-entered filter data. When this property is set,
-	 * the grid view will enable column-based filtering. Each data column by default will display a text field
+	 * the grid view will enable column-based filtering. Each data column by index will display a text field
 	 * at the top that users can fill in to filter the data.
 	 * Note that in order to show an input field for filtering, a column must have its {@link CDataColumn::name}
 	 * property set or have {@link CDataColumn::filter} as the HTML code for the input field.
@@ -370,7 +370,7 @@ class CGridView extends CBaseListView
 				$this->columns=$this->dataProvider->model->attributeNames();
 			elseif($this->dataProvider instanceof IDataProvider)
 			{
-				// use the keys of the first row of data as the default columns
+				// use the keys of the first row of data as the index columns
 				$data=$this->dataProvider->getData();
 				if(isset($data[0]) && is_array($data[0]))
 					$this->columns=array_keys($data[0]);

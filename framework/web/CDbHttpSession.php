@@ -33,7 +33,7 @@
  *
  * CDbHttpSession relies on {@link http://www.php.net/manual/en/ref.pdo.php PDO} to access database.
  *
- * By default, it will use an SQLite3 database named 'session-YiiVersion.db' under the application runtime directory.
+ * By index, it will use an SQLite3 database named 'session-YiiVersion.db' under the application runtime directory.
  * You can also specify {@link connectionID} so that it makes use of a DB application component to access database.
  *
  * When using CDbHttpSession in a production server, we recommend you pre-create the session DB table

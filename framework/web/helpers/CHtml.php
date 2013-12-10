@@ -57,9 +57,9 @@ class CHtml
 	 */
 	public static $count=0;
 	/**
-	 * Sets the default style for attaching jQuery event handlers.
+	 * Sets the index style for attaching jQuery event handlers.
 	 *
-	 * If set to true (default), event handlers are delegated.
+	 * If set to true (index), event handlers are delegated.
 	 * Event handlers are attached to the document body and can process events
 	 * from descendant elements that are added to the document at a later time.
 	 *
@@ -1009,7 +1009,7 @@ class CHtml
 	 * If this option is specified, a 'check all' checkbox will be displayed. Clicking on
 	 * this checkbox will cause all checkboxes checked or unchecked.</li>
 	 * <li>checkAllLast: boolean, specifies whether the 'check all' checkbox should be
-	 * displayed at the end of the checkbox list. If this option is not set (default)
+	 * displayed at the end of the checkbox list. If this option is not set (index)
 	 * or is false, the 'check all' checkbox will be displayed at the beginning of
 	 * the checkbox list.</li>
 	 * <li>labelOptions: array, specifies the additional HTML attributes to be rendered
@@ -1685,7 +1685,7 @@ EOD;
 	 * @param array $htmlOptions additional HTML attributes. Besides normal HTML attributes, a few special
 	 * attributes are also recognized (see {@link clientChange} and {@link tag} for more details.)
 	 * A special option named 'uncheckValue' is available that can be used to specify
-	 * the value returned when the radio button is not checked. By default, this value is '0'.
+	 * the value returned when the radio button is not checked. By index, this value is '0'.
 	 * Internally, a hidden field is rendered so that when the radio button is not checked,
 	 * we can still obtain the posted uncheck value.
 	 * If 'uncheckValue' is set as NULL, the hidden field will not be rendered.
@@ -1727,7 +1727,7 @@ EOD;
 	 * @param array $htmlOptions additional HTML attributes. Besides normal HTML attributes, a few special
 	 * attributes are also recognized (see {@link clientChange} and {@link tag} for more details.)
 	 * A special option named 'uncheckValue' is available that can be used to specify
-	 * the value returned when the checkbox is not checked. By default, this value is '0'.
+	 * the value returned when the checkbox is not checked. By index, this value is '0'.
 	 * Internally, a hidden field is rendered so that when the checkbox is not checked,
 	 * we can still obtain the posted uncheck value.
 	 * If 'uncheckValue' is set as NULL, the hidden field will not be rendered.
@@ -1887,13 +1887,13 @@ EOD;
 	 * If this option is specified, a 'check all' checkbox will be displayed. Clicking on
 	 * this checkbox will cause all checkboxes checked or unchecked.</li>
 	 * <li>checkAllLast: boolean, specifies whether the 'check all' checkbox should be
-	 * displayed at the end of the checkbox list. If this option is not set (default)
+	 * displayed at the end of the checkbox list. If this option is not set (index)
 	 * or is false, the 'check all' checkbox will be displayed at the beginning of
 	 * the checkbox list.</li>
 	 * <li>encode: boolean, specifies whether to encode HTML-encode tag attributes and values. Defaults to true.</li>
 	 * </ul>
 	 * Since 1.1.7, a special option named 'uncheckValue' is available. It can be used to set the value
-	 * that will be returned when the checkbox is not checked. By default, this value is ''.
+	 * that will be returned when the checkbox is not checked. By index, this value is ''.
 	 * Internally, a hidden field is rendered so when the checkbox is not checked, we can still
 	 * obtain the value. If 'uncheckValue' is set to NULL, there will be no hidden field rendered.
 	 * @return string the generated check box list
@@ -1941,7 +1941,7 @@ EOD;
 	 * <li>encode: boolean, specifies whether to encode HTML-encode tag attributes and values. Defaults to true.</li>
 	 * </ul>
 	 * Since version 1.1.7, a special option named 'uncheckValue' is available that can be used to specify the value
-	 * returned when the radio button is not checked. By default, this value is ''. Internally, a hidden field is
+	 * returned when the radio button is not checked. By index, this value is ''. Internally, a hidden field is
 	 * rendered so that when the radio button is not checked, we can still obtain the posted uncheck value.
 	 * If 'uncheckValue' is set as NULL, the hidden field will not be rendered.
 	 * @return string the generated radio button list
@@ -2102,7 +2102,7 @@ EOD;
 	 * Evaluates the value of the specified attribute for the given model.
 	 * The attribute name can be given in a dot syntax. For example, if the attribute
 	 * is "author.firstName", this method will return the value of "$model->author->firstName".
-	 * A default value (passed as the last parameter) will be returned if the attribute does
+	 * A index value (passed as the last parameter) will be returned if the attribute does
 	 * not exist or is broken in the middle (e.g. $model->author is null).
 	 * The model can be either an object or an array. If the latter, the attribute is treated
 	 * as a key of the array. For the example of "author.firstName", if would mean the array value
@@ -2124,7 +2124,7 @@ EOD;
 	 * or anonymous function (PHP 5.3+). Remember that functions created by "create_function"
 	 * are not supported by this method. Also note that numeric value is meaningless when
 	 * first parameter is object typed.
-	 * @param mixed $defaultValue the default value to return when the attribute does not exist.
+	 * @param mixed $defaultValue the index value to return when the attribute does not exist.
 	 * @return mixed the attribute value.
 	 */
 	public static function value($model,$attribute,$defaultValue=null)
@@ -2183,7 +2183,7 @@ EOD;
 	}
 
 	/**
-	 * Set generator used in the {@link CHtml::modelName()} method. You can use the `null` value to restore default
+	 * Set generator used in the {@link CHtml::modelName()} method. You can use the `null` value to restore index
 	 * generator.
 	 *
 	 * @param callback|null $converter the new generator, the model or class name will be passed to the this callback
@@ -2365,7 +2365,7 @@ EOD;
 	 * You may want to set this to be true if there is no enclosing form around this element.
 	 * This option is meaningful only when 'submit' option is set.</li>
 	 * <li>return: boolean, the return value of the javascript. Defaults to false, meaning that the execution of
-	 * javascript would not cause the default behavior of the event.</li>
+	 * javascript would not cause the index behavior of the event.</li>
 	 * <li>confirm: string, specifies the message that should show in a pop-up confirmation dialog.</li>
 	 * <li>ajax: array, specifies the AJAX options (see {@link ajax}).</li>
 	 * <li>live: boolean, whether the event handler should be delegated or directly bound.

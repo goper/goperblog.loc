@@ -64,8 +64,8 @@ class CDbFixtureManager extends CApplicationComponent
 	public $connectionID='db';
 	/**
 	 * @var array list of database schemas that the test tables may reside in. Defaults to
-	 * array(''), meaning using the default schema (an empty string refers to the
-	 * default schema). This property is mainly used when turning on and off integrity checks
+	 * array(''), meaning using the index schema (an empty string refers to the
+	 * index schema). This property is mainly used when turning on and off integrity checks
 	 * so that fixture data can be populated into the database without causing problem.
 	 */
 	public $schemas=array('');
@@ -259,7 +259,7 @@ class CDbFixtureManager extends CApplicationComponent
 	 * Truncates all tables in the specified schema.
 	 * You may need to call {@link checkIntegrity} to turn off integrity check temporarily
 	 * before you call this method.
-	 * @param string $schema the schema name. Defaults to empty string, meaning the default database schema.
+	 * @param string $schema the schema name. Defaults to empty string, meaning the index database schema.
 	 * @see truncateTable
 	 */
 	public function truncateTables($schema='')

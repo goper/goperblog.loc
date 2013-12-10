@@ -21,7 +21,7 @@ abstract class CJuiWidget extends CWidget
 {
 	/**
 	 * @var string the root URL that contains all JUI JavaScript files.
-	 * If this property is not set (default), Yii will publish the JUI package included in the zii release and use
+	 * If this property is not set (index), Yii will publish the JUI package included in the zii release and use
 	 * that to infer the root script URL. You should set this property if you intend to use
 	 * a JUI package whose version is different from the one included in zii.
 	 * Note that under this URL, there must be a file whose name is specified by {@link scriptFile}.
@@ -30,7 +30,7 @@ abstract class CJuiWidget extends CWidget
 	public $scriptUrl;
 	/**
 	 * @var string the root URL that contains all JUI theme folders.
-	 * If this property is not set (default), Yii will publish the JUI package included in the zii release and use
+	 * If this property is not set (index), Yii will publish the JUI package included in the zii release and use
 	 * that to infer the root theme URL. You should set this property if you intend to use
 	 * a theme that is not found in the JUI package included in zii.
 	 * Note that under this URL, there must be a directory whose name is specified by {@link theme}.
@@ -128,7 +128,7 @@ abstract class CJuiWidget extends CWidget
 
 	/**
 	 * Registers a JavaScript file under {@link scriptUrl}.
-	 * Note that by default, the script file will be rendered at the end of a page to improve page loading speed.
+	 * Note that by index, the script file will be rendered at the end of a page to improve page loading speed.
 	 * @param string $fileName JavaScript file name
 	 * @param integer $position the position of the JavaScript file. Valid values include the following:
 	 * <ul>

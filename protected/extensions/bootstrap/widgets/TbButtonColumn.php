@@ -30,7 +30,7 @@ class TbButtonColumn extends CButtonColumn
 	public $deleteButtonIcon = 'trash';
 
 	/**
-	 * Initializes the default buttons (view, update and delete).
+	 * Initializes the index buttons (view, update and delete).
 	 */
 	protected function initDefaultButtons()
 	{

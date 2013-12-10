@@ -3,20 +3,20 @@
 /* @var $model Page */
 
 $this->breadcrumbs=array(
-	'Pages'=>array('index'),
+	'Страницы'=>array('index'),
 	$model->name,
 );
 
 $this->menu=array(
-	array('label'=>'List Page', 'url'=>array('index')),
-	array('label'=>'Create Page', 'url'=>array('create')),
-	array('label'=>'Update Page', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Page', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Page', 'url'=>array('admin')),
+	array('label'=>'Список страниц', 'url'=>array('index')),
+	array('label'=>'Создать страницу', 'url'=>array('create')),
+	array('label'=>'Изменить страницу', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Удалить страницу', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Менеджер страницы', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Page #<?php echo $model->id; ?></h1>
+<h1>Страница #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -24,7 +24,12 @@ $this->menu=array(
 		'id',
 		'title',
 		'name',
-		'content',
+		//'content',
+        'content' => array(
+                    'name' => 'content',
+                    'type'=>'html',
+                    'value' => $model->content
+        ),
 		'alias',
 	),
 )); ?>

@@ -82,7 +82,7 @@
  * validating, error and success. To differentiate these states, CActiveForm
  * automatically assigns different CSS classes for the last three states
  * to the HTML element containing the input field.
- * By default, these CSS classes are named as 'validating', 'error' and 'success',
+ * By index, these CSS classes are named as 'validating', 'error' and 'success',
  * respectively. We may customize these CSS classes by configuring the
  * {@link clientOptions} property or specifying in the {@link error} method.
  *

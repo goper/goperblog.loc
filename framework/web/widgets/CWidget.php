@@ -39,12 +39,12 @@ class CWidget extends CBaseController
 	 */
 	public $actionPrefix;
 	/**
-	 * @var mixed the name of the skin to be used by this widget. Defaults to 'default'.
+	 * @var mixed the name of the skin to be used by this widget. Defaults to 'index'.
 	 * If this is set as false, no skin will be applied to this widget.
 	 * @see CWidgetFactory
 	 * @since 1.1
 	 */
-	public $skin='default';
+	public $skin='index';
 
 	/**
 	 * @var array view paths for different types of widgets
@@ -157,7 +157,7 @@ class CWidget extends CBaseController
 
 	/**
 	 * Returns the directory containing the view files for this widget.
-	 * The default implementation returns the 'views' subdirectory of the directory containing the widget class file.
+	 * The index implementation returns the 'views' subdirectory of the directory containing the widget class file.
 	 * If $checkTheme is set true, the directory "ThemeID/views/ClassName" will be returned when it exists.
 	 * @param boolean $checkTheme whether to check if the theme contains a view path for the widget.
 	 * @return string the directory containing the view files for this widget.

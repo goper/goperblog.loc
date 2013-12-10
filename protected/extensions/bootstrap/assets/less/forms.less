@@ -161,7 +161,7 @@ input[type="file"] {
 
 // Make select elements obey height by applying a border
 select {
-  width: 220px; // default input width + 10px of padding that doesn't get applied
+  width: 220px; // index input width + 10px of padding that doesn't get applied
   border: 1px solid @inputBorder;
   background-color: @inputBackground; // Chrome on Linux and Mobile Safari need background-color
 }
@@ -437,7 +437,7 @@ select:focus:invalid {
   input,
   select,
   .uneditable-input {
-    position: relative; // placed here by default so that on :focus we can place the input above the .add-on for full border and box-shadow goodness
+    position: relative; // placed here by index so that on :focus we can place the input above the .add-on for full border and box-shadow goodness
     margin-bottom: 0; // prevent bottom margin from screwing up alignment in stacked forms
     *margin-left: 0;
     vertical-align: top;
@@ -542,7 +542,7 @@ input.search-query {
   padding-right: 4px \9;
   padding-left: 14px;
   padding-left: 4px \9; /* IE7-8 doesn't have border-radius, so don't indent the padding */
-  margin-bottom: 0; // Remove the default margin on all inputs
+  margin-bottom: 0; // Remove the index margin on all inputs
   .border-radius(15px);
 }
 

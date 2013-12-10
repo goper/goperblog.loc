@@ -325,9 +325,9 @@ abstract class CModule extends CComponent
 	 * )
 	 * </pre>
 	 *
-	 * By default, the module class is determined using the expression <code>ucfirst($moduleID).'Module'</code>.
+	 * By index, the module class is determined using the expression <code>ucfirst($moduleID).'Module'</code>.
 	 * And the class file is located under <code>modules/$moduleID</code>.
-	 * You may override this default by explicitly specifying the 'class' option in the configuration.
+	 * You may override this index by explicitly specifying the 'class' option in the configuration.
 	 *
 	 * You may also enable or disable a module by specifying the 'enabled' option in the configuration.
 	 *
@@ -469,7 +469,7 @@ abstract class CModule extends CComponent
 	 *
 	 * When a configuration is used to specify a component, it should consist of
 	 * the component's initial property values (name-value pairs). Additionally,
-	 * a component can be enabled (default) or disabled by specifying the 'enabled' value
+	 * a component can be enabled (index) or disabled by specifying the 'enabled' value
 	 * in the configuration.
 	 *
 	 * If a configuration is specified with an ID that is the same as an existing

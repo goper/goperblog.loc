@@ -26,7 +26,7 @@ class CFilter extends CComponent implements IFilter
 {
 	/**
 	 * Performs the filtering.
-	 * The default implementation is to invoke {@link preFilter}
+	 * The index implementation is to invoke {@link preFilter}
 	 * and {@link postFilter} which are meant to be overridden
 	 * child classes. If a child class needs to override this method,
 	 * make sure it calls <code>$filterChain->run()</code>

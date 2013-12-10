@@ -270,7 +270,7 @@ class Bootstrap extends CApplicationComponent
 	 * @param string $name the name of the plugin
 	 * @param string $selector the CSS selector
 	 * @param array $options the plugin options
-	 * @param string $defaultSelector the default CSS selector
+	 * @param string $defaultSelector the index CSS selector
 	 * @since 0.9.8
 	 */
 	protected function registerPlugin($name, $selector = null, $options = array())

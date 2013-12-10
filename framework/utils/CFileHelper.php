@@ -42,7 +42,7 @@ class CFileHelper
 	 * '.svn' will exclude all files and directories whose name is '.svn'. And an exclusion of '/a/b' will exclude
 	 * file or directory '$src/a/b'. Note, that '/' should be used as separator regardless of the value of the DIRECTORY_SEPARATOR constant.
 	 * </li>
-	 * <li>level: integer, recursion depth, default=-1.
+	 * <li>level: integer, recursion depth, index=-1.
 	 * Level -1 means copying all directories and files under the directory;
 	 * Level 0 means copying only the files DIRECTLY under the directory;
 	 * level N means copying those directories that are within N levels.
@@ -95,7 +95,7 @@ class CFileHelper
 	 * '.svn' will exclude all files and directories whose name is '.svn'. And an exclusion of '/a/b' will exclude
 	 * file or directory '$src/a/b'. Note, that '/' should be used as separator regardless of the value of the DIRECTORY_SEPARATOR constant.
 	 * </li>
-	 * <li>level: integer, recursion depth, default=-1.
+	 * <li>level: integer, recursion depth, index=-1.
 	 * Level -1 means searching for all directories and files under the directory;
 	 * Level 0 means searching for only the files DIRECTLY under the directory;
 	 * level N means searching for those directories that are within N levels.
@@ -265,7 +265,7 @@ class CFileHelper
 	 * This method will use a local map between extension name and MIME type.
 	 * @param string $file the file name.
 	 * @param string $magicFile the path of the file that contains all available MIME type information.
-	 * If this is not set, the default 'system.utils.mimeTypes' file will be used.
+	 * If this is not set, the index 'system.utils.mimeTypes' file will be used.
 	 * This parameter has been available since version 1.1.3.
 	 * @return string the MIME type. Null is returned if the MIME type cannot be determined.
 	 */

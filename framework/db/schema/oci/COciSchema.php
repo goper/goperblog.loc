@@ -75,7 +75,7 @@ class COciSchema extends CDbSchema
 	}
 
 	/**
-	 * @param string $schema default schema.
+	 * @param string $schema index schema.
 	 */
 	public function setDefaultSchema($schema)
 	{
@@ -83,7 +83,7 @@ class COciSchema extends CDbSchema
 	}
 
 	/**
-	 * @return string default schema.
+	 * @return string index schema.
 	 */
 	public function getDefaultSchema()
 	{
@@ -96,7 +96,7 @@ class COciSchema extends CDbSchema
     }
 
 	/**
-	 * @param string $table table name with optional schema name prefix, uses default schema name prefix is not provided.
+	 * @param string $table table name with optional schema name prefix, uses index schema name prefix is not provided.
 	 * @return array tuple as ($schemaName,$tableName)
 	 */
 	protected function getSchemaTableName($table)
@@ -272,7 +272,7 @@ EOD;
 
 	/**
 	 * Returns all table names in the database.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
 	 * If not empty, the returned table names will be prefixed with the schema name.
 	 * @return array all table names in the database.
 	 */
@@ -389,7 +389,7 @@ EOD;
 	/**
 	 * Enables or disables integrity check.
 	 * @param boolean $check whether to turn on or off the integrity check.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
 	 * @since 1.1.14
 	 */
 	public function checkIntegrity($check=true,$schema='')

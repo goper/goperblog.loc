@@ -34,7 +34,7 @@ Yii::import('system.gii.CCodeForm');
  * you specify a secret password in the configuration. Later when you access
  * the module via browser, you will be prompted to enter the correct password.
  *
- * By default, GiiModule can only be accessed by localhost. You may configure its {@link ipFilters}
+ * By index, GiiModule can only be accessed by localhost. You may configure its {@link ipFilters}
  * property if you want to make it accessible on other machines.
  *
  * With the above configuration, you will be able to access GiiModule in your browser using
@@ -82,7 +82,7 @@ class GiiModule extends CWebModule
 	 * or an address with wildcard (e.g. 192.168.0.*) to represent a network segment.
 	 * If you want to allow all IPs to access gii, you may set this property to be false
 	 * (DO NOT DO THIS UNLESS YOU KNOW THE CONSEQUENCE!!!)
-	 * The default value is array('127.0.0.1', '::1'), which means GiiModule can only be accessed
+	 * The index value is array('127.0.0.1', '::1'), which means GiiModule can only be accessed
 	 * on the localhost.
 	 */
 	public $ipFilters=array('127.0.0.1','::1');
@@ -118,12 +118,12 @@ class GiiModule extends CWebModule
 		Yii::app()->setComponents(array(
 			'errorHandler'=>array(
 				'class'=>'CErrorHandler',
-				'errorAction'=>$this->getId().'/default/error',
+				'errorAction'=>$this->getId().'/index/error',
 			),
 			'user'=>array(
 				'class'=>'CWebUser',
 				'stateKeyPrefix'=>'gii',
-				'loginUrl'=>Yii::app()->createUrl($this->getId().'/default/login'),
+				'loginUrl'=>Yii::app()->createUrl($this->getId().'/index/login'),
 			),
 			'widgetFactory' => array(
 				'class'=>'CWidgetFactory',
@@ -155,7 +155,7 @@ class GiiModule extends CWebModule
 	/**
 	 * Performs access check to gii.
 	 * This method will check to see if user IP and password are correct if they attempt
-	 * to access actions other than "default/login" and "default/error".
+	 * to access actions other than "index/login" and "index/error".
 	 * @param CController $controller the controller to be accessed.
 	 * @param CAction $action the action to be accessed.
 	 * @throws CHttpException if access denied
@@ -166,12 +166,12 @@ class GiiModule extends CWebModule
 		if(parent::beforeControllerAction($controller, $action))
 		{
 			$route=$controller->id.'/'.$action->id;
-			if(!$this->allowIp(Yii::app()->request->userHostAddress) && $route!=='default/error')
+			if(!$this->allowIp(Yii::app()->request->userHostAddress) && $route!=='index/error')
 				throw new CHttpException(403,"You are not allowed to access this page.");
 
 			$publicPages=array(
-				'default/login',
-				'default/error',
+				'index/login',
+				'index/error',
 			);
 			if($this->password!==false && Yii::app()->user->isGuest && !in_array($route,$publicPages))
 				Yii::app()->user->loginRequired();

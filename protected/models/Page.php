@@ -25,10 +25,10 @@ class Page extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('title, name, content, alias', 'safe'),
+            array('title, name, content, alias, date, show', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, title, name, content, alias', 'safe', 'on' => 'search'),
+            array('id, title, name, content, alias, date, show', 'safe', 'on' => 'search'),
         );
     }
 
@@ -43,6 +43,26 @@ class Page extends CActiveRecord {
     }
 
     /**
+     * Retrieves a list of models based on the current search/filter conditions.
+     * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+     */
+    public function search()
+    {
+        // Warning: Please modify the following code to remove attributes that
+        // should not be searched.
+
+        $criteria=new CDbCriteria;
+        $criteria->compare('title',$this->title,true);
+        $criteria->compare('name',$this->name,true);
+        $criteria->compare('alias',$this->alias,true);
+        $criteria->compare('show',$this->show,true);
+
+        return new CActiveDataProvider($this, array(
+            'criteria'=>$criteria,
+        ));
+    }
+
+    /**
      * @return array customized attribute labels (name=>label)
      */
     public function attributeLabels() {
@@ -51,7 +71,9 @@ class Page extends CActiveRecord {
             'title' => 'Title',
             'name' => 'Название',
             'content' => 'Контент',
-            'alias' => 'Алиас'
+            'alias' => 'Алиас',
+            'date' => 'Создан',
+            'show' => 'Опубликован?',
         );
     }
 
@@ -65,6 +87,13 @@ class Page extends CActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    public function beforeSave() {
+        //if($this->isNewRecord){
+            $this->date = time();
+        //}
+        return parent::beforeSave();
     }
 
 }

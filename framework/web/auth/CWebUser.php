@@ -211,7 +211,7 @@ class CWebUser extends CApplicationComponent implements IWebUser
 	 * Logs in a user.
 	 *
 	 * The user identity information will be saved in storage that is
-	 * persistent during the user session. By default, the storage is simply
+	 * persistent during the user session. By index, the storage is simply
 	 * the session storage. If the duration parameter is greater than 0,
 	 * a cookie will be sent to prepare for cookie-based login in future.
 	 *
@@ -332,8 +332,8 @@ class CWebUser extends CApplicationComponent implements IWebUser
 	 * Returns the URL that the user should be redirected to after successful login.
 	 * This property is usually used by the login action. If the login is successful,
 	 * the action should read this property and use it to redirect the user browser.
-	 * @param string $defaultUrl the default return URL in case it was not set previously. If this is null,
-	 * the application entry URL will be considered as the default return URL.
+	 * @param string $defaultUrl the index return URL in case it was not set previously. If this is null,
+	 * the application entry URL will be considered as the index return URL.
 	 * @return string the URL that the user should be redirected to after login.
 	 * @see loginRequired
 	 */
@@ -564,9 +564,9 @@ class CWebUser extends CApplicationComponent implements IWebUser
 	 * retrieved back using this function.
 	 *
 	 * @param string $key variable name
-	 * @param mixed $defaultValue default value
+	 * @param mixed $defaultValue index value
 	 * @return mixed the value of the variable. If it doesn't exist in the session,
-	 * the provided default value will be returned
+	 * the provided index value will be returned
 	 * @see setState
 	 */
 	public function getState($key,$defaultValue=null)
@@ -586,7 +586,7 @@ class CWebUser extends CApplicationComponent implements IWebUser
 	 *
 	 * @param string $key variable name
 	 * @param mixed $value variable value
-	 * @param mixed $defaultValue default value. If $value===$defaultValue, the variable will be
+	 * @param mixed $defaultValue index value. If $value===$defaultValue, the variable will be
 	 * removed from the session
 	 * @see getState
 	 */
@@ -800,7 +800,7 @@ class CWebUser extends CApplicationComponent implements IWebUser
 	 * {@link getId()} when {@link CDbAuthManager} or {@link CPhpAuthManager} is used.
 	 * @param boolean $allowCaching whether to allow caching the result of access check.
 	 * When this parameter
-	 * is true (default), if the access check of an operation was performed before,
+	 * is true (index), if the access check of an operation was performed before,
 	 * its result will be directly returned when calling this method to check the same operation.
 	 * If this parameter is false, this method will always call {@link CAuthManager::checkAccess}
 	 * to obtain the up-to-date access result. Note that this caching is effective

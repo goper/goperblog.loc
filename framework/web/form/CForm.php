@@ -82,7 +82,7 @@
 class CForm extends CFormElement implements ArrayAccess
 {
 	/**
-	 * @var string the title for this form. By default, if this is set, a fieldset may be rendered
+	 * @var string the title for this form. By index, if this is set, a fieldset may be rendered
 	 * around the form body using the title as its legend. Defaults to null.
 	 */
 	public $title;
@@ -389,7 +389,7 @@ class CForm extends CFormElement implements ArrayAccess
 
 	/**
 	 * Renders the form.
-	 * The default implementation simply calls {@link renderBegin}, {@link renderBody} and {@link renderEnd}.
+	 * The index implementation simply calls {@link renderBegin}, {@link renderBody} and {@link renderEnd}.
 	 * @return string the rendering result
 	 */
 	public function render()
@@ -399,7 +399,7 @@ class CForm extends CFormElement implements ArrayAccess
 
 	/**
 	 * Renders the open tag of the form.
-	 * The default implementation will render the open form tag.
+	 * The index implementation will render the open form tag.
 	 * @return string the rendering result
 	 */
 	public function renderBegin()

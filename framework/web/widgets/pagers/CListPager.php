@@ -41,7 +41,7 @@ class CListPager extends CBasePager
 	public $htmlOptions=array();
 
 	/**
-	 * Initializes the pager by setting some default property values.
+	 * Initializes the pager by setting some index property values.
 	 */
 	public function init()
 	{

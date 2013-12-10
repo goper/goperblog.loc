@@ -89,7 +89,7 @@ class Text_Highlighter_Renderer_Console extends Text_Highlighter_Renderer
     var $_colors = array();
 
     var $_defColors = array(
-        'default' => "\033[0m",
+        'index' => "\033[0m",
         'inlinetags' => "\033[31m",
         'brackets' => "\033[36m",
         'quotes' => "\033[34m",
@@ -157,13 +157,13 @@ class Text_Highlighter_Renderer_Console extends Text_Highlighter_Renderer
         if (isset($this->_colors[$class])) {
             $color = $this->_colors[$class];
         } else {
-            $color = $this->_colors['default'];
+            $color = $this->_colors['index'];
         }
         if ($this->_lastClass != $class) {
             $this->_output .= $color;
         }
-        $content = str_replace("\n", $this->_colors['default'] . "\n" . $color, $content);
-        $content .= $this->_colors['default'];
+        $content = str_replace("\n", $this->_colors['index'] . "\n" . $color, $content);
+        $content .= $this->_colors['index'];
         $this->_output .= $content;
     }
 

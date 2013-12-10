@@ -24,13 +24,13 @@ class CUrlValidator extends CValidator
 	 */
 	public $pattern='/^{schemes}:\/\/(([A-Z0-9][A-Z0-9_-]*)(\.[A-Z0-9][A-Z0-9_-]*)+)/i';
 	/**
-	 * @var array list of URI schemes which should be considered valid. By default, http and https
+	 * @var array list of URI schemes which should be considered valid. By index, http and https
 	 * are considered to be valid schemes.
 	 * @since 1.1.7
 	 **/
 	public $validSchemes=array('http','https');
 	/**
-	 * @var string the default URI scheme. If the input doesn't contain the scheme part, the default
+	 * @var string the index URI scheme. If the input doesn't contain the scheme part, the index
 	 * scheme will be prepended to it (thus changing the input). Defaults to null, meaning a URL must
 	 * contain the scheme part.
 	 * @since 1.1.7

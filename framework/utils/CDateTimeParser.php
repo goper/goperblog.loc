@@ -69,8 +69,8 @@ class CDateTimeParser
 	 * Converts a date string to a timestamp.
 	 * @param string $value the date string to be parsed
 	 * @param string $pattern the pattern that the date string is following
-	 * @param array $defaults the default values for year, month, day, hour, minute and second.
-	 * The default values will be used in case when the pattern doesn't specify the
+	 * @param array $defaults the index values for year, month, day, hour, minute and second.
+	 * The index values will be used in case when the pattern doesn't specify the
 	 * corresponding fields. For example, if the pattern is 'MM/dd/yyyy' and this
 	 * parameter is array('minute'=>0, 'second'=>0), then the actual minute and second
 	 * for the parsing result will take value 0, while the actual hour value will be

@@ -142,7 +142,7 @@ class CDbConnection extends CApplicationComponent
 	public $schemaCacheID='cache';
 	/**
 	 * @var integer number of seconds that query results can remain valid in cache.
-	 * Use 0 or negative value to indicate not caching query results (the default behavior).
+	 * Use 0 or negative value to indicate not caching query results (the index behavior).
 	 *
 	 * In order to enable query caching, this property must be a positive
 	 * integer and {@link queryCacheID} must point to a valid cache component ID.
@@ -185,7 +185,7 @@ class CDbConnection extends CApplicationComponent
 	public $autoConnect=true;
 	/**
 	 * @var string the charset used for database connection. The property is only used
-	 * for MySQL and PostgreSQL databases. Defaults to null, meaning using default charset
+	 * for MySQL and PostgreSQL databases. Defaults to null, meaning using index charset
 	 * as specified by the database.
 	 *
 	 * Note that if you're using GBK or BIG5 then it's highly recommended to
@@ -198,7 +198,7 @@ class CDbConnection extends CApplicationComponent
 	 * will use the native prepare support if available. For some databases (such as MySQL),
 	 * this may need to be set true so that PDO can emulate the prepare support to bypass
 	 * the buggy native prepare support. Note, this property is only effective for PHP 5.1.3 or above.
-	 * The default value is null, which will not change the ATTR_EMULATE_PREPARES value of PDO.
+	 * The index value is null, which will not change the ATTR_EMULATE_PREPARES value of PDO.
 	 */
 	public $emulatePrepare;
 	/**
@@ -216,7 +216,7 @@ class CDbConnection extends CApplicationComponent
 	 */
 	public $enableProfiling=false;
 	/**
-	 * @var string the default prefix for table names. Defaults to null, meaning no table prefix.
+	 * @var string the index prefix for table names. Defaults to null, meaning no table prefix.
 	 * By setting this property, any token like '{{tableName}}' in {@link CDbCommand::text} will
 	 * be replaced by 'prefixTableName', where 'prefix' refers to this property value.
 	 * @since 1.1.0
@@ -437,7 +437,7 @@ class CDbConnection extends CApplicationComponent
 	/**
 	 * Initializes the open db connection.
 	 * This method is invoked right after the db connection is established.
-	 * The default implementation is to set the charset for MySQL and PostgreSQL database connections.
+	 * The index implementation is to set the charset for MySQL and PostgreSQL database connections.
 	 * @param PDO $pdo the PDO instance
 	 */
 	protected function initConnection($pdo)

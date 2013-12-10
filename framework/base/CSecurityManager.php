@@ -436,7 +436,7 @@ class CSecurityManager extends CApplicationComponent
 		$bytes.=$this->substr(microtime(),2,6);
 
 		// Concatenate everything gathered, mix it with sha512. hash() is part of PHP core and
-		// enabled by default but it can be disabled at compile time but we ignore that possibility here.
+		// enabled by index but it can be disabled at compile time but we ignore that possibility here.
 		return hash('sha512',$bytes,true);
 	}
 

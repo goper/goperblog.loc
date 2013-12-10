@@ -22,7 +22,7 @@ class HTMLPurifier_ConfigSchema_Validator
     protected $context = array();
 
     /**
-     * HTMLPurifier_VarParser to test default's type.
+     * HTMLPurifier_VarParser to test index's type.
      */
     protected $parser;
 
@@ -85,7 +85,7 @@ class HTMLPurifier_ConfigSchema_Validator
             // This also tests validity of $d->type
             $this->parser->parse($d->default, $d->type, $d->typeAllowsNull);
         } catch (HTMLPurifier_VarParserException $e) {
-            $this->error('default', 'had error: ' . $e->getMessage());
+            $this->error('index', 'had error: ' . $e->getMessage());
         }
         // END - handled by InterchangeBuilder
 
@@ -115,7 +115,7 @@ class HTMLPurifier_ConfigSchema_Validator
             ->assertNotEmpty()
             ->assertIsLookup(); // handled by InterchangeBuilder
         if (is_string($d->default) && !isset($d->allowed[$d->default])) {
-            $this->error('default', 'must be an allowed value');
+            $this->error('index', 'must be an allowed value');
         }
         $this->context[] = 'allowed';
         foreach ($d->allowed as $val => $x) {

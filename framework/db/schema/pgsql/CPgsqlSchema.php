@@ -82,7 +82,7 @@ class CPgsqlSchema extends CDbSchema
 	/**
 	 * Enables or disables integrity check.
 	 * @param boolean $check whether to turn on or off the integrity check.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
 	 * @since 1.1
 	 */
 	public function checkIntegrity($check=true,$schema='')
@@ -338,7 +338,7 @@ EOD;
 
 	/**
 	 * Returns all table names in the database.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
 	 * If not empty, the returned table names will be prefixed with the schema name.
 	 * @return array all table names in the database.
 	 */

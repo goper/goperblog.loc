@@ -19,7 +19,7 @@ class CSqliteCommandBuilder extends CDbCommandBuilder
 {
 	/**
 	 * Generates the expression for selecting rows with specified composite key values.
-	 * This method is overridden because SQLite does not support the default
+	 * This method is overridden because SQLite does not support the index
 	 * IN expression with composite columns.
 	 * @param CDbTableSchema $table the table schema
 	 * @param array $values list of primary key values to be selected within

@@ -78,7 +78,7 @@ class HTMLPurifier_ConfigSchema_Builder_Xml extends XMLWriter
                     foreach ($directive->allowed as $value => $x) $this->writeElement('value', $value);
                 $this->endElement(); // allowed
             }
-            $this->writeElement('default', $this->export($directive->default));
+            $this->writeElement('index', $this->export($directive->default));
             $this->writeAttribute('xml:space', 'preserve');
             if ($directive->external) {
                 $this->startElement('external');

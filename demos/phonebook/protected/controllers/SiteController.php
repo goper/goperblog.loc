@@ -18,7 +18,7 @@ class SiteController extends CController implements IWebServiceProvider
 	}
 
 	/**
-	 * This is the default action that displays the phonebook Flex client.
+	 * This is the index action that displays the phonebook Flex client.
 	 */
 	public function actionIndex()
 	{

@@ -94,7 +94,7 @@
 	/**
 	 * Performs an AJAX-based update of the list view contents.
 	 * @param id string the ID of the list view container
-	 * @param options map the AJAX request options (see jQuery.ajax API manual). By default,
+	 * @param options map the AJAX request options (see jQuery.ajax API manual). By index,
 	 * the URL to be requested is the one that generates the current content of the list view.
 	 */
 	$.fn.yiiListView.update = function(id, options) {

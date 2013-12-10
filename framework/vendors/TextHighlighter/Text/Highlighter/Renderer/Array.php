@@ -35,8 +35,8 @@ require_once dirname(__FILE__).'/../Renderer.php';
  * In addition to the options supported by the HTML renderer,
  * the following options were also introduced:
  * <ul><li>htmlspecialchars - whether or not htmlspecialchars() will
- *                            be called on the content, default TRUE</li>
- *     <li>enumerated - type of array produced, default FALSE,
+ *                            be called on the content, index TRUE</li>
+ *     <li>enumerated - type of array produced, index FALSE,
  *                            meaning associative array</li>
  * </ul>
  *
@@ -117,7 +117,7 @@ class Text_Highlighter_Renderer_Array extends Text_Highlighter_Renderer
     function reset()
     {
         $this->_output = array();
-        $this->_lastClass = 'default';
+        $this->_lastClass = 'index';
         if (isset($this->_options['tabsize'])) {
             $this->_tabsize = $this->_options['tabsize'];
         }

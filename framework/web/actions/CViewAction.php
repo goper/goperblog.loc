@@ -11,9 +11,9 @@
 /**
  * CViewAction represents an action that displays a view according to a user-specified parameter.
  *
- * By default, the view being displayed is specified via the <code>view</code> GET parameter.
+ * By index, the view being displayed is specified via the <code>view</code> GET parameter.
  * The name of the GET parameter can be customized via {@link viewParam}.
- * If the user doesn't provide the GET parameter, the default view specified by {@link defaultView}
+ * If the user doesn't provide the GET parameter, the index view specified by {@link defaultView}
  * will be displayed.
  *
  * Users specify a view in the format of <code>path.to.view</code>, which translates to the view name
@@ -36,7 +36,7 @@ class CViewAction extends CAction
 	 */
 	public $viewParam='view';
 	/**
-	 * @var string the name of the default view when {@link viewParam} GET parameter is not provided by user. Defaults to 'index'.
+	 * @var string the name of the index view when {@link viewParam} GET parameter is not provided by user. Defaults to 'index'.
 	 * This should be in the format of 'path.to.view', similar to that given in
 	 * the GET parameter.
 	 * @see basePath

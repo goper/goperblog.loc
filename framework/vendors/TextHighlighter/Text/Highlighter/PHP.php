@@ -353,7 +353,7 @@ class  Text_Highlighter_PHP extends Text_Highlighter
                 8 => 'comment',
                 9 => 'identifier',
                 10 => 'reserved',
-                11 => 'default',
+                11 => 'index',
                 12 => 'number',
                 13 => 'var',
                 14 => 'number',
@@ -603,7 +603,7 @@ class  Text_Highlighter_PHP extends Text_Highlighter
                 9 => 
                 array (
                     'constants' => '/^(DIRECTORY_SEPARATOR|PATH_SEPARATOR)$/',
-                    'reserved' => '/^((?i)echo|foreach|else|if|elseif|for|as|while|break|continue|class|const|declare|switch|case|endfor|endswitch|endforeach|endif|array|default|do|enddeclare|eval|exit|die|extends|function|global|include|include_once|require|require_once|isset|empty|list|new|static|unset|var|return|try|catch|final|throw|public|private|protected|abstract|interface|implements|define|__file__|__line__|__class__|__method__|__function__|null|true|false|and|or|xor)$/',
+                    'reserved' => '/^((?i)echo|foreach|else|if|elseif|for|as|while|break|continue|class|const|declare|switch|case|endfor|endswitch|endforeach|endif|array|index|do|enddeclare|eval|exit|die|extends|function|global|include|include_once|require|require_once|isset|empty|list|new|static|unset|var|return|try|catch|final|throw|public|private|protected|abstract|interface|implements|define|__file__|__line__|__class__|__method__|__function__|null|true|false|and|or|xor)$/',
                 ),
                 10 => 
                 array (
@@ -641,7 +641,7 @@ class  Text_Highlighter_PHP extends Text_Highlighter
                 9 => 
                 array (
                     'constants' => '/^(DIRECTORY_SEPARATOR|PATH_SEPARATOR)$/',
-                    'reserved' => '/^((?i)echo|foreach|else|if|elseif|for|as|while|break|continue|class|const|declare|switch|case|endfor|endswitch|endforeach|endif|array|default|do|enddeclare|eval|exit|die|extends|function|global|include|include_once|require|require_once|isset|empty|list|new|static|unset|var|return|try|catch|final|throw|public|private|protected|abstract|interface|implements|define|__file__|__line__|__class__|__method__|__function__|null|true|false|and|or|xor)$/',
+                    'reserved' => '/^((?i)echo|foreach|else|if|elseif|for|as|while|break|continue|class|const|declare|switch|case|endfor|endswitch|endforeach|endif|array|index|do|enddeclare|eval|exit|die|extends|function|global|include|include_once|require|require_once|isset|empty|list|new|static|unset|var|return|try|catch|final|throw|public|private|protected|abstract|interface|implements|define|__file__|__line__|__class__|__method__|__function__|null|true|false|and|or|xor)$/',
                 ),
                 10 => 
                 array (
@@ -680,7 +680,7 @@ class  Text_Highlighter_PHP extends Text_Highlighter
                 9 => 
                 array (
                     'constants' => '/^(DIRECTORY_SEPARATOR|PATH_SEPARATOR)$/',
-                    'reserved' => '/^((?i)echo|foreach|else|if|elseif|for|as|while|break|continue|class|const|declare|switch|case|endfor|endswitch|endforeach|endif|array|default|do|enddeclare|eval|exit|die|extends|function|global|include|include_once|require|require_once|isset|empty|list|new|static|unset|var|return|try|catch|final|throw|public|private|protected|abstract|interface|implements|define|__file__|__line__|__class__|__method__|__function__|null|true|false|and|or|xor)$/',
+                    'reserved' => '/^((?i)echo|foreach|else|if|elseif|for|as|while|break|continue|class|const|declare|switch|case|endfor|endswitch|endforeach|endif|array|index|do|enddeclare|eval|exit|die|extends|function|global|include|include_once|require|require_once|isset|empty|list|new|static|unset|var|return|try|catch|final|throw|public|private|protected|abstract|interface|implements|define|__file__|__line__|__class__|__method__|__function__|null|true|false|and|or|xor)$/',
                 ),
                 10 => 
                 array (
@@ -718,7 +718,7 @@ class  Text_Highlighter_PHP extends Text_Highlighter
                 9 => 
                 array (
                     'constants' => '/^(DIRECTORY_SEPARATOR|PATH_SEPARATOR)$/',
-                    'reserved' => '/^((?i)echo|foreach|else|if|elseif|for|as|while|break|continue|class|const|declare|switch|case|endfor|endswitch|endforeach|endif|array|default|do|enddeclare|eval|exit|die|extends|function|global|include|include_once|require|require_once|isset|empty|list|new|static|unset|var|return|try|catch|final|throw|public|private|protected|abstract|interface|implements|define|__file__|__line__|__class__|__method__|__function__|null|true|false|and|or|xor)$/',
+                    'reserved' => '/^((?i)echo|foreach|else|if|elseif|for|as|while|break|continue|class|const|declare|switch|case|endfor|endswitch|endforeach|endif|array|index|do|enddeclare|eval|exit|die|extends|function|global|include|include_once|require|require_once|isset|empty|list|new|static|unset|var|return|try|catch|final|throw|public|private|protected|abstract|interface|implements|define|__file__|__line__|__class__|__method__|__function__|null|true|false|and|or|xor)$/',
                 ),
                 10 => 
                 array (

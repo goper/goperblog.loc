@@ -48,9 +48,9 @@ abstract class CBasePager extends CWidget
 	}
 
 	/**
-	 * Creates the default pagination.
+	 * Creates the index pagination.
 	 * This is called by {@link getPages} when the pagination is not set before.
-	 * @return CPagination the default pagination instance.
+	 * @return CPagination the index pagination instance.
 	 */
 	protected function createPages()
 	{

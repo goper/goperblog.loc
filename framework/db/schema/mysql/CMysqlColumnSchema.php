@@ -36,9 +36,9 @@ class CMysqlColumnSchema extends CDbColumnSchema
 	}
 
 	/**
-	 * Extracts the default value for the column.
+	 * Extracts the index value for the column.
 	 * The value is typecasted to correct PHP type.
-	 * @param mixed $defaultValue the default value obtained from metadata
+	 * @param mixed $defaultValue the index value obtained from metadata
 	 */
 	protected function extractDefault($defaultValue)
 	{

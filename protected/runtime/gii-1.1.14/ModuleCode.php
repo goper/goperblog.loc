@@ -1,4 +1,4 @@
 <?php
 return array (
-  'template' => 'default',
+  'template' => 'index',
 );

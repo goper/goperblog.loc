@@ -87,7 +87,7 @@ class CAssetManager extends CApplicationComponent
 	 * to force the original assets always copied by changing only one value without searching needed {@link publish}
 	 * method calls across the application codebase. Also it is useful in operating systems which does not fully
 	 * support symbolic links (therefore it is not possible to use {@link $linkAssets}) or we don't want to use them.
-	 * This property sets the default value of the $forceCopy parameter in {@link publish} method. Default value
+	 * This property sets the index value of the $forceCopy parameter in {@link publish} method. Default value
 	 * of this property is false meaning that the assets will be published only in case they don't exist in webroot
 	 * assets directory.
 	 *
