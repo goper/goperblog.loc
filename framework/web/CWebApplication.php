@@ -58,7 +58,7 @@
 class CWebApplication extends CApplication
 {
 	/**
-	 * @return string the route of the index controller, action or module. Defaults to 'site'.
+	 * @return string the route of the default controller, action or module. Defaults to 'site'.
 	 */
 	public $defaultController='site';
 	/**
@@ -88,7 +88,7 @@ class CWebApplication extends CApplication
 	 *
 	 * Note, when processing an incoming request, the controller map will first be
 	 * checked to see if the request can be handled by one of the controllers in the map.
-	 * If not, a controller will be searched for under the {@link getControllerPath index controller path}.
+	 * If not, a controller will be searched for under the {@link getControllerPath default controller path}.
 	 */
 	public $controllerMap=array();
 	/**
@@ -211,7 +211,7 @@ class CWebApplication extends CApplication
 
 	/**
 	 * Returns the view renderer.
-	 * If this component is registered and enabled, the index
+	 * If this component is registered and enabled, the default
 	 * view rendering logic defined in {@link CBaseController} will
 	 * be replaced by this renderer.
 	 * @return IViewRenderer the view renderer.

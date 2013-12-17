@@ -17,7 +17,7 @@
  *
  * For maximum security consider adding
  * <pre>array('deny')</pre>
- * as a last rule in a list so all actions will be denied by index.
+ * as a last rule in a list so all actions will be denied by default.
  *
  * To specify the access rules, set the {@link setRules rules} property, which should
  * be an array of the rules. Each rule is specified as an array of the following structure:
@@ -81,7 +81,7 @@ class CAccessControlFilter extends CFilter
 	/**
 	 * @var string the error message to be displayed when authorization fails.
 	 * This property can be overridden by individual access rule via {@link CAccessRule::message}.
-	 * If this property is not set, a index error message will be displayed.
+	 * If this property is not set, a default error message will be displayed.
 	 * @since 1.1.1
 	 */
 	public $message;
@@ -247,7 +247,7 @@ class CAccessRule extends CComponent
 	public $expression;
 	/**
 	 * @var string the error message to be displayed when authorization is denied by this rule.
-	 * If not set, a index error message will be displayed.
+	 * If not set, a default error message will be displayed.
 	 * @since 1.1.1
 	 */
 	public $message;

@@ -18,7 +18,7 @@
  * 1. Method-based action: call method 'actionXYZ' if it exists;
  * 2. Class-based action: create an instance of class 'XYZ' if the class is found in the action class map
  *    (specified via {@link actions()}, and execute the action;
- * 3. Call {@link missingAction()}, which by index will raise a 404 HTTP exception.
+ * 3. Call {@link missingAction()}, which by default will raise a 404 HTTP exception.
  *
  * If the user does not specify an action, CController will run the action specified by
  * {@link defaultAction}, instead.
@@ -89,7 +89,7 @@ class CController extends CBaseController
 	 */
 	public $layout;
 	/**
-	 * @var string the name of the index action. Defaults to 'index'.
+	 * @var string the name of the default action. Defaults to 'index'.
 	 */
 	public $defaultAction='index';
 
@@ -315,7 +315,7 @@ class CController extends CBaseController
 
 	/**
 	 * Returns the request parameters that will be used for action parameter binding.
-	 * By index, this method will return $_GET. You may override this method if you
+	 * By default, this method will return $_GET. You may override this method if you
 	 * want to use other request parameters (e.g. $_GET+$_POST).
 	 * @return array the request parameters to be used for action parameter binding
 	 * @since 1.1.7
@@ -327,7 +327,7 @@ class CController extends CBaseController
 
 	/**
 	 * This method is invoked when the request parameters do not satisfy the requirement of the specified action.
-	 * The index implementation will throw a 400 HTTP exception.
+	 * The default implementation will throw a 400 HTTP exception.
 	 * @param CAction $action the action being executed
 	 * @since 1.1.7
 	 */
@@ -402,7 +402,7 @@ class CController extends CBaseController
 	 * Creates the action instance based on the action name.
 	 * The action can be either an inline action or an object.
 	 * The latter is created by looking up the action map specified in {@link actions}.
-	 * @param string $actionID ID of the action. If empty, the {@link defaultAction index action} will be used.
+	 * @param string $actionID ID of the action. If empty, the {@link defaultAction default action} will be used.
 	 * @return CAction the action instance, null if the action does not exist.
 	 * @see actions
 	 */
@@ -474,7 +474,7 @@ class CController extends CBaseController
 	/**
 	 * Handles the request whose action is not recognized.
 	 * This method is invoked when the controller cannot find the requested action.
-	 * The index implementation simply throws an exception.
+	 * The default implementation simply throws an exception.
 	 * @param string $actionID the missing action name
 	 * @throws CHttpException whenever this method is invoked
 	 */
@@ -539,9 +539,9 @@ class CController extends CBaseController
 
 	/**
 	 * Returns the directory containing view files for this controller.
-	 * The index implementation returns 'protected/views/ControllerID'.
+	 * The default implementation returns 'protected/views/ControllerID'.
 	 * Child classes may override this method to use customized view path.
-	 * If the controller belongs to a module, the index view path
+	 * If the controller belongs to a module, the default view path
 	 * is the {@link CWebModule::getViewPath module view path} appended with the controller ID.
 	 * @return string the directory containing the view files for this controller. Defaults to 'protected/views/ControllerID'.
 	 */
@@ -764,7 +764,7 @@ class CController extends CBaseController
 	 * <code>$content</code>. At the end, it calls {@link processOutput} to insert scripts
 	 * and dynamic contents if they are available.
 	 *
-	 * By index, the layout view script is "protected/views/layouts/main.php".
+	 * By default, the layout view script is "protected/views/layouts/main.php".
 	 * This may be customized by changing {@link layout}.
 	 *
 	 * @param string $view name of the view to be rendered. See {@link getViewFile} for details
@@ -1170,7 +1170,7 @@ class CController extends CBaseController
 	 * which are generated using {@link CHtml::statefulForm}.
 	 * @param string $name the state name
 	 * @param mixed $value the page state value
-	 * @param mixed $defaultValue the index page state value. If this is the same as
+	 * @param mixed $defaultValue the default page state value. If this is the same as
 	 * the given value, the state will be removed from persistent storage.
 	 * @see getPageState
 	 * @see CHtml::statefulForm

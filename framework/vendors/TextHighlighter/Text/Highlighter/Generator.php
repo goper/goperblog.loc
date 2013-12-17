@@ -147,7 +147,7 @@ class Text_Highlighter_Generator extends  XML_Parser
     * @var string
     * @access private
     */
-    var $_defClass = 'index';
+    var $_defClass = 'default';
 
     /**
     * Comment
@@ -292,7 +292,7 @@ class Text_Highlighter_Generator extends  XML_Parser
         $this->_keywords   = array();
         $this->language    = '';
         $this->_code       = '';
-        $this->_defClass   = 'index';
+        $this->_defClass   = 'default';
         $this->_comment    = '';
         $this->_inComment  = false;
         $this->_authors    = array();
@@ -480,7 +480,7 @@ class Text_Highlighter_Generator extends  XML_Parser
     // {{{ xmltag_Default
 
     /**
-    * start handler for <index> element
+    * start handler for <default> element
     */
     function xmltag_Default($xp, $elem, $attribs)
     {

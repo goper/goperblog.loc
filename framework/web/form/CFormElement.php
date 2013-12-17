@@ -52,7 +52,7 @@ abstract class CFormElement extends CComponent
 	/**
 	 * Converts the object to a string.
 	 * This is a PHP magic method.
-	 * The index implementation simply calls {@link render} and return
+	 * The default implementation simply calls {@link render} and return
 	 * the rendering result.
 	 * @return string the string representation of this object.
 	 */

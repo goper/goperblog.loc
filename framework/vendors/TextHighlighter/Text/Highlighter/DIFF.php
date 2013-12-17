@@ -359,7 +359,7 @@ class  Text_Highlighter_DIFF extends Text_Highlighter
         );
         $this->_kwmap = array (
         );
-        $this->_defClass = 'index';
+        $this->_defClass = 'default';
         $this->_checkDefines();
     }
     

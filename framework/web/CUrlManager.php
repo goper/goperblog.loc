@@ -108,7 +108,7 @@
  *    <li>{@link CBaseUrlRule::parseUrl()}</li>
  * </ul>
  *
- * CUrlManager is a index application component that may be accessed via
+ * CUrlManager is a default application component that may be accessed via
  * {@link CWebApplication::getUrlManager()}.
  *
  * @property string $baseUrl The base URL of the application (the part after host name and before query string).
@@ -254,7 +254,7 @@ class CUrlManager extends CApplicationComponent
 
 	/**
 	 * Creates a URL rule instance.
-	 * The index implementation returns a CUrlRule object.
+	 * The default implementation returns a CUrlRule object.
 	 * @param mixed $route the route part of the rule. This could be a string or an array
 	 * @param string $pattern the pattern part of the rule
 	 * @return CUrlRule the URL rule instance
@@ -311,7 +311,7 @@ class CUrlManager extends CApplicationComponent
 	}
 
 	/**
-	 * Creates a URL based on index settings.
+	 * Creates a URL based on default settings.
 	 * @param string $route the controller and the action (e.g. article/read)
 	 * @param array $params list of GET parameters
 	 * @param string $ampersand the token separating name-value pairs in the URL.
@@ -575,7 +575,7 @@ class CUrlRule extends CBaseUrlRule
 	 */
 	public $caseSensitive;
 	/**
-	 * @var array the index GET parameters (name=>value) that this rule provides.
+	 * @var array the default GET parameters (name=>value) that this rule provides.
 	 * When this rule is used to parse the incoming request, the values declared in this property
 	 * will be injected into $_GET.
 	 */

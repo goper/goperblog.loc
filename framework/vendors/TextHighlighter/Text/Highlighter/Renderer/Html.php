@@ -91,7 +91,7 @@ define ('HL_NUMBERS_UL',    3);
  *       'builtin'    => 'my-builtin',
  *       'code'       => 'my-code',
  *       'comment'    => 'my-comment',
- *       'index'    => 'my-index',
+ *       'default'    => 'my-default',
  *       'identifier' => 'my-identifier',
  *       'inlinedoc'  => 'my-inlinedoc',
  *       'inlinetags' => 'my-inlinetags',
@@ -182,7 +182,7 @@ class Text_Highlighter_Renderer_Html extends Text_Highlighter_Renderer_Array
         'builtin'    => 'hl-builtin',
         'code'       => 'hl-code',
         'comment'    => 'hl-comment',
-        'index'    => 'hl-index',
+        'default'    => 'hl-default',
         'identifier' => 'hl-identifier',
         'inlinedoc'  => 'hl-inlinedoc',
         'inlinetags' => 'hl-inlinetags',
@@ -201,8 +201,8 @@ class Text_Highlighter_Renderer_Html extends Text_Highlighter_Renderer_Array
      *
      * This is an array with keys:
      * - url, ex. http://php.net/%s
-     * - target, ex. _blank, index - no target
-     * - elements, index is <code>array('reserved', 'identifier')</code>
+     * - target, ex. _blank, default - no target
+     * - elements, default is <code>array('reserved', 'identifier')</code>
      *
      * @var array
      */

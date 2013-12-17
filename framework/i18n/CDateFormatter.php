@@ -22,7 +22,7 @@
  * CDateFormatter supports predefined patterns as well as customized ones:
  * <ul>
  * <li>The method {@link formatDateTime()} formats date or time or both using
- *   predefined patterns which include 'full', 'long', 'medium' (index) and 'short'.</li>
+ *   predefined patterns which include 'full', 'long', 'medium' (default) and 'short'.</li>
  * <li>The method {@link format()} formats datetime using the specified pattern.
  *   See {@link http://www.unicode.org/reports/tr35/#Date_Format_Patterns} for
  *   details about the recognized pattern characters.</li>

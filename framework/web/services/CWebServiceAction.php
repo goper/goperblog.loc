@@ -17,7 +17,7 @@
  * is used to differentiate these two aspects: the existence of the GET parameter
  * indicates performing the latter action.
  *
- * By index, CWebServiceAction will use the current controller as
+ * By default, CWebServiceAction will use the current controller as
  * the Web service provider. See {@link CWsdlGenerator} on how to declare
  * methods that can be remotely invoked.
  *

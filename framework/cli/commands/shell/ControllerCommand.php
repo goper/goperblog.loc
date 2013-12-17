@@ -21,7 +21,7 @@ class ControllerCommand extends CConsoleCommand
 	 * @var string the directory that contains templates for the model command.
 	 * Defaults to null, meaning using 'framework/cli/views/shell/controller'.
 	 * If you set this path and some views are missing in the directory,
-	 * the index views will be used.
+	 * the default views will be used.
 	 */
 	public $templatePath;
 
@@ -47,7 +47,7 @@ PARAMETERS
    under a subdirectory of that module).
 
  * action-ID: optional, action ID. You may supply one or several
-   action IDs. A index 'index' action will always be generated.
+   action IDs. A default 'index' action will always be generated.
 
 EXAMPLES
  * Generates the 'post' controller:
@@ -161,14 +161,14 @@ EOD;
 
 	public function generateController($source,$params)
 	{
-		if(!is_file($source))  // fall back to index ones
+		if(!is_file($source))  // fall back to default ones
 			$source=YII_PATH.'/cli/views/shell/controller/'.basename($source);
 		return $this->renderFile($source,array('className'=>$params[0],'actions'=>$params[1]),true);
 	}
 
 	public function generateAction($source,$params)
 	{
-		if(!is_file($source))  // fall back to index ones
+		if(!is_file($source))  // fall back to default ones
 			$source=YII_PATH.'/cli/views/shell/controller/'.basename($source);
 		return $this->renderFile($source,$params,true);
 	}

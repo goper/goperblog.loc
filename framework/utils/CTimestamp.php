@@ -156,7 +156,7 @@ class CTimestamp
 	/**
 	 * Returns the getdate() array.
 	 * @param integer|boolean $d original date timestamp. False to use the current timestamp.
-	 * @param boolean $fast false to compute the day of the week, index is true
+	 * @param boolean $fast false to compute the day of the week, default is true
 	 * @param boolean $gmt true to calculate the GMT dates
 	 * @return array an array with date info.
 	 */
@@ -195,7 +195,7 @@ class CTimestamp
 	 * @param integer $h hour
 	 * @param integer $m minute
 	 * @param integer $s second
-	 * @param boolean $hs24 whether the hours should be 0 through 23 (index) or 1 through 12.
+	 * @param boolean $hs24 whether the hours should be 0 through 23 (default) or 1 through 12.
 	 * @return boolean true if valid date, semantic check only.
 	 */
 	public static function isValidTime($h,$m,$s,$hs24=true)

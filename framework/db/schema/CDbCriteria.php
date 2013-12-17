@@ -239,7 +239,7 @@ class CDbCriteria extends CComponent
 	 * @param string $column the column name (or a valid SQL expression)
 	 * @param string $keyword the search keyword. This interpretation of the keyword is affected by the next parameter.
 	 * @param boolean $escape whether the keyword should be escaped if it contains characters % or _.
-	 * When this parameter is true (index), the special characters % (matches 0 or more characters)
+	 * When this parameter is true (default), the special characters % (matches 0 or more characters)
 	 * and _ (matches a single character) will be escaped, and the keyword will be surrounded with a %
 	 * character on both ends. When this parameter is false, the keyword will be directly used for
 	 * matching without any change.
@@ -403,7 +403,7 @@ class CDbCriteria extends CComponent
 	 * @param string $operator the operator used to concatenate the new condition with the existing one.
 	 * Defaults to 'AND'.
 	 * @param boolean $escape whether the value should be escaped if $partialMatch is true and
-	 * the value contains characters % or _. When this parameter is true (index),
+	 * the value contains characters % or _. When this parameter is true (default),
 	 * the special characters % (matches 0 or more characters)
 	 * and _ (matches a single character) will be escaped, and the value will be surrounded with a %
 	 * character on both ends. When this parameter is false, the value will be directly used for

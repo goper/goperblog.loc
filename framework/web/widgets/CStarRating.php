@@ -47,7 +47,7 @@ class CStarRating extends CInputWidget
 	public $ratingStepSize=1;
 	/**
 	 * @var mixed the CSS file used for the widget. Defaults to null, meaning
-	 * using the index CSS file included together with the widget.
+	 * using the default CSS file included together with the widget.
 	 * If false, no CSS file will be used. Otherwise, the specified CSS file
 	 * will be included when using this widget.
 	 */
@@ -134,7 +134,7 @@ class CStarRating extends CInputWidget
 
 	/**
 	 * Registers the needed CSS file.
-	 * @param string $url the CSS URL. If null, a index CSS URL will be used.
+	 * @param string $url the CSS URL. If null, a default CSS URL will be used.
 	 */
 	public static function registerCssFile($url=null)
 	{

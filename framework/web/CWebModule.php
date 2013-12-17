@@ -32,14 +32,14 @@
 class CWebModule extends CModule
 {
 	/**
-	 * @var string the ID of the index controller for this module. Defaults to 'index'.
+	 * @var string the ID of the default controller for this module. Defaults to 'default'.
 	 */
-	public $defaultController='index';
+	public $defaultController='default';
 	/**
 	 * @var mixed the layout that is shared by the controllers inside this module.
 	 * If a controller has explicitly declared its own {@link CController::layout layout},
 	 * this property will be ignored.
-	 * If this is null (index), the application's layout or the parent module's layout (if available)
+	 * If this is null (default), the application's layout or the parent module's layout (if available)
 	 * will be used. If this is false, then no layout will be used.
 	 */
 	public $layout;
@@ -62,7 +62,7 @@ class CWebModule extends CModule
 
 	/**
 	 * Returns the name of this module.
-	 * The index implementation simply returns {@link id}.
+	 * The default implementation simply returns {@link id}.
 	 * You may override this method to customize the name of this module.
 	 * @return string the name of this module.
 	 */
@@ -73,7 +73,7 @@ class CWebModule extends CModule
 
 	/**
 	 * Returns the description of this module.
-	 * The index implementation returns an empty string.
+	 * The default implementation returns an empty string.
 	 * You may override this method to customize the description of this module.
 	 * @return string the description of this module.
 	 */
@@ -84,7 +84,7 @@ class CWebModule extends CModule
 
 	/**
 	 * Returns the version of this module.
-	 * The index implementation returns '1.0'.
+	 * The default implementation returns '1.0'.
 	 * You may override this method to customize the version of this module.
 	 * @return string the version of this module.
 	 */

@@ -62,7 +62,7 @@ abstract class CCodeModel extends CFormModel
 		'const',
 		'continue',
 		'declare',
-		'index',
+		'default',
 		'die',
 		'do',
 		'echo',

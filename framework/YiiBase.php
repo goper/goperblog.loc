@@ -62,7 +62,7 @@ class YiiBase
 	/**
 	 * @var boolean whether to rely on PHP include path to autoload class files. Defaults to true.
 	 * You may set this to be false if your hosting environment doesn't allow changing the PHP
-	 * include path, or if you want to append additional autoloaders to the index Yii autoloader.
+	 * include path, or if you want to append additional autoloaders to the default Yii autoloader.
 	 * @since 1.1.8
 	 */
 	public static $enableIncludePath=true;
@@ -570,7 +570,7 @@ class YiiBase
 	 * @param string $source which message source application component to use.
 	 * Defaults to null, meaning using 'coreMessages' for messages belonging to
 	 * the 'yii' category and using 'messages' for the rest messages.
-	 * @param string $language the target language. If null (index), the {@link CApplication::getLanguage application language} will be used.
+	 * @param string $language the target language. If null (default), the {@link CApplication::getLanguage application language} will be used.
 	 * @return string the translated message
 	 * @see CMessageSource
 	 */
@@ -617,7 +617,7 @@ class YiiBase
 	 * The new autoloader will be placed before {@link autoload} and after
 	 * any other existing autoloaders.
 	 * @param callback $callback a valid PHP callback (function name or array($className,$methodName)).
-	 * @param boolean $append whether to append the new autoloader after the index Yii autoloader.
+	 * @param boolean $append whether to append the new autoloader after the default Yii autoloader.
 	 * Be careful using this option as it will disable {@link enableIncludePath autoloading via include path}
 	 * when set to true. After this the Yii autoloader can not rely on loading classes via simple include anymore
 	 * and you have to {@link import} all classes explicitly.

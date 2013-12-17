@@ -41,7 +41,7 @@ if(!class_exists('HTMLPurifier_Bootstrap',false))
  * <li>{@link http://michelf.com/projects/php-markdown/extra/ markdown extra syntax}</li>
  * </ul>
  *
- * @property string $defaultCssFile The index CSS file that is used to highlight code blocks.
+ * @property string $defaultCssFile The default CSS file that is used to highlight code blocks.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package system.utils
@@ -82,7 +82,7 @@ class CMarkdownParser extends MarkdownExtra_Parser
 	}
 
 	/**
-	 * @return string the index CSS file that is used to highlight code blocks.
+	 * @return string the default CSS file that is used to highlight code blocks.
 	 */
 	public function getDefaultCssFile()
 	{
@@ -195,7 +195,7 @@ class CMarkdownParser extends MarkdownExtra_Parser
 	 * Retrieves the specified configuration.
 	 * @param string $name the configuration name
 	 * @param string $str the user-entered options
-	 * @param mixed $defaultValue index value if the configuration is not present
+	 * @param mixed $defaultValue default value if the configuration is not present
 	 * @return mixed the configuration value
 	 */
 	protected function getInlineOption($name, $str, $defaultValue)

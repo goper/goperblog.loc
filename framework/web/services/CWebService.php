@@ -81,7 +81,7 @@ class CWebService extends CComponent
 	 * @var string|array WSDL generator configuration. This property may be useful in purpose of enhancing features
 	 * of the standard {@link CWsdlGenerator} class by extending it. For example, some developers may need support
 	 * of the <code>xsd:xsd:base64Binary</code> elements. Another use case is to change initial values
-	 * at instantiation of the index {@link CWsdlGenerator}. The value of this property will be passed
+	 * at instantiation of the default {@link CWsdlGenerator}. The value of this property will be passed
 	 * to {@link Yii::createComponent} to create the generator object. Default value is 'CWsdlGenerator'.
 	 * @since 1.1.12
 	 */

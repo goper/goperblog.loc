@@ -106,7 +106,7 @@ class CPortlet extends CWidget
 
 	/**
 	 * Renders the decoration for the portlet.
-	 * The index implementation will render the title if it is set.
+	 * The default implementation will render the title if it is set.
 	 */
 	protected function renderDecoration()
 	{

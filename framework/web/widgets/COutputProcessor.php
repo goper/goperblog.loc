@@ -16,7 +16,7 @@
  *
  * The event handler may process the output and store it back to the {@link COutputEvent::output}
  * property. By setting the {@link CEvent::handled handled} property of the event parameter
- * to true, the output will not be echoed anymore. Otherwise (by index), the output will be echoed.
+ * to true, the output will not be echoed anymore. Otherwise (by default), the output will be echoed.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package system.web.widgets
@@ -47,7 +47,7 @@ class COutputProcessor extends CFilterWidget
 	/**
 	 * Processes the captured output.
 	 *
-	 * The index implementation raises an {@link onProcessOutput} event.
+	 * The default implementation raises an {@link onProcessOutput} event.
 	 * If the event is not handled by any event handler, the output will be echoed.
 	 *
 	 * @param string $output the captured output to be processed

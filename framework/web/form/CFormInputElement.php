@@ -166,7 +166,7 @@ class CFormInputElement extends CFormElement
 
 	/**
 	 * Renders everything for this input.
-	 * The index implementation simply returns the result of {@link renderLabel}, {@link renderInput},
+	 * The default implementation simply returns the result of {@link renderLabel}, {@link renderInput},
 	 * {@link renderHint}. When {@link CForm::showErrorSummary} is false, {@link renderError} is also called
 	 * to show error messages after individual input fields.
 	 * @return string the complete rendering result for this input, including label, input field, hint, and error.
@@ -186,7 +186,7 @@ class CFormInputElement extends CFormElement
 
 	/**
 	 * Renders the label for this input.
-	 * The index implementation returns the result of {@link CHtml activeLabelEx}.
+	 * The default implementation returns the result of {@link CHtml activeLabelEx}.
 	 * @return string the rendering result
 	 */
 	public function renderLabel()
@@ -206,7 +206,7 @@ class CFormInputElement extends CFormElement
 
 	/**
 	 * Renders the input field.
-	 * The index implementation returns the result of the appropriate CHtml method or the widget.
+	 * The default implementation returns the result of the appropriate CHtml method or the widget.
 	 * @return string the rendering result
 	 */
 	public function renderInput()
@@ -232,7 +232,7 @@ class CFormInputElement extends CFormElement
 
 	/**
 	 * Renders the error display of this input.
-	 * The index implementation returns the result of {@link CHtml::error}
+	 * The default implementation returns the result of {@link CHtml::error}
 	 * @return string the rendering result
 	 */
 	public function renderError()
@@ -243,7 +243,7 @@ class CFormInputElement extends CFormElement
 
 	/**
 	 * Renders the hint text for this input.
-	 * The index implementation returns the {@link hint} property enclosed in a paragraph HTML tag.
+	 * The default implementation returns the {@link hint} property enclosed in a paragraph HTML tag.
 	 * @return string the rendering result.
 	 */
 	public function renderHint()

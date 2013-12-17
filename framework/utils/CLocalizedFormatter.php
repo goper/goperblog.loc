@@ -16,12 +16,12 @@
  * current locale. Because of this you are not able to configure these properties for CLocalizedFormatter directly.
  * Date and time format can be adjsuted by setting {@link dateFormat} and {@link timeFormat}.
  *
- * It uses {@link CApplication::locale} by index but you can set a custom locale by using {@link setLocale}-method.
+ * It uses {@link CApplication::locale} by default but you can set a custom locale by using {@link setLocale}-method.
  *
  * For a list of recognizable format types, and details on how to call the formatter methods,
  * see {@link CFormatter} documentation.
  *
- * To replace the application component 'format', which is registered by {@link CApplication} by index, you can
+ * To replace the application component 'format', which is registered by {@link CApplication} by default, you can
  * put this in your application 'components' config:
  * <code>
  * 'format' => array(

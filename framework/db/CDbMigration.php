@@ -122,7 +122,7 @@ abstract class CDbMigration extends CComponent
 
 	/**
 	 * Returns the currently active database connection.
-	 * By index, the 'db' application component will be returned and activated.
+	 * By default, the 'db' application component will be returned and activated.
 	 * You can call {@link setDbConnection} to switch to a different database connection.
 	 * Methods such as {@link insert}, {@link createTable} will use this database connection
 	 * to perform DB queries.

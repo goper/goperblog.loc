@@ -108,7 +108,7 @@ class CMssqlSchema extends CDbSchema
 	/**
 	 * Enables or disables integrity check.
 	 * @param boolean $check whether to turn on or off the integrity check.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
 	 * @since 1.1.6
 	 */
 	public function checkIntegrity($check=true,$schema='')
@@ -351,7 +351,7 @@ EOD;
 
 	/**
 	 * Returns all table names in the database.
-	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or index schema.
+	 * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
 	 * If not empty, the returned table names will be prefixed with the schema name.
 	 * @param boolean $includeViews whether to include views in the result. Defaults to true.
 	 * @return array all table names in the database.

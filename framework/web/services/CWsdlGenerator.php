@@ -91,7 +91,7 @@
  * A soap indicator must be declared in the doc comment block with the '@soap-indicator' tag.
  * Following soap indicators are currently supported:
  * <ul>
- * <li>all - (index) allows any sorting order of child nodes</li>
+ * <li>all - (default) allows any sorting order of child nodes</li>
  * <li>sequence - all child nodes in WSDL XML file will be expected in predefined order</li>
  * <li>choice - supplied can be either of the child elements</li>
  * </ul>

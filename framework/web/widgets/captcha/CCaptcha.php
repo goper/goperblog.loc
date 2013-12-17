@@ -16,7 +16,7 @@
  *
  * The image element rendered by CCaptcha will display a CAPTCHA image generated
  * by an action of class {@link CCaptchaAction} belonging to the current controller.
- * By index, the action ID should be 'captcha', which can be changed by setting {@link captchaAction}.
+ * By default, the action ID should be 'captcha', which can be changed by setting {@link captchaAction}.
  *
  * CCaptcha may also render a button next to the CAPTCHA image. Clicking on the button
  * will change the CAPTCHA image to be a new one in an AJAX way.

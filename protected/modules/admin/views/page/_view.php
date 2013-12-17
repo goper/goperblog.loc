@@ -29,7 +29,7 @@
     <br />
 
     <b><?php echo CHtml::encode($data->getAttributeLabel('date')); ?>:</b>
-    <?php echo date('d.m.Y',$data->date)?>
+    <?php echo date('d.m.Y H:i',$data->date)?>
     <br />
 
 

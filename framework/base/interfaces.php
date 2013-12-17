@@ -212,7 +212,7 @@ interface IWebServiceProvider
  * IViewRenderer interface is implemented by a view renderer class.
  *
  * A view renderer is {@link CWebApplication::viewRenderer viewRenderer}
- * application component whose wants to replace the index view rendering logic
+ * application component whose wants to replace the default view rendering logic
  * implemented in {@link CBaseController}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>

@@ -41,7 +41,7 @@
  * <li>captcha: {@link CCaptchaValidator}</li>
  * <li>type: {@link CTypeValidator}</li>
  * <li>file: {@link CFileValidator}</li>
- * <li>index: {@link CDefaultValueValidator}</li>
+ * <li>default: {@link CDefaultValueValidator}</li>
  * <li>exist: {@link CExistValidator}</li>
  * <li>boolean: {@link CBooleanValidator}</li>
  * <li>date: {@link CDateValidator}</li>
@@ -72,7 +72,7 @@ abstract class CValidator extends CComponent
 		'captcha'=>'CCaptchaValidator',
 		'type'=>'CTypeValidator',
 		'file'=>'CFileValidator',
-		'index'=>'CDefaultValueValidator',
+		'default'=>'CDefaultValueValidator',
 		'exist'=>'CExistValidator',
 		'boolean'=>'CBooleanValidator',
 		'safe'=>'CSafeValidator',

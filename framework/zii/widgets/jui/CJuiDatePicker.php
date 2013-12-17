@@ -54,7 +54,7 @@ class CJuiDatePicker extends CJuiInputWidget
 	 */
 	public $i18nScriptFile='jquery-ui-i18n.min.js';
 	/**
-	 * @var array The index options called just one time per request. This options will alter every other CJuiDatePicker instance in the page.
+	 * @var array The default options called just one time per request. This options will alter every other CJuiDatePicker instance in the page.
 	 * It has to be set at the first call of CJuiDatePicker widget in the request.
 	 */
 	public $defaultOptions;

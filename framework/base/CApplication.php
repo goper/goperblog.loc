@@ -25,7 +25,7 @@
  * <li>{@link getStatePersister statePersister}: provides global state
  *   persistence method. This application component is dynamically loaded when needed.</li>
  * <li>{@link getCache cache}: provides caching feature. This application component is
- *   disabled by index.</li>
+ *   disabled by default.</li>
  * <li>{@link getMessages messages}: provides the message source for translating
  *   application messages. This application component is dynamically loaded when needed.</li>
  * <li>{@link getCoreMessages coreMessages}: provides the message source for translating
@@ -343,7 +343,7 @@ abstract class CApplication extends CModule
 	 * Returns the time zone used by this application.
 	 * This is a simple wrapper of PHP function date_default_timezone_get().
 	 * @return string the time zone used by this application.
-	 * @see http://php.net/manual/en/function.date-index-timezone-get.php
+	 * @see http://php.net/manual/en/function.date-default-timezone-get.php
 	 */
 	public function getTimeZone()
 	{
@@ -354,7 +354,7 @@ abstract class CApplication extends CModule
 	 * Sets the time zone used by this application.
 	 * This is a simple wrapper of PHP function date_default_timezone_set().
 	 * @param string $value the time zone used by this application.
-	 * @see http://php.net/manual/en/function.date-index-timezone-set.php
+	 * @see http://php.net/manual/en/function.date-default-timezone-set.php
 	 */
 	public function setTimeZone($value)
 	{
@@ -601,7 +601,7 @@ abstract class CApplication extends CModule
 	 *
 	 * A global value is one that is persistent across users sessions and requests.
 	 * @param string $key the name of the value to be returned
-	 * @param mixed $defaultValue the index value. If the named global value is not found, this will be returned instead.
+	 * @param mixed $defaultValue the default value. If the named global value is not found, this will be returned instead.
 	 * @return mixed the named global value
 	 * @see setGlobalState
 	 */
@@ -622,7 +622,7 @@ abstract class CApplication extends CModule
 	 * Make sure that the value is serializable and unserializable.
 	 * @param string $key the name of the value to be saved
 	 * @param mixed $value the global value to be saved. It must be serializable.
-	 * @param mixed $defaultValue the index value. If the named global value is the same as this value, it will be cleared from the current storage.
+	 * @param mixed $defaultValue the default value. If the named global value is the same as this value, it will be cleared from the current storage.
 	 * @see getGlobalState
 	 */
 	public function setGlobalState($key,$value,$defaultValue=null)

@@ -22,7 +22,7 @@
 
 // {{{ BC constants
 
-// BC trick : define constants related to index
+// BC trick : define constants related to default
 // renderer if needed
 if (!defined('HL_NUMBERS_LI')) {
     /**#@+

@@ -49,7 +49,7 @@ class CFormStringElement extends CFormElement
 
 	/**
 	 * Renders this element.
-	 * The index implementation simply returns {@link content}.
+	 * The default implementation simply returns {@link content}.
 	 * @return string the string content
 	 */
 	public function render()

@@ -12,7 +12,7 @@
  * CRedisCache implements a cache application component based on {@link http://redis.io/ redis}.
  *
  * CRedisCache needs to be configured with {@link hostname}, {@link port} and {@link database} of the server
- * to connect to. By index CRedisCache assumes there is a redis server running on localhost at
+ * to connect to. By default CRedisCache assumes there is a redis server running on localhost at
  * port 6379 and uses the database number 0.
  *
  * CRedisCache also supports {@link http://redis.io/commands/auth the AUTH command} of redis.

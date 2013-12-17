@@ -38,7 +38,7 @@ class CWebLogRoute extends CLogRoute
 	 */
 	public $ignoreFlashInFireBug=true;
 	/**
-	 * @var boolean whether the log should be collapsed by index in Firebug. Defaults to false.
+	 * @var boolean whether the log should be collapsed by default in Firebug. Defaults to false.
 	 * @since 1.1.13.
 	 */
 	public $collapsedInFireBug=false;

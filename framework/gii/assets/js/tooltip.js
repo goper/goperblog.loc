@@ -23,7 +23,7 @@
 		
 		conf: { 
 			
-			// index effect variables
+			// default effect variables
 			effect: 'toggle',			
 			fadeOutSpeed: "fast",
 			predelay: 0,
@@ -181,7 +181,7 @@
 		}); 
 		
 		
-		// remove index title
+		// remove default title
 		if (title && conf.cancelDefault) { 
 			trigger.removeAttr("title");
 			trigger.data("title", title);			

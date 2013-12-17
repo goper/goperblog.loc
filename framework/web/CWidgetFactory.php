@@ -12,7 +12,7 @@
 /**
  * CWidgetFactory creates new widgets to be used in views.
  *
- * CWidgetFactory is used as the index "widgetFactory" application component.
+ * CWidgetFactory is used as the default "widgetFactory" application component.
  *
  * When calling {@link CBaseController::createWidget}, {@link CBaseController::widget}
  * or {@link CBaseController::beginWidget}, if the "widgetFactory" component is installed,
@@ -44,11 +44,11 @@
  * for a particular widget type and is named as the widget class name (e.g. CLinkPager.php).
  * Each widget type may have one or several skins, identified by the skin name set via
  * {@link CWidget::skin} property. If the {@link CWidget::skin} property is not set for a given
- * widget, it means the index skin would be used. The following shows the possible skins for
+ * widget, it means the default skin would be used. The following shows the possible skins for
  * the {@link CLinkPager} widget:
  * <pre>
  * return array(
- *     'index'=>array(
+ *     'default'=>array(
  *         'nextPageLabel'=>'&gt;&gt;',
  *         'prevPageLabel'=>'&lt;&lt;',
  *     ),
@@ -58,13 +58,13 @@
  *     ),
  * );
  * </pre>
- * In the above, there are two skins. The first one is the index skin which is indexed by the string "index".
- * Note that {@link CWidget::skin} defaults to "index". Therefore, this is the skin that will be applied
+ * In the above, there are two skins. The first one is the default skin which is indexed by the string "default".
+ * Note that {@link CWidget::skin} defaults to "default". Therefore, this is the skin that will be applied
  * if we do not explicitly specify the {@link CWidget::skin} property.
  * The second one is named as the "short" skin which will be used only when we set {@link CWidget::skin}
  * to be "short".
  *
- * By index, CWidgetFactory looks for the skin of a widget under the "skins" directory
+ * By default, CWidgetFactory looks for the skin of a widget under the "skins" directory
  * of the current application's {@link CWebApplication::viewPath} (e.g. protected/views/skins).
  * If a theme is being used, it will look for the skin under the "skins" directory of
  * the theme's {@link CTheme::viewPath} (as well as the aforementioned skin directory).
@@ -152,7 +152,7 @@ class CWidgetFactory extends CApplicationComponent implements IWidgetFactory
 		{
 			if($this->skinnableWidgets===null || in_array($className,$this->skinnableWidgets))
 			{
-				$skinName=isset($properties['skin']) ? $properties['skin'] : 'index';
+				$skinName=isset($properties['skin']) ? $properties['skin'] : 'default';
 				if($skinName!==false && ($skin=$this->getSkin($className,$skinName))!==array())
 					$properties=$properties===array() ? $skin : CMap::mergeArray($skin,$properties);
 			}

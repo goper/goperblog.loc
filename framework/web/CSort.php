@@ -73,7 +73,7 @@ class CSort extends CComponent
 	 * @var array list of attributes that are allowed to be sorted.
 	 * For example, array('user_id','create_time') would specify that only 'user_id'
 	 * and 'create_time' of the model {@link modelClass} can be sorted.
-	 * By index, this property is an empty array, which means all attributes in
+	 * By default, this property is an empty array, which means all attributes in
 	 * {@link modelClass} are allowed to be sorted.
 	 *
 	 * This property can also be used to specify complex sorting. To do so,
@@ -111,16 +111,16 @@ class CSort extends CComponent
 	 * Note, the attribute name should not contain '-' or '.' characters because
 	 * they are used as {@link separators}.
 	 *
-	 * Starting from version 1.1.3, an additional option named 'index' can be used in the virtual attribute
+	 * Starting from version 1.1.3, an additional option named 'default' can be used in the virtual attribute
 	 * declaration. This option specifies whether an attribute should be sorted in ascending or descending
 	 * order upon user clicking the corresponding sort hyperlink if it is not currently sorted. The valid
-	 * option values include 'asc' (index) and 'desc'. For example,
+	 * option values include 'asc' (default) and 'desc'. For example,
 	 * <pre>
 	 * 'price'=>array(
 	 *     'asc'=>'item.price',
 	 *     'desc'=>'item.price DESC',
 	 *     'label'=>'Item Price',
-	 *     'index'=>'desc',
+	 *     'default'=>'desc',
 	 * )
 	 * </pre>
 	 *
@@ -132,7 +132,7 @@ class CSort extends CComponent
 	 *         'asc'=>'item.price',
 	 *         'desc'=>'item.price DESC',
 	 *         'label'=>'Item Price',
-	 *         'index'=>'desc',
+	 *         'default'=>'desc',
 	 *     ),
 	 *     '*',
 	 * )
@@ -154,11 +154,11 @@ class CSort extends CComponent
 	 */
 	public $descTag='desc';
 	/**
-	 * @var mixed the index order that should be applied to the query criteria when
+	 * @var mixed the default order that should be applied to the query criteria when
 	 * the current request does not specify any sort. For example, 'name, create_time DESC' or
 	 * 'UPPER(name)'.
 	 *
-	 * Starting from version 1.1.3, you can also specify the index order using an array.
+	 * Starting from version 1.1.3, you can also specify the default order using an array.
 	 * The array keys could be attribute names or virtual attribute names as declared in {@link attributes},
 	 * and the array values indicate whether the sorting of the corresponding attributes should
 	 * be in descending order. For example,
@@ -170,7 +170,7 @@ class CSort extends CComponent
 	 * `SORT_DESC` and `SORT_ASC` are available since 1.1.10. In earlier Yii versions you should use
 	 * `true` and `false` respectively.
 	 *
-	 * Please note when using array to specify the index order, the corresponding attributes
+	 * Please note when using array to specify the default order, the corresponding attributes
 	 * will be put into {@link directions} and thus affect how the sort links are rendered
 	 * (e.g. an arrow may be displayed next to the currently active sort link).
 	 */
@@ -293,8 +293,8 @@ class CSort extends CComponent
 			$descending=!$directions[$attribute];
 			unset($directions[$attribute]);
 		}
-		elseif(is_array($definition) && isset($definition['index']))
-			$descending=$definition['index']==='desc';
+		elseif(is_array($definition) && isset($definition['default']))
+			$descending=$definition['default']==='desc';
 		else
 			$descending=false;
 

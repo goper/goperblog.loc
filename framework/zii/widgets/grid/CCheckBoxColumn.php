@@ -19,9 +19,9 @@ Yii::import('zii.widgets.grid.CGridColumn');
  * The header cell can be customized by {@link headerTemplate}.
  *
  * Additionally selecting a checkbox can select a grid view row (depending on {@link CGridView::selectableRows} value) if
- * {@link selectableRows} is null (index).
+ * {@link selectableRows} is null (default).
  *
- * By index, the checkboxes rendered in data cells will have the values that are the same as
+ * By default, the checkboxes rendered in data cells will have the values that are the same as
  * the key values of the data model. One may change this by setting either {@link name} or
  * {@link value}.
  *
@@ -117,7 +117,7 @@ class CCheckBoxColumn extends CGridColumn
 	/**
 	 * @var string the template to be used to control the layout of the header cell.
 	 * The token "{item}" is recognized and it will be replaced with a "check all" checkbox.
-	 * By index if in multiple checking mode, the header cell will display an additional checkbox,
+	 * By default if in multiple checking mode, the header cell will display an additional checkbox,
 	 * clicking on which will check or uncheck all of the checkboxes in the data cells.
 	 * See {@link selectableRows} for more details.
 	 * @since 1.1.11

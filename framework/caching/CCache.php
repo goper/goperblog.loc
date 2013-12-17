@@ -65,7 +65,7 @@ abstract class CCache extends CApplicationComponent implements ICache, ArrayAcce
 	public $hashKey=true;
 	/**
 	 * @var array|boolean the functions used to serialize and unserialize cached data. Defaults to null, meaning
-	 * using the index PHP `serialize()` and `unserialize()` functions. If you want to use some more efficient
+	 * using the default PHP `serialize()` and `unserialize()` functions. If you want to use some more efficient
 	 * serializer (e.g. {@link http://pecl.php.net/package/igbinary igbinary}), you may configure this property with
 	 * a two-element array. The first element specifies the serialization function, and the second the deserialization
 	 * function. If this property is set false, data will be directly sent to and retrieved from the underlying
@@ -76,7 +76,7 @@ abstract class CCache extends CApplicationComponent implements ICache, ArrayAcce
 
 	/**
 	 * Initializes the application component.
-	 * This method overrides the parent implementation by setting index cache key prefix.
+	 * This method overrides the parent implementation by setting default cache key prefix.
 	 */
 	public function init()
 	{
@@ -249,7 +249,7 @@ abstract class CCache extends CApplicationComponent implements ICache, ArrayAcce
 
 	/**
 	 * Retrieves multiple values from cache with the specified keys.
-	 * The index implementation simply calls {@link getValue} multiple
+	 * The default implementation simply calls {@link getValue} multiple
 	 * times to retrieve the cached values one by one.
 	 * If the underlying cache storage supports multiget, this method should
 	 * be overridden to exploit that feature.

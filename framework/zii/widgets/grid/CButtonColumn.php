@@ -13,7 +13,7 @@ Yii::import('zii.widgets.grid.CGridColumn');
 /**
  * CButtonColumn represents a grid view column that renders one or several buttons.
  *
- * By index, it will display three buttons, "view", "update" and "delete", which triggers the corresponding
+ * By default, it will display three buttons, "view", "update" and "delete", which triggers the corresponding
  * actions on the model of the row.
  *
  * By configuring {@link buttons} and {@link template} properties, the column can display other buttons
@@ -39,7 +39,7 @@ class CButtonColumn extends CGridColumn
 	public $footerHtmlOptions=array('class'=>'button-column');
 	/**
 	 * @var string the template that is used to render the content in each data cell.
-	 * These index tokens are recognized: {view}, {update} and {delete}. If the {@link buttons} property
+	 * These default tokens are recognized: {view}, {update} and {delete}. If the {@link buttons} property
 	 * defines additional buttons, their IDs are also recognized here. For example, if a button named 'preview'
 	 * is declared in {@link buttons}, we can use the token '{preview}' here to specify where to display the button.
 	 */
@@ -178,9 +178,9 @@ class CButtonColumn extends CGridColumn
 	 * A PHP expression can be any PHP code that has a value. To learn more about what an expression is,
 	 * please refer to the {@link http://www.php.net/manual/en/language.expressions.php php manual}.
 	 *
-	 * If the 'buttonID' is 'view', 'update' or 'delete' the options will be applied to the index buttons.
+	 * If the 'buttonID' is 'view', 'update' or 'delete' the options will be applied to the default buttons.
 	 *
-	 * Note that in order to display non-index buttons, the {@link template} property needs to
+	 * Note that in order to display non-default buttons, the {@link template} property needs to
 	 * be configured so that the corresponding button IDs appear as tokens in the template.
 	 */
 	public $buttons=array();
@@ -210,7 +210,7 @@ class CButtonColumn extends CGridColumn
 	}
 
 	/**
-	 * Initializes the index buttons (view, update and delete).
+	 * Initializes the default buttons (view, update and delete).
 	 */
 	protected function initDefaultButtons()
 	{

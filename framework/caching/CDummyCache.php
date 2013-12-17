@@ -29,7 +29,7 @@ class CDummyCache extends CApplicationComponent implements ICache, ArrayAccess
 
 	/**
 	 * Initializes the application component.
-	 * This method overrides the parent implementation by setting index cache key prefix.
+	 * This method overrides the parent implementation by setting default cache key prefix.
 	 */
 	public function init()
 	{

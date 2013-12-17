@@ -21,7 +21,7 @@ class ModelCommand extends CConsoleCommand
 	 * @var string the directory that contains templates for the model command.
 	 * Defaults to null, meaning using 'framework/cli/views/shell/model'.
 	 * If you set this path and some views are missing in the directory,
-	 * the index views will be used.
+	 * the default views will be used.
 	 */
 	public $templatePath;
 	/**
@@ -52,9 +52,9 @@ DESCRIPTION
   This command generates a model class with the specified class name.
 
 PARAMETERS
- * class-name: required, model class name. By index, the generated
+ * class-name: required, model class name. By default, the generated
    model class file will be placed under the directory aliased as
-   'application.models'. To override this index, specify the class
+   'application.models'. To override this default, specify the class
    name in terms of a path alias, e.g., 'application.somewhere.ClassName'.
 
    If the model class belongs to a module, it should be specified
@@ -434,7 +434,7 @@ EOD;
 		else
 			echo "Warning: the table '$tableName' does not exist in the database.\n";
 
-		if(!is_file($source))  // fall back to index ones
+		if(!is_file($source))  // fall back to default ones
 			$source=YII_PATH.'/cli/views/shell/model/'.basename($source);
 		return $this->renderFile($source,array(
 			'className'=>$className,
@@ -448,7 +448,7 @@ EOD;
 
 	public function generateFixture($source,$table)
 	{
-		if(!is_file($source))  // fall back to index ones
+		if(!is_file($source))  // fall back to default ones
 			$source=YII_PATH.'/cli/views/shell/model/'.basename($source);
 		return $this->renderFile($source, array(
 			'table'=>$table,
@@ -458,7 +458,7 @@ EOD;
 	public function generateTest($source,$params)
 	{
 		list($className,$fixtureName)=$params;
-		if(!is_file($source))  // fall back to index ones
+		if(!is_file($source))  // fall back to default ones
 			$source=YII_PATH.'/cli/views/shell/model/'.basename($source);
 		return $this->renderFile($source, array(
 			'className'=>$className,

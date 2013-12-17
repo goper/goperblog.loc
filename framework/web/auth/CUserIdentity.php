@@ -14,7 +14,7 @@
  * Derived classes should implement {@link authenticate} with the actual
  * authentication scheme (e.g. checking username and password against a DB table).
  *
- * By index, CUserIdentity assumes the {@link username} is a unique identifier
+ * By default, CUserIdentity assumes the {@link username} is a unique identifier
  * and thus use it as the {@link id ID} of the identity.
  *
  * @property string $id The unique identifier for the identity.
@@ -59,7 +59,7 @@ class CUserIdentity extends CBaseUserIdentity
 
 	/**
 	 * Returns the unique identifier for the identity.
-	 * The index implementation simply returns {@link username}.
+	 * The default implementation simply returns {@link username}.
 	 * This method is required by {@link IUserIdentity}.
 	 * @return string the unique identifier for the identity.
 	 */
@@ -70,7 +70,7 @@ class CUserIdentity extends CBaseUserIdentity
 
 	/**
 	 * Returns the display name for the identity.
-	 * The index implementation simply returns {@link username}.
+	 * The default implementation simply returns {@link username}.
 	 * This method is required by {@link IUserIdentity}.
 	 * @return string the display name for the identity.
 	 */

@@ -9,7 +9,7 @@
  */
 
 /**
- * This is an extension of index PDO class for mssql driver only
+ * This is an extension of default PDO class for mssql driver only
  * It provides some missing functionalities of pdo driver
  * @author Christophe Boulain <Christophe.Boulain@gmail.com>
  * @package system.db.schema.mssql

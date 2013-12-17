@@ -49,7 +49,7 @@
 abstract class CConsoleCommand extends CComponent
 {
 	/**
-	 * @var string the name of the index action. Defaults to 'index'.
+	 * @var string the name of the default action. Defaults to 'index'.
 	 * @since 1.1.5
 	 */
 	public $defaultAction='index';
@@ -107,7 +107,7 @@ abstract class CConsoleCommand extends CComponent
 
 	/**
 	 * Executes the command.
-	 * The index implementation will parse the input parameters and
+	 * The default implementation will parse the input parameters and
 	 * dispatch the command request to an appropriate action with the corresponding
 	 * option values
 	 * @param array $args command line parameters for this command.
@@ -285,7 +285,7 @@ abstract class CConsoleCommand extends CComponent
 
 	/**
 	 * Provides the command option help information.
-	 * The index implementation will return all available actions together with their
+	 * The default implementation will return all available actions together with their
 	 * corresponding option information.
 	 * @return array the command option help information. Each array element describes
 	 * the help information for a single action.
@@ -527,8 +527,8 @@ abstract class CConsoleCommand extends CComponent
 	 * Reads input via the readline PHP extension if that's available, or fgets() if readline is not installed.
 	 *
 	 * @param string $message to echo out before waiting for user input
-	 * @param string $default the index string to be returned when user does not write anything.
-	 * Defaults to null, means that index string is disabled. This parameter is available since version 1.1.11.
+	 * @param string $default the default string to be returned when user does not write anything.
+	 * Defaults to null, means that default string is disabled. This parameter is available since version 1.1.11.
 	 * @return mixed line read as a string, or false if input has been closed
 	 *
 	 * @since 1.1.9

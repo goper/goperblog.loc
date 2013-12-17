@@ -65,7 +65,7 @@ class CDetailView extends CWidget
 	 * "Type" represents the type of the attribute. It determines how the attribute value should be formatted and displayed.
 	 * It is defaulted to be 'text'.
 	 * "Type" should be recognizable by the {@link formatter}. In particular, if "Type" is "xyz", then the "formatXyz" method
-	 * of {@link formatter} will be invoked to format the attribute value for display. By index when {@link CFormatter} is used,
+	 * of {@link formatter} will be invoked to format the attribute value for display. By default when {@link CFormatter} is used,
 	 * these "Type" values are valid: raw, text, ntext, html, date, time, datetime, boolean, number, email, image, url.
 	 * For more details about these types, please refer to {@link CFormatter}.
 	 *

@@ -22,7 +22,7 @@ class ModuleCommand extends CConsoleCommand
 	 * @var string the directory that contains templates for the module command.
 	 * Defaults to null, meaning using 'framework/cli/views/shell/module'.
 	 * If you set this path and some views are missing in the directory,
-	 * the index views will be used.
+	 * the default views will be used.
 	 */
 	public $templatePath;
 

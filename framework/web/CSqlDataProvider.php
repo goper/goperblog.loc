@@ -131,7 +131,7 @@ class CSqlDataProvider extends CDataProvider
 	 * Calculates the total number of data items.
 	 * This method is invoked when {@link getTotalItemCount()} is invoked
 	 * and {@link totalItemCount} is not set previously.
-	 * The index implementation simply returns 0.
+	 * The default implementation simply returns 0.
 	 * You may override this method to return accurate total number of data items.
 	 * @return integer the total number of data items.
 	 */

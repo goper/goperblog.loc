@@ -37,7 +37,7 @@
  * <li>size: the {@link formatSize} method will be called to format the attribute value, interpreted as a number of bytes, as a size in human readable form.</li>
  * </ul>
  *
- * By index, {@link CApplication} registers {@link CFormatter} as an application component whose ID is 'format'.
+ * By default, {@link CApplication} registers {@link CFormatter} as an application component whose ID is 'format'.
  * Therefore, one may call <code>Yii::app()->format->boolean(1)</code>.
  * You might want to replace this component with {@link CLocalizedFormatter} to enable formatting based on the
  * current locale settings.
@@ -156,7 +156,7 @@ class CFormatter extends CApplicationComponent
 	 * &lt;p&gt;&lt;/p&gt; tags.
 	 * @param mixed $value the value to be formatted
 	 * @param boolean $paragraphs whether newlines should be converted to HTML &lt;p&gt;&lt;/p&gt; tags,
-	 * false by index meaning that HTML &lt;br /&gt; tags will be used
+	 * false by default meaning that HTML &lt;br /&gt; tags will be used
 	 * @param boolean $removeEmptyParagraphs whether empty paragraphs should be removed, defaults to true;
 	 * makes sense only when $paragraphs parameter is true
 	 * @return string the formatted result

@@ -10,7 +10,7 @@
 
 /**
  * CDefaultValueValidator sets the attributes with the specified value.
- * It does not do validation but rather allows setting a index value at the
+ * It does not do validation but rather allows setting a default value at the
  * same time validation is performed. Usually this happens when calling either
  * <code>$model->validate()</code> or <code>$model->save()</code>.
  *
@@ -20,12 +20,12 @@
 class CDefaultValueValidator extends CValidator
 {
 	/**
-	 * @var mixed the index value to be set to the specified attributes.
+	 * @var mixed the default value to be set to the specified attributes.
 	 */
 	public $value;
 	/**
-	 * @var boolean whether to set the index value only when the attribute value is null or empty string.
-	 * Defaults to true. If false, the attribute will always be assigned with the index value,
+	 * @var boolean whether to set the default value only when the attribute value is null or empty string.
+	 * Defaults to true. If false, the attribute will always be assigned with the default value,
 	 * even if it is already explicitly assigned a value.
 	 */
 	public $setOnEmpty=true;

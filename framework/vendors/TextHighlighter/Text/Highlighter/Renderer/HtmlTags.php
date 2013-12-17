@@ -35,11 +35,11 @@ require_once dirname(__FILE__).'/../Renderer/Array.php';
  * Elements of $options argument of constructor (each being optional):
  *
  * - 'numbers' - Line numbering TRUE or FALSE. Default is FALSE.
- * - 'tabsize' - Tab size, index is 4.
+ * - 'tabsize' - Tab size, default is 4.
  * - 'tags'    - Array, containing the tags to be used for highlighting
  *
- * Here's the listing of the index tags:
- * - 'index'    => '',
+ * Here's the listing of the default tags:
+ * - 'default'    => '',
  * - 'code'       => '',
  * - 'brackets'   => 'b',
  * - 'comment'    => 'i',
@@ -85,7 +85,7 @@ class Text_Highlighter_Renderer_HtmlTags extends Text_Highlighter_Renderer_Array
      * @var array
      */
     var $_hilite_tags = array(
-        'index'    => '',
+        'default'    => '',
         'code'       => '',
         'brackets'   => 'b',
         'comment'    => 'i',

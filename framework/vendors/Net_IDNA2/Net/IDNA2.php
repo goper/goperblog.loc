@@ -2253,7 +2253,7 @@ class Net_IDNA2
      *             otherwise); The output is always UTF-8]
      * [overlong - Unicode does not allow unnecessarily long encodings of chars,
      *             to allow this, set this parameter to true, else to false;
-     *             index is false.]
+     *             default is false.]
      * [strict -   true: strict mode, good for registration purposes - Causes errors
      *             on failures; false: loose mode, ideal for "wildlife" applications
      *             by silently ignoring errors and returning the original input instead]
@@ -2315,7 +2315,7 @@ class Net_IDNA2
      *
      * @param string $decoded           Domain name (UTF-8 or UCS-4)
      * @param string $one_time_encoding Desired input encoding, see {@link set_parameter}
-     *                                  If not given will use index-encoding
+     *                                  If not given will use default-encoding
      *
      * @return string Encoded Domain name (ACE string)
      * @return mixed  processed string
@@ -2469,7 +2469,7 @@ class Net_IDNA2
         } else { // Otherwise we consider it being a pure domain name string
             $return = $this->_decode($input);
         }
-        // The output is UTF-8 by index, other output formats need conversion here
+        // The output is UTF-8 by default, other output formats need conversion here
         // If one time encoding is given, use this, else the objects property
         switch (($one_time_encoding) ? $one_time_encoding : $this->_api_encoding) {
         case 'utf8':

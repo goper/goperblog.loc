@@ -12,7 +12,7 @@
  * CMemCache implements a cache application component based on {@link http://memcached.org/ memcached}.
  *
  * CMemCache can be configured with a list of memcache servers by settings
- * its {@link setServers servers} property. By index, CMemCache assumes
+ * its {@link setServers servers} property. By default, CMemCache assumes
  * there is a memcache server running on localhost at port 11211.
  *
  * See {@link CCache} manual for common cache operations that are supported by CMemCache.

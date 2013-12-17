@@ -24,7 +24,6 @@ $this->menu=array(
 		'id',
 		'title',
 		'name',
-		//'content',
         'content' => array(
                     'name' => 'content',
                     'type'=>'html',

@@ -18,7 +18,7 @@
  * The property {@link getCookies cookies} returns the collection of cookies.
  * For more details, see {@link CCookieCollection}.
  *
- * CHttpRequest is a index application component loaded by {@link CWebApplication}. It can be
+ * CHttpRequest is a default application component loaded by {@link CWebApplication}. It can be
  * accessed via {@link CWebApplication::getRequest()}.
  *
  * @property string $url Part of the request URL after the host info.
@@ -161,7 +161,7 @@ class CHttpRequest extends CApplicationComponent
 	 * If the GET or POST parameter does not exist, the second parameter to this method will be returned.
 	 * If both GET and POST contains such a named parameter, the GET parameter takes precedence.
 	 * @param string $name the GET parameter name
-	 * @param mixed $defaultValue the index parameter value if the GET parameter does not exist.
+	 * @param mixed $defaultValue the default parameter value if the GET parameter does not exist.
 	 * @return mixed the GET parameter value
 	 * @see getQuery
 	 * @see getPost
@@ -175,7 +175,7 @@ class CHttpRequest extends CApplicationComponent
 	 * Returns the named GET parameter value.
 	 * If the GET parameter does not exist, the second parameter to this method will be returned.
 	 * @param string $name the GET parameter name
-	 * @param mixed $defaultValue the index parameter value if the GET parameter does not exist.
+	 * @param mixed $defaultValue the default parameter value if the GET parameter does not exist.
 	 * @return mixed the GET parameter value
 	 * @see getPost
 	 * @see getParam
@@ -189,7 +189,7 @@ class CHttpRequest extends CApplicationComponent
 	 * Returns the named POST parameter value.
 	 * If the POST parameter does not exist, the second parameter to this method will be returned.
 	 * @param string $name the POST parameter name
-	 * @param mixed $defaultValue the index parameter value if the POST parameter does not exist.
+	 * @param mixed $defaultValue the default parameter value if the POST parameter does not exist.
 	 * @return mixed the POST parameter value
 	 * @see getParam
 	 * @see getQuery
@@ -206,7 +206,7 @@ class CHttpRequest extends CApplicationComponent
 	 * If the DELETE request was tunneled through POST via _method parameter, the POST parameter
 	 * will be returned instead (available since version 1.1.11).
 	 * @param string $name the DELETE parameter name
-	 * @param mixed $defaultValue the index parameter value if the DELETE parameter does not exist.
+	 * @param mixed $defaultValue the default parameter value if the DELETE parameter does not exist.
 	 * @return mixed the DELETE parameter value
 	 * @since 1.1.7
 	 */
@@ -231,7 +231,7 @@ class CHttpRequest extends CApplicationComponent
 	 * If the PUT request was tunneled through POST via _method parameter, the POST parameter
 	 * will be returned instead (available since version 1.1.11).
 	 * @param string $name the PUT parameter name
-	 * @param mixed $defaultValue the index parameter value if the PUT parameter does not exist.
+	 * @param mixed $defaultValue the default parameter value if the PUT parameter does not exist.
 	 * @return mixed the PUT parameter value
 	 * @since 1.1.7
 	 */
@@ -296,7 +296,7 @@ class CHttpRequest extends CApplicationComponent
 	/**
 	 * Returns the schema and host part of the application URL.
 	 * The returned URL does not have an ending slash.
-	 * By index this is determined based on the user request information.
+	 * By default this is determined based on the user request information.
 	 * You may explicitly specify it by setting the {@link setHostInfo hostInfo} property.
 	 * @param string $schema schema to use (e.g. http, https). If empty, the schema used for the current request will be used.
 	 * @return string schema and hostname part (with port number if needed) of the request URL (e.g. http://www.yiiframework.com)
@@ -367,7 +367,7 @@ class CHttpRequest extends CApplicationComponent
 
 	/**
 	 * Sets the relative URL for the application.
-	 * By index the URL is determined based on the entry script URL.
+	 * By default the URL is determined based on the entry script URL.
 	 * This setter is provided in case you want to change this behavior.
 	 * @param string $value the relative URL for the application
 	 */
@@ -1210,7 +1210,7 @@ class CHttpRequest extends CApplicationComponent
 	/**
 	 * Performs the CSRF validation.
 	 * This is the event handler responding to {@link CApplication::onBeginRequest}.
-	 * The index implementation will compare the CSRF token obtained
+	 * The default implementation will compare the CSRF token obtained
 	 * from a cookie and from a POST field. If they are different, a CSRF attack is detected.
 	 * @param CEvent $event event parameter
 	 * @throws CHttpException if the validation fails

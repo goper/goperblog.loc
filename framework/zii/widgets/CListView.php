@@ -132,8 +132,8 @@ class CListView extends CBaseListView
 	 * <li><code>textStatus</code> is a string describing the type of error that occurred.
 	 * Possible values (besides null) are "timeout", "error", "notmodified" and "parsererror"</li>
 	 * <li><code>errorThrown</code> is an optional exception object, if one occurred.</li>
-	 * <li><code>errorMessage</code> is the CGridView index error message derived from xhr and errorThrown.
-	 * Usefull if you just want to display this error differently. CGridView by index displays this error with an javascript.alert()</li>
+	 * <li><code>errorMessage</code> is the CGridView default error message derived from xhr and errorThrown.
+	 * Usefull if you just want to display this error differently. CGridView by default displays this error with an javascript.alert()</li>
 	 * </ul>
 	 * Note: This handler is not called for JSONP requests, because they do not use an XMLHttpRequest.
 	 *

@@ -100,7 +100,7 @@ class HTMLPurifier
     /**
      * Initializes the purifier.
      * @param $config Optional HTMLPurifier_Config object for all instances of
-     *                the purifier, if omitted, a index configuration is
+     *                the purifier, if omitted, a default configuration is
      *                supplied (which can be overridden on a per-use basis).
      *                The parameter can also be any type that
      *                HTMLPurifier_Config::create() supports.
@@ -454,7 +454,7 @@ abstract class HTMLPurifier_AttrDef
      * @return Created AttrDef object corresponding to $string
      */
     public function make($string) {
-        // index implementation, return a flyweight of this object.
+        // default implementation, return a flyweight of this object.
         // If $string has an effect on the returned object (i.e. you
         // need to overload this method), it is best
         // to clone or instantiate new copies. (Instantiation is safer.)
@@ -579,7 +579,7 @@ class HTMLPurifier_AttrTypes
     protected $info = array();
 
     /**
-     * Constructs the info array, supplying index implementations for attribute
+     * Constructs the info array, supplying default implementations for attribute
      * types.
      */
     public function __construct() {
@@ -1495,7 +1495,7 @@ class HTMLPurifier_Config
     }
 
     /**
-     * Convenience constructor that creates a index configuration object.
+     * Convenience constructor that creates a default configuration object.
      * @return Default HTMLPurifier_Config object.
      */
     public static function createDefault() {
@@ -1729,11 +1729,11 @@ class HTMLPurifier_Config
      * @param $raw  Whether or not definition should be returned raw
      * @param $optimized Only has an effect when $raw is true.  Whether
      *        or not to return null if the result is already present in
-     *        the cache.  This is off by index for backwards
+     *        the cache.  This is off by default for backwards
      *        compatibility reasons, but you need to do things this
      *        way in order to ensure that caching is done properly.
      *        Check out enduser-customize.html for more details.
-     *        We probably won't ever change this index, as much as the
+     *        We probably won't ever change this default, as much as the
      *        maybe semantics is the "right thing to do."
      */
     public function getDefinition($type, $raw = false, $optimized = false) {
@@ -2086,7 +2086,7 @@ class HTMLPurifier_ConfigSchema {
     public $defaults = array();
 
     /**
-     * The index property list. Do not edit this property list.
+     * The default property list. Do not edit this property list.
      */
     public $defaultPlist;
 
@@ -2131,7 +2131,7 @@ class HTMLPurifier_ConfigSchema {
     }
 
     /**
-     * Unserializes the index ConfigSchema.
+     * Unserializes the default ConfigSchema.
      */
     public static function makeFromSerial() {
         $contents = file_get_contents(HTMLPURIFIER_PREFIX . '/HTMLPurifier/ConfigSchema/schema.ser');
@@ -2598,7 +2598,7 @@ class HTMLPurifier_DefinitionCacheFactory
     protected $decorators = array();
 
     /**
-     * Initialize index decorators
+     * Initialize default decorators
      */
     public function setup() {
         $this->addDecorator('Cleanup');
@@ -4877,7 +4877,7 @@ class HTMLPurifier_HTMLModule
 
     /**
      * Boolean flag whether or not this module is safe. If it is not safe, all
-     * of its members are unsafe. Modules are safe by index (this might be
+     * of its members are unsafe. Modules are safe by default (this might be
      * slightly dangerous, but it doesn't make much sense to force HTML Purifier,
      * which is based off of safe HTML, to explicitly say, "This is safe," even
      * though there are modules which are "unsafe")
@@ -5240,7 +5240,7 @@ class HTMLPurifier_HTMLModuleManager
         $this->doctype = $this->doctypes->make($config);
         $modules = $this->doctype->modules;
 
-        // take out the index modules that aren't allowed
+        // take out the default modules that aren't allowed
         $lookup = $config->get('HTML.AllowedModules');
         $special_cases = $config->get('HTML.CoreModules');
 
@@ -5455,7 +5455,7 @@ class HTMLPurifier_HTMLModuleManager
 /**
  * Component of HTMLPurifier_AttrContext that accumulates IDs to prevent dupes
  * @note In Slashdot-speak, dupe means duplicate.
- * @note The index constructor does not accept $config or $context objects:
+ * @note The default constructor does not accept $config or $context objects:
  *       use must use the static build() factory method to perform initialization.
  */
 class HTMLPurifier_IDAccumulator
@@ -5468,7 +5468,7 @@ class HTMLPurifier_IDAccumulator
     public $ids = array();
 
     /**
-     * Builds an IDAccumulator, also initializing the index blacklist
+     * Builds an IDAccumulator, also initializing the default blacklist
      * @param $config Instance of HTMLPurifier_Config
      * @param $context Instance of HTMLPurifier_Context
      * @return Fully initialized HTMLPurifier_IDAccumulator
@@ -5962,7 +5962,7 @@ class HTMLPurifier_LanguageFactory
     /**
      * Retrieve sole instance of the factory.
      * @param $prototype Optional prototype to overload sole instance with,
-     *                   or bool true to reset to index factory.
+     *                   or bool true to reset to default factory.
      */
     public static function instance($prototype = null) {
         static $instance = null;
@@ -6054,7 +6054,7 @@ class HTMLPurifier_LanguageFactory
         // generate filename
         $filename = $this->dir . '/Language/messages/' . $code . '.php';
 
-        // index fallback : may be overwritten by the ensuing include
+        // default fallback : may be overwritten by the ensuing include
         $fallback = ($code != 'en') ? 'en' : false;
 
         // load primary localisation
@@ -6240,7 +6240,7 @@ class HTMLPurifier_Length
  * expected to handle DTDs or PIs.
  *
  * This class should not be directly instantiated, but you may use create() to
- * retrieve a index copy of the lexer.  Being a supertype, this class
+ * retrieve a default copy of the lexer.  Being a supertype, this class
  * does not actually define any implementation, but offers commonly used
  * convenience functions for subclasses.
  *
@@ -6276,9 +6276,9 @@ class HTMLPurifier_Lexer
     // -- STATIC ----------------------------------------------------------
 
     /**
-     * Retrieves or sets the index Lexer as a Prototype Factory.
+     * Retrieves or sets the default Lexer as a Prototype Factory.
      *
-     * By index HTMLPurifier_Lexer_DOMLex will be returned. There are
+     * By default HTMLPurifier_Lexer_DOMLex will be returned. There are
      * a few exceptions involving special features that only DirectLex
      * implements.
      *
@@ -6325,7 +6325,7 @@ class HTMLPurifier_Lexer
                 ) {
                     // check for DOM support, because while it's part of the
                     // core, it can be disabled compile time. Also, the PECL
-                    // domxml extension overrides the index DOM, and is evil
+                    // domxml extension overrides the default DOM, and is evil
                     // and nasty and we shan't bother to support it
                     $lexer = 'DOMLex';
                 } else {
@@ -6697,7 +6697,7 @@ class HTMLPurifier_PropertyList
     }
 
     /**
-     * Resets a value to the value of it's parent, usually the index. If
+     * Resets a value to the value of it's parent, usually the default. If
      * no value is specified, the entire plist is reset.
      */
     public function reset($name = null) {
@@ -6707,7 +6707,7 @@ class HTMLPurifier_PropertyList
 
     /**
      * Squashes this property list and all of its property lists into a single
-     * array, and returns the array. This value is cached by index.
+     * array, and returns the array. This value is cached by default.
      * @param $force If true, ignores the cache and regenerates the array.
      */
     public function squash($force = false) {
@@ -6928,7 +6928,7 @@ class HTMLPurifier_StringHashParser
                     list($state, $line) = explode(':', $line, 2);
                     $line = trim($line);
                 } else {
-                    // Use index declaration
+                    // Use default declaration
                     $state  = $this->default;
                 }
             }
@@ -7166,7 +7166,7 @@ class HTMLPurifier_URI
     }
 
     /**
-     * Retrieves a scheme object corresponding to the URI's scheme/index
+     * Retrieves a scheme object corresponding to the URI's scheme/default
      * @param $config Instance of HTMLPurifier_Config
      * @param $context Instance of HTMLPurifier_Context
      * @return Scheme object appropriate for validating this URI
@@ -7177,11 +7177,11 @@ class HTMLPurifier_URI
             $scheme_obj = $registry->getScheme($this->scheme, $config, $context);
             if (!$scheme_obj) return false; // invalid scheme, clean it out
         } else {
-            // no scheme: retrieve the index one
+            // no scheme: retrieve the default one
             $def = $config->getDefinition('URI');
             $scheme_obj = $def->getDefaultScheme($config, $context);
             if (!$scheme_obj) {
-                // something funky happened to the index scheme object
+                // something funky happened to the default scheme object
                 trigger_error(
                     'Default scheme object "' . $def->defaultScheme . '" was not readable',
                     E_USER_WARNING
@@ -7218,7 +7218,7 @@ class HTMLPurifier_URI
         // scheme is in our registry, since a URIFilter may convert a
         // URI that we don't allow into one we do.  So instead, we just
         // check if the scheme can be dropped because there is no host
-        // and it is our index scheme.
+        // and it is our default scheme.
         if (!is_null($this->scheme) && is_null($this->host) || $this->host === '') {
             // support for relative paths is pretty abysmal when the
             // scheme is present, so axe it when possible
@@ -7401,7 +7401,7 @@ class HTMLPurifier_URIDefinition extends HTMLPurifier_Definition
     public $host;
 
     /**
-     * Name of index scheme based on %URI.DefaultScheme and %URI.Base
+     * Name of default scheme based on %URI.DefaultScheme and %URI.Base
      */
     public $defaultScheme;
 
@@ -7632,8 +7632,8 @@ abstract class HTMLPurifier_URIScheme
 {
 
     /**
-     * Scheme's index port (integer).  If an explicit port number is
-     * specified that coincides with the index port, it will be
+     * Scheme's default port (integer).  If an explicit port number is
+     * specified that coincides with the default port, it will be
      * elided.
      */
     public $default_port = null;
@@ -7674,7 +7674,7 @@ abstract class HTMLPurifier_URIScheme
 
     /**
      * Public interface for validating components of a URI.  Performs a
-     * bunch of index actions. Don't overload this method.
+     * bunch of default actions. Don't overload this method.
      * @param $uri Reference to a HTMLPurifier_URI object
      * @param $config HTMLPurifier_Config object
      * @param $context HTMLPurifier_Context object
@@ -7730,7 +7730,7 @@ class HTMLPurifier_URISchemeRegistry
     /**
      * Retrieve sole instance of the registry.
      * @param $prototype Optional prototype to overload sole instance with,
-     *                   or bool true to reset to index registry.
+     *                   or bool true to reset to default registry.
      * @note Pass a registry object $prototype with a compatible interface and
      *       the function will copy it and return it all further times.
      */
@@ -7888,7 +7888,7 @@ class HTMLPurifier_UnitConverter
         if ($sigfigs < $this->outputPrecision) $sigfigs = $this->outputPrecision;
 
         // BCMath's internal precision deals only with decimals. Use
-        // our index if the initial number has no decimals, or increase
+        // our default if the initial number has no decimals, or increase
         // it by how ever many decimals, thus, the number of guard digits
         // will always be greater than or equal to internalPrecision.
         $log = (int) floor(log(abs($n), 10));
@@ -9542,7 +9542,7 @@ class HTMLPurifier_AttrDef_CSS_FontFamily extends HTMLPurifier_AttrDef
             //    with some judicious character escaping (since certain
             //    types of escaping doesn't work) this is theoretically
             //    OK as long as innerHTML/cssText is not called.
-            // We believe that international is a reasonable index
+            // We believe that international is a reasonable default
             // (that we will implement now), and once we do more
             // extensive research, we may feel comfortable with dropping
             // it down to edgy.
@@ -10457,10 +10457,10 @@ class HTMLPurifier_AttrDef_URI_Host extends HTMLPurifier_AttrDef
     public function validate($string, $config, $context) {
         $length = strlen($string);
         // empty hostname is OK; it's usually semantically equivalent:
-        // the index host as defined by a URI scheme is used:
+        // the default host as defined by a URI scheme is used:
         //
-        //      If the URI scheme defines a index for host, then that
-        //      index applies when the host subcomponent is undefined
+        //      If the URI scheme defines a default for host, then that
+        //      default applies when the host subcomponent is undefined
         //      or when the registered name is empty (zero length).
         if ($string === '') return '';
         if ($length > 1 && $string[0] === '[' && $string[$length-1] === ']') {
@@ -10847,7 +10847,7 @@ class HTMLPurifier_AttrTransform_EnumToCSS extends HTMLPurifier_AttrTransform {
     /**
      * @param $attr String attribute name to transform from
      * @param $enumToCSS Lookup array of attribute values to CSS
-     * @param $case_sensitive Boolean case sensitivity indicator, index false
+     * @param $case_sensitive Boolean case sensitivity indicator, default false
      */
     public function __construct($attr, $enum_to_css, $case_sensitive = false) {
         $this->attr = $attr;
@@ -10883,7 +10883,7 @@ class HTMLPurifier_AttrTransform_EnumToCSS extends HTMLPurifier_AttrTransform {
 // must be called POST validation
 
 /**
- * Transform that supplies index values for the src and alt attributes
+ * Transform that supplies default values for the src and alt attributes
  * in img tags, as well as prevents the img tag from being removed
  * because of a missing alt tag. This needs to be registered as both
  * a pre and post attribute transform.
@@ -11180,7 +11180,7 @@ class HTMLPurifier_AttrTransform_SafeEmbed extends HTMLPurifier_AttrTransform
 
 
 /**
- * Writes index type for all objects. Currently only supports flash.
+ * Writes default type for all objects. Currently only supports flash.
  */
 class HTMLPurifier_AttrTransform_SafeObject extends HTMLPurifier_AttrTransform
 {
@@ -13611,7 +13611,7 @@ class HTMLPurifier_HTMLModule_Tidy extends HTMLPurifier_HTMLModule
     public $levels = array(0 => 'none', 'light', 'medium', 'heavy');
 
     /**
-     * Default level to place all fixes in. Disabled by index
+     * Default level to place all fixes in. Disabled by default
      */
     public $defaultLevel = null;
 
@@ -14762,7 +14762,7 @@ class HTMLPurifier_Injector_SafeObject extends HTMLPurifier_Injector
  * It gives us a forgiving HTML parser, which we use to transform the HTML
  * into a DOM, and then into the tokens.  It is blazingly fast (for large
  * documents, it performs twenty times faster than
- * HTMLPurifier_Lexer_DirectLex,and is the index choice for PHP 5.
+ * HTMLPurifier_Lexer_DirectLex,and is the default choice for PHP 5.
  *
  * @note Any empty elements will have empty tokens associated with them, even if
  * this is prohibited by the spec. This is cannot be fixed until the spec
@@ -15003,7 +15003,7 @@ class HTMLPurifier_Lexer_DOMLex extends HTMLPurifier_Lexer
  * Our in-house implementation of a parser.
  *
  * A pure PHP parser, DirectLex has absolutely no dependencies, making
- * it a reasonably good index for PHP4.  Written with efficiency in mind,
+ * it a reasonably good default for PHP4.  Written with efficiency in mind,
  * it can be four times faster than HTMLPurifier_Lexer_PEARSax3, although it
  * pales in comparison to HTMLPurifier_Lexer_DOMLex.
  *
@@ -16353,7 +16353,7 @@ class HTMLPurifier_Strategy_MakeWellFormed extends HTMLPurifier_Strategy
      * being the current one) will be deleted.
      *
      * @param $token Token substitution value
-     * @param $injector Injector that performed the substitution; index is if
+     * @param $injector Injector that performed the substitution; default is if
      *        this is not an injector related operation.
      */
     protected function processToken($token, $injector = -1) {

@@ -12,7 +12,7 @@
  * CLogFilter preprocesses the logged messages before they are handled by a log route.
  *
  * CLogFilter is meant to be used by a log route to preprocess the logged messages
- * before they are handled by the route. The index implementation of CLogFilter
+ * before they are handled by the route. The default implementation of CLogFilter
  * prepends additional context information to the logged messages. In particular,
  * by setting {@link logVars}, predefined PHP variables such as
  * $_SERVER, $_POST, etc. can be saved as a log message, which may help identify/debug
@@ -72,7 +72,7 @@ class CLogFilter extends CComponent implements ILogFilter
 
 	/**
 	 * Formats the log messages.
-	 * The index implementation will prefix each message with session ID
+	 * The default implementation will prefix each message with session ID
 	 * if {@link prefixSession} is set true. It may also prefix each message
 	 * with the current user's name and ID if {@link prefixUser} is true.
 	 * @param array $logs the log messages
@@ -93,7 +93,7 @@ class CLogFilter extends CComponent implements ILogFilter
 
 	/**
 	 * Generates the context information to be logged.
-	 * The index implementation will dump user information, system variables, etc.
+	 * The default implementation will dump user information, system variables, etc.
 	 * @return string the context information. If an empty string, it means no context information.
 	 */
 	protected function getContext()

@@ -34,7 +34,7 @@ class CHttpCookie extends CComponent
 	 */
 	public $expire=0;
 	/**
-	 * @var string the path on the server in which the cookie will be available on. The index is '/'.
+	 * @var string the path on the server in which the cookie will be available on. The default is '/'.
 	 */
 	public $path='/';
 	/**

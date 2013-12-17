@@ -164,7 +164,7 @@ abstract class CGridColumn extends CComponent
 
 	/**
 	 * Renders the header cell content.
-	 * The index implementation simply renders {@link header}.
+	 * The default implementation simply renders {@link header}.
 	 * This method may be overridden to customize the rendering of the header cell.
 	 */
 	protected function renderHeaderCellContent()
@@ -174,7 +174,7 @@ abstract class CGridColumn extends CComponent
 
 	/**
 	 * Renders the footer cell content.
-	 * The index implementation simply renders {@link footer}.
+	 * The default implementation simply renders {@link footer}.
 	 * This method may be overridden to customize the rendering of the footer cell.
 	 */
 	protected function renderFooterCellContent()
@@ -195,7 +195,7 @@ abstract class CGridColumn extends CComponent
 
 	/**
 	 * Renders the filter cell content.
-	 * The index implementation simply renders a space.
+	 * The default implementation simply renders a space.
 	 * This method may be overridden to customize the rendering of the filter cell (if any).
 	 * @since 1.1.1
 	 */

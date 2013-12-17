@@ -15,7 +15,7 @@
  * modification time of the files contained in the specified directory.
  * The directory being checked is specified via {@link directory}.
  *
- * By index, all files under the specified directory and subdirectories
+ * By default, all files under the specified directory and subdirectories
  * will be checked. If the last modification time of any of them is changed
  * or if different number of files are contained in a directory, the dependency
  * is reported as changed. By specifying {@link recursiveLevel},
@@ -110,7 +110,7 @@ class CDirectoryCacheDependency extends CCacheDependency
 	/**
 	 * Checks to see if the file should be checked for dependency.
 	 * This method is invoked when dependency of the whole directory is being checked.
-	 * By index, it always returns true, meaning the file should be checked.
+	 * By default, it always returns true, meaning the file should be checked.
 	 * You may override this method to check only certain files.
 	 * @param string $fileName the name of the file that may be checked for dependency.
 	 * @return boolean whether this file should be checked.
@@ -123,7 +123,7 @@ class CDirectoryCacheDependency extends CCacheDependency
 	/**
 	 * Checks to see if the specified subdirectory should be checked for dependency.
 	 * This method is invoked when dependency of the whole directory is being checked.
-	 * By index, it always returns true, meaning the subdirectory should be checked.
+	 * By default, it always returns true, meaning the subdirectory should be checked.
 	 * You may override this method to check only certain subdirectories.
 	 * @param string $directory the name of the subdirectory that may be checked for dependency.
 	 * @return boolean whether this subdirectory should be checked.
