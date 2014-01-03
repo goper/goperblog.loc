@@ -107,21 +107,17 @@ class User extends CActiveRecord {
     }
 
     public function beforeSave() {
+
         $this->date = time();
+
         if ($this->isNewRecord) {
-            //$this->password = md5($this->password);
             $this->password = crypt($this->password);
         }
         return parent::beforeSave();
     }
 
     public function validatePassword($password) {
-        return crypt($password, $this->password) === $this->password;                
-        //return $this->hashPassword($password) === $this->password;
-    }
-
-    public function hashPassword($password) {
-        return md5($password);
+        return crypt($password, $this->password) === $this->password;
     }
 
 }

@@ -9846,3 +9846,425 @@ Stack trace:
 REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
 HTTP_REFERER=http://goperblog.loc/
 ---
+2014/01/03 08:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:04:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:04:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:04:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:04:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:05:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:05:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:06:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:06:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:06:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:06:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/contact
+---
+2014/01/03 08:09:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/01/03 08:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:10:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:10:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:10:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:10:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/03 08:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 08:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 09:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/03 09:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
