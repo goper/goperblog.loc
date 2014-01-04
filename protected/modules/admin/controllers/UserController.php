@@ -1,6 +1,7 @@
 <?php
 
 class UserController extends Controller {
+
     /**
      * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
      * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -41,20 +42,6 @@ class UserController extends Controller {
         );
     }
 
-    public function actionPassword($id) {
-
-        $model = $this->loadModel($id);
-
-        if (isset($_POST['password'])) {
-            $model->password = crypt($_POST['password']);
-            if ($model->save()) {
-                $this->redirect(array('view', 'id' => $model->id));
-            }
-        }
-        $this->render('password', array(
-            'model' => $model,
-        ));
-    }
 
     /**
      * Displays a particular model.
@@ -71,15 +58,18 @@ class UserController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
-        $model = new User;
+        $model = new User('create');
 
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['User'])) {
+            //html::pr($_POST['User'],1);
             $model->attributes = $_POST['User'];
-            if ($model->save())
+            //html::pr($model->attributes,1);
+            if ($model->save()){
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('create', array(
@@ -94,17 +84,38 @@ class UserController extends Controller {
      */
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
-
+        $model->scenario = 'update';
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['User'])) {
+            //html::pr($_POST['User'],1);
             $model->attributes = $_POST['User'];
             if ($model->save())
                 $this->redirect(array('view', 'id' => $model->id));
         }
 
         $this->render('update', array(
+            'model' => $model,
+        ));
+    }
+
+
+
+    public function actionPassword($id) {
+        $model = $this->loadModel($id);
+        $model->scenario = 'password';
+
+        if (isset($_POST['User'])) {
+            $model->attributes = $_POST['User'];
+            $model->password = $_POST['User']['password'];
+
+            if ($model->save()){
+                //die;
+                $this->redirect(array('view', 'id' => $model->id));
+            }
+        }
+        $this->render('password', array(
             'model' => $model,
         ));
     }

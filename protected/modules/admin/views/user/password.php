@@ -12,7 +12,11 @@ $this->menu=array(
 ?>
 <p>Укажите новый пароль</p>
 <?php 
-echo CHtml::form();
-echo CHtml::textField('password');
-echo CHtml::submitButton('Изменить');
-echo CHtml::endForm();
+//echo CHtml::form();
+//echo CHtml::textField('password');
+//echo CHtml::submitButton('Изменить');
+//echo CHtml::endForm();
+?>
+<?php $this->renderPartial('_form_password', array('model'=>$model)); ?>
+
+

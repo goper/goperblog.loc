@@ -7,7 +7,6 @@ $this->breadcrumbs=array(
 	$model->id=>array('view','id'=>$model->id),
 	'Изменить',
 );
-
 $this->menu=array(
     array('label'=>'Изменить пароль', 'url'=>array('password','id'=>$model->id)),
 	array('label'=>'Списко юзеров', 'url'=>array('index')),
@@ -16,7 +15,5 @@ $this->menu=array(
 	array('label'=>'Менеджер юзеров', 'url'=>array('admin')),
 );
 ?>
-
 <h1>Имзенить юзера '<i><?php echo $model->username; ?></i>'</h1>
-
-<?php $this->renderPartial('_formupdate', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form_update', array('model'=>$model)); ?>

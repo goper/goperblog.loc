@@ -14,6 +14,8 @@
  */
 class User extends CActiveRecord {
 
+    public $password2;
+
     /**
      * @return string the associated database table name
      */
@@ -30,7 +32,10 @@ class User extends CActiveRecord {
         return array(
             array('email, username', 'unique'),
             array('email', 'email'),
-            array('username, password, email', 'required'),
+            array('username, password, email', 'required', 'on'=>'create,update'),
+            array('password', 'required', 'on'=>'password'),
+            array('password2', 'required', 'on'=>'create, password'),
+            array('password', 'compare', 'compareAttribute'=>'password2', 'on'=>'create, password'),
             array('date, role', 'numerical', 'integerOnly' => true),
             array('username, email', 'length', 'max' => 128),
             array('password', 'length', 'max' => 64),
@@ -59,6 +64,7 @@ class User extends CActiveRecord {
             'id' => 'ID',
             'username' => 'Login',
             'password' => 'Пароль',
+            'password2' => 'Повторить пароль',
             'date' => 'Создан',
             'email' => 'Email',
             'ban' => 'Забанен',
@@ -110,7 +116,7 @@ class User extends CActiveRecord {
 
         $this->date = time();
 
-        if ($this->isNewRecord) {
+        if ($this->isNewRecord || $this->scenario == 'password') {
             $this->password = crypt($this->password);
         }
         return parent::beforeSave();

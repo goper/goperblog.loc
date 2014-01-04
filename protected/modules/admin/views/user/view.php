@@ -8,15 +8,16 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Список юзеров', 'url'=>array('index')),
 	array('label'=>'Создать юзера', 'url'=>array('create')),
 	array('label'=>'Изменить юзера', 'url'=>array('update', 'id'=>$model->id)),
+    array('label'=>'Изменить пароль', 'url'=>array('password','id'=>$model->id)),
 	array('label'=>'Удалить юзера', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Уверены?')),
-	array('label'=>'Менеджер юзеров', 'url'=>array('admin')),
+    array('label'=>'Список юзеров', 'url'=>array('index')),
+    array('label'=>'Менеджер юзеров', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View User #<?php echo $model->id; ?></h1>
+<h1>View User #<?php echo $model->username; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
