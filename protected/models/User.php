@@ -31,6 +31,7 @@ class User extends CActiveRecord {
         // will receive user inputs.
         return array(
             array('email, username', 'unique'),
+            array('username', 'match', 'pattern'=>'/^[A-z][\w]+$/'),
             array('email', 'email'),
             array('username, password, email', 'required', 'on'=>'create,update'),
             array('password', 'required', 'on'=>'password'),
@@ -64,7 +65,7 @@ class User extends CActiveRecord {
             'id' => 'ID',
             'username' => 'Login',
             'password' => 'Пароль',
-            'password2' => 'Повторить пароль',
+            'password2' => 'Повторите пароль',
             'date' => 'Создан',
             'email' => 'Email',
             'ban' => 'Забанен',

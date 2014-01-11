@@ -88,6 +88,28 @@ class SiteController extends Controller {
         $this->render('login', array('model' => $model));
     }
 
+    public function actionRegistration(){
+        $model = new RegistrationForm;
+
+        if(isset($_POST['RegistrationForm'])){
+
+            // Безопасное присваивание значений атрибутам
+            $model->attributes = $_POST['RegistrationForm'];
+            $model->role = 3;
+            $model->date = time();
+            if($model->validate()){
+                if ($model->save()){
+                    Yii::app()->user->setFlash('registration', 'Спасибо за регистрацию!');
+                    $this->refresh();
+                }
+            }
+
+        }
+
+        $this->render('registration', array('model' => $model));
+
+    }
+
     /**
      * Logs out the current user and redirect to homepage.
      */

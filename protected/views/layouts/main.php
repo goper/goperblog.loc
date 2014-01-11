@@ -19,7 +19,7 @@
     <!-- header -->
 
     <?php $this->widget('bootstrap.widgets.TbNavbar', array(
-        'type'=>'inverse', // null or 'inverse'
+        'type'=>'null', // null or 'inverse'
         'brand'=> false,
         'brandUrl'=>'/',
         'fixed' => false,
@@ -28,20 +28,24 @@
             array(
                 'class'=>'bootstrap.widgets.TbMenu',
                 'items'=>array(
-                    array('label'=>'Home', 'url'=>'/'),
-                    array('label'=>'Контакты', 'url'=>'/contact'),
-                    array('label'=>'Dropdown', 'url'=>'#', 'items'=>array(
-                        array('label'=>'Action', 'url'=>'#'),
-                        array('label'=>'Another action', 'url'=>'#'),
-                        array('label'=>'Something else here', 'url'=>'#'),
+                    array('label'=>'', 'url'=> '/', 'icon'=>'home'),
+                    array('label'=>'', 'url'=>'/contact', 'icon'=>'envelope'),
+                ),
+            ),
+            array(
+                'class'=>'bootstrap.widgets.TbMenu',
+                'htmlOptions'=>array('class'=>'pull-right'),
+                'items'=>array(
+                    array('label'=>'', 'icon'=>'user', 'url'=>'/site/', 'visible' => Yii::app()->user->isGuest, 'items'=>array(
+                        array('label' => 'Вход', 'url' => '/site/login', 'visible' => Yii::app()->user->isGuest),
+                        array('label' => 'Регистрация', 'url' => '/site/registration', 'visible' => Yii::app()->user->isGuest),
                     )),
-                    array('label'=>'Вход', 'url'=>'/site/login'),
-                    array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+                    array('label' => '', 'icon'=>'wrench', 'url' => '/admin', 'visible' => Yii::app()->user->name === 'admin'),
+                    array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'icon' => 'lock', 'visible' => !Yii::app()->user->isGuest),
                 ),
             ),
         ),
     )); ?>
-    <p></p>
     <?php if (isset($this->breadcrumbs)): ?>
         <?php
         $this->widget('zii.widgets.CBreadcrumbs', array(

@@ -35,10 +35,10 @@
         <?php
         $this->widget('ext.zii.widgets.Menu', array(
             'items' => array(
-                array('label' => 'Главная', 'url' => array('/admin')),
-                array('label' => 'Страницы', 'url' => array('/admin/page')),
-                array('label' => 'Пользователи', 'url' => array('/admin/user')),
-                array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+                array('label' => 'Главная', 'url' => '/admin/default'),
+                array('label' => 'Страницы', 'url' => '/admin/page'),
+                array('label' => 'Пользователи', 'url' => '/admin/user'),
+                array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => '/site/logout', 'visible' => !Yii::app()->user->isGuest)
             ),
         ));
         ?>
