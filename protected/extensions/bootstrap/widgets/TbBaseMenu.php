@@ -7,9 +7,11 @@
  * @package bootstrap.widgets
  */
 
-Yii::import('zii.widgets.CMenu');
+//Yii::import('zii.widgets.CMenu');
+Yii::import('ext.zii.widgets.Menu');
 
-abstract class TbBaseMenu extends CMenu
+//abstract class TbBaseMenu extends CMenu
+abstract class TbBaseMenu extends Menu
 {
 	/**
 	 * Returns the divider css class.

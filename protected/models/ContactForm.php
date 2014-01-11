@@ -36,7 +36,7 @@ class ContactForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-                        'user' => 'Ваше имя',
+            'user' => 'Ваше имя',
 			'verifyCode'=>'Капча',
 		);
 	}

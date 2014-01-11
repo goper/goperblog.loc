@@ -51,7 +51,10 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
+                //'pattern1'=>'route1',
                 'page/<alias:[\w]+>'=>'page/index',
+                '<controller:category>/<alias:([\w_\/-]+)>'=>'category/index',
+                '<controller:category>'=>'category/all',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
