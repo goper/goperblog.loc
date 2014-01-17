@@ -2,178 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26ae0ee-4945-4d03-9a3c-b7936db71ecf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/user/_formupdate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/ABAP.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/ABAP.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/Array.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/Array.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/BB.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/BB.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/auth/CAccessControlFilter.php" afterPath="$PROJECT_DIR$/framework/web/auth/CAccessControlFilter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CActiveForm.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CActiveForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/ar/CActiveRecord.php" afterPath="$PROJECT_DIR$/framework/db/ar/CActiveRecord.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CApplication.php" afterPath="$PROJECT_DIR$/framework/base/CApplication.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CAssetManager.php" afterPath="$PROJECT_DIR$/framework/web/CAssetManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CAutoComplete.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CAutoComplete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CBaseController.php" afterPath="$PROJECT_DIR$/framework/web/CBaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/pagers/CBasePager.php" afterPath="$PROJECT_DIR$/framework/web/widgets/pagers/CBasePager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/auth/CBaseUserIdentity.php" afterPath="$PROJECT_DIR$/framework/web/auth/CBaseUserIdentity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CBehavior.php" afterPath="$PROJECT_DIR$/framework/base/CBehavior.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/caching/CCache.php" afterPath="$PROJECT_DIR$/framework/caching/CCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/captcha/CCaptcha.php" afterPath="$PROJECT_DIR$/framework/web/widgets/captcha/CCaptcha.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CCheckBoxColumn.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CCheckBoxColumn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CClientScript.php" afterPath="$PROJECT_DIR$/framework/web/CClientScript.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/gii/CCodeModel.php" afterPath="$PROJECT_DIR$/framework/gii/CCodeModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/console/CConsoleCommand.php" afterPath="$PROJECT_DIR$/framework/console/CConsoleCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/console/CConsoleCommandBehavior.php" afterPath="$PROJECT_DIR$/framework/console/CConsoleCommandBehavior.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/console/CConsoleCommandEvent.php" afterPath="$PROJECT_DIR$/framework/console/CConsoleCommandEvent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CContentDecorator.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CContentDecorator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CController.php" afterPath="$PROJECT_DIR$/framework/web/CController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/i18n/CDateFormatter.php" afterPath="$PROJECT_DIR$/framework/i18n/CDateFormatter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/utils/CDateTimeParser.php" afterPath="$PROJECT_DIR$/framework/utils/CDateTimeParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/auth/CDbAuthManager.php" afterPath="$PROJECT_DIR$/framework/web/auth/CDbAuthManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/caching/CDbCache.php" afterPath="$PROJECT_DIR$/framework/caching/CDbCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/CDbColumnSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/CDbColumnSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/CDbCommand.php" afterPath="$PROJECT_DIR$/framework/db/CDbCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/CDbCommandBuilder.php" afterPath="$PROJECT_DIR$/framework/db/schema/CDbCommandBuilder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/CDbConnection.php" afterPath="$PROJECT_DIR$/framework/db/CDbConnection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/CDbCriteria.php" afterPath="$PROJECT_DIR$/framework/db/schema/CDbCriteria.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/CDbDataReader.php" afterPath="$PROJECT_DIR$/framework/db/CDbDataReader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/test/CDbFixtureManager.php" afterPath="$PROJECT_DIR$/framework/test/CDbFixtureManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CDbHttpSession.php" afterPath="$PROJECT_DIR$/framework/web/CDbHttpSession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/CDbMigration.php" afterPath="$PROJECT_DIR$/framework/db/CDbMigration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/CDbSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/CDbSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/validators/CDefaultValueValidator.php" afterPath="$PROJECT_DIR$/framework/validators/CDefaultValueValidator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/CDetailView.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/CDetailView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/caching/dependencies/CDirectoryCacheDependency.php" afterPath="$PROJECT_DIR$/framework/caching/dependencies/CDirectoryCacheDependency.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/caching/CDummyCache.php" afterPath="$PROJECT_DIR$/framework/caching/CDummyCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/utils/CFileHelper.php" afterPath="$PROJECT_DIR$/framework/utils/CFileHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/filters/CFilter.php" afterPath="$PROJECT_DIR$/framework/web/filters/CFilter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CFilterWidget.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CFilterWidget.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/form/CForm.php" afterPath="$PROJECT_DIR$/framework/web/form/CForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/form/CFormElement.php" afterPath="$PROJECT_DIR$/framework/web/form/CFormElement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/form/CFormInputElement.php" afterPath="$PROJECT_DIR$/framework/web/form/CFormInputElement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CFormModel.php" afterPath="$PROJECT_DIR$/framework/web/CFormModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/form/CFormStringElement.php" afterPath="$PROJECT_DIR$/framework/web/form/CFormStringElement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/utils/CFormatter.php" afterPath="$PROJECT_DIR$/framework/utils/CFormatter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CGridColumn.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CGridColumn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CGridView.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CGridView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/helpers/CHtml.php" afterPath="$PROJECT_DIR$/framework/web/helpers/CHtml.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CHttpCookie.php" afterPath="$PROJECT_DIR$/framework/web/CHttpCookie.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CHttpRequest.php" afterPath="$PROJECT_DIR$/framework/web/CHttpRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CHttpSession.php" afterPath="$PROJECT_DIR$/framework/web/CHttpSession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiButton.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiButton.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDatePicker.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDatePicker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiWidget.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiWidget.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/pagers/CLinkPager.php" afterPath="$PROJECT_DIR$/framework/web/widgets/pagers/CLinkPager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/pagers/CListPager.php" afterPath="$PROJECT_DIR$/framework/web/widgets/pagers/CListPager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/CListView.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/CListView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/utils/CLocalizedFormatter.php" afterPath="$PROJECT_DIR$/framework/utils/CLocalizedFormatter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/logging/CLogFilter.php" afterPath="$PROJECT_DIR$/framework/logging/CLogFilter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/logging/CLogger.php" afterPath="$PROJECT_DIR$/framework/logging/CLogger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CMarkdown.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CMarkdown.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/utils/CMarkdownParser.php" afterPath="$PROJECT_DIR$/framework/utils/CMarkdownParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/caching/CMemCache.php" afterPath="$PROJECT_DIR$/framework/caching/CMemCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/CMenu.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/CMenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/i18n/CMessageSource.php" afterPath="$PROJECT_DIR$/framework/i18n/CMessageSource.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CModel.php" afterPath="$PROJECT_DIR$/framework/base/CModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CModelBehavior.php" afterPath="$PROJECT_DIR$/framework/base/CModelBehavior.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CModule.php" afterPath="$PROJECT_DIR$/framework/base/CModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlColumnSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlColumnSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlPdoAdapter.php" afterPath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlPdoAdapter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlSqlsrvPdoAdapter.php" afterPath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlSqlsrvPdoAdapter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/mysql/CMysqlColumnSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/mysql/CMysqlColumnSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/mysql/CMysqlSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/mysql/CMysqlSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/oci/COciColumnSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/oci/COciColumnSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/oci/COciSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/oci/COciSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/COutputProcessor.php" afterPath="$PROJECT_DIR$/framework/web/widgets/COutputProcessor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/CPP.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/CPP.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CPagination.php" afterPath="$PROJECT_DIR$/framework/web/CPagination.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/pgsql/CPgsqlColumnSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/pgsql/CPgsqlColumnSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/pgsql/CPgsqlCommandBuilder.php" afterPath="$PROJECT_DIR$/framework/db/schema/pgsql/CPgsqlCommandBuilder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/pgsql/CPgsqlSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/pgsql/CPgsqlSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/CPortlet.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/CPortlet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/caching/CRedisCache.php" afterPath="$PROJECT_DIR$/framework/caching/CRedisCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/CSS.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/CSS.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CSecurityManager.php" afterPath="$PROJECT_DIR$/framework/base/CSecurityManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CSort.php" afterPath="$PROJECT_DIR$/framework/web/CSort.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CSqlDataProvider.php" afterPath="$PROJECT_DIR$/framework/web/CSqlDataProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/sqlite/CSqliteColumnSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/sqlite/CSqliteColumnSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/sqlite/CSqliteCommandBuilder.php" afterPath="$PROJECT_DIR$/framework/db/schema/sqlite/CSqliteCommandBuilder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/sqlite/CSqliteSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/sqlite/CSqliteSchema.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CStarRating.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CStarRating.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CStatePersister.php" afterPath="$PROJECT_DIR$/framework/base/CStatePersister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CTabView.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CTabView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CTextHighlighter.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CTextHighlighter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CThemeManager.php" afterPath="$PROJECT_DIR$/framework/web/CThemeManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/utils/CTimestamp.php" afterPath="$PROJECT_DIR$/framework/utils/CTimestamp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/behaviors/CTimestampBehavior.php" afterPath="$PROJECT_DIR$/framework/zii/behaviors/CTimestampBehavior.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CTreeView.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CTreeView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CUrlManager.php" afterPath="$PROJECT_DIR$/framework/web/CUrlManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/validators/CUrlValidator.php" afterPath="$PROJECT_DIR$/framework/validators/CUrlValidator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/auth/CUserIdentity.php" afterPath="$PROJECT_DIR$/framework/web/auth/CUserIdentity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/validators/CValidator.php" afterPath="$PROJECT_DIR$/framework/validators/CValidator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/actions/CViewAction.php" afterPath="$PROJECT_DIR$/framework/web/actions/CViewAction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CWebApplication.php" afterPath="$PROJECT_DIR$/framework/web/CWebApplication.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/logging/CWebLogRoute.php" afterPath="$PROJECT_DIR$/framework/logging/CWebLogRoute.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CWebModule.php" afterPath="$PROJECT_DIR$/framework/web/CWebModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/services/CWebService.php" afterPath="$PROJECT_DIR$/framework/web/services/CWebService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/services/CWebServiceAction.php" afterPath="$PROJECT_DIR$/framework/web/services/CWebServiceAction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/auth/CWebUser.php" afterPath="$PROJECT_DIR$/framework/web/auth/CWebUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CWidget.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CWidget.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CWidgetFactory.php" afterPath="$PROJECT_DIR$/framework/web/CWidgetFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/services/CWsdlGenerator.php" afterPath="$PROJECT_DIR$/framework/web/services/CWsdlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/htmlpurifier/standalone/HTMLPurifier/Printer/ConfigForm.php" afterPath="$PROJECT_DIR$/framework/vendors/htmlpurifier/standalone/HTMLPurifier/Printer/ConfigForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/Console.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/Console.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/webapp/protected/components/Controller.php" afterPath="$PROJECT_DIR$/framework/cli/views/webapp/protected/components/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/shell/ControllerCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/shell/ControllerCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/shell/CrudCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/shell/CrudCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/DIFF.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/DIFF.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/shell/FormCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/shell/FormCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Generator.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Generator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/gii/GiiModule.php" afterPath="$PROJECT_DIR$/framework/gii/GiiModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/htmlpurifier/HTMLPurifier.standalone.php" afterPath="$PROJECT_DIR$/framework/vendors/htmlpurifier/HTMLPurifier.standalone.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/Html.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/Html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/HtmlTags.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/Renderer/HtmlTags.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/Net_IDNA2/Net/IDNA2.php" afterPath="$PROJECT_DIR$/framework/vendors/Net_IDNA2/Net/IDNA2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/JAVA.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/JAVA.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/JAVASCRIPT.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/JAVASCRIPT.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/MYSQL.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/MYSQL.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/MigrateCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/MigrateCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/shell/ModelCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/shell/ModelCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/shell/ModuleCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/shell/ModuleCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/PHP.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/PHP.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/SQL.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/SQL.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/webapp/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/framework/cli/views/webapp/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/User.php" afterPath="$PROJECT_DIR$/protected/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/VBSCRIPT.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/VBSCRIPT.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/Validator.php" afterPath="$PROJECT_DIR$/framework/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/Validator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/Builder/Xml.php" afterPath="$PROJECT_DIR$/framework/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/Builder/Xml.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/YiiBase.php" afterPath="$PROJECT_DIR$/framework/YiiBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/page/_view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/page/_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/interfaces.php" afterPath="$PROJECT_DIR$/framework/base/interfaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jui/js/jquery-ui.min.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jui/js/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.autocomplete.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.autocomplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.ba-bbq.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.ba-bbq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.cookie.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.cookie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.maskedinput.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.maskedinput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.multifile.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.multifile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.rating.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.rating.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/assets/gridview/jquery.yiigridview.js" afterPath="$PROJECT_DIR$/framework/zii/widgets/assets/gridview/jquery.yiigridview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/assets/listview/jquery.yiilistview.js" afterPath="$PROJECT_DIR$/framework/zii/widgets/assets/listview/jquery.yiilistview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/gii/views/layouts/main.php" afterPath="$PROJECT_DIR$/framework/gii/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/CategoryController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/category/all.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/components/Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/components/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/markdown/markdown.php" afterPath="$PROJECT_DIR$/framework/vendors/markdown/markdown.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/pagers/pager.css" afterPath="$PROJECT_DIR$/framework/web/widgets/pagers/pager.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/gii/assets/js/tooltip.js" afterPath="$PROJECT_DIR$/framework/gii/assets/js/tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/page/view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/page/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/yiic.php" afterPath="$PROJECT_DIR$/protected/yiic.php" />
-      <change type="MOVED" beforePath="D:\php\goperblog.loc\protected\modules\admin\controllers\IndexController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
-      <change type="MOVED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\index\index.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/default/index.php" />
     </list>
     <ignored path="goperblog.loc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -196,46 +32,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/User.php">
+      <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="49" selection-start="3295" selection-end="3295" vertical-scroll-proportion="-14.0" vertical-offset="1625" max-vertical-offset="2312">
+            <state line="42" column="30" selection-start="990" selection-end="990" vertical-scroll-proportion="31.76923" vertical-offset="1540" max-vertical-offset="2108">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_form.php">
+      <file leaf-file-name="CategoryController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/CategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1470" selection-end="1470" vertical-scroll-proportion="-8.5" vertical-offset="544" max-vertical-offset="1122">
+            <state line="67" column="20" selection-start="1841" selection-end="2011" vertical-scroll-proportion="0.46126762" vertical-offset="877" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_formupdate.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_formupdate.php">
+      <file leaf-file-name="all.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/category/all.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="10" selection-start="1598" selection-end="1598" vertical-scroll-proportion="-8.115385" vertical-offset="537" max-vertical-offset="1105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="318" selection-end="318" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="78" selection-start="273" selection-end="273" vertical-scroll-proportion="0.32922536" vertical-offset="0" max-vertical-offset="568">
+            <state line="1" column="42" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -259,22 +77,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/_view.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/page/view.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/admin.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/view.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/protected/components/Controller.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/password.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/zii/widgets/TbMenuMy.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbMenu.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbBaseMenu.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/zii/widgets/Menu.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/components/Controller.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/PageController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/create.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/_form.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/_formupdate.php" />
-        <option value="$PROJECT_DIR$/protected/models/User.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/update.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/Category.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/protected/models/Category.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/category/all.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/CategoryController.php" />
       </list>
     </option>
   </component>
@@ -282,7 +100,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -311,7 +129,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -358,66 +175,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goperblog.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goperblog.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goperblog.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goperblog.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -436,15 +193,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,16 +319,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="PHPUnit.user">
     <configuration default="false" name="user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -572,7 +370,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
+    <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -580,7 +378,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496329" sideWeight="0.67096776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -607,114 +405,106 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/components/Controller.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/AdminModule.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
+        <state line="13" column="50" selection-start="404" selection-end="404" vertical-scroll-proportion="-4.8461537" vertical-offset="95" max-vertical-offset="867" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/PageController.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="294" selection-end="294" vertical-scroll-proportion="0.4190141" vertical-offset="0" max-vertical-offset="3043">
-          <folding />
-        </state>
+        <state line="39" column="71" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.36576578" vertical-offset="460" max-vertical-offset="1275" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="99" selection-start="618" selection-end="618" vertical-scroll-proportion="0.27567568" vertical-offset="0" max-vertical-offset="1241">
+        <state line="39" column="38" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.62852114" vertical-offset="306" max-vertical-offset="3247" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/zii/widgets/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="197" selection-end="197" vertical-scroll-proportion="0.15539305" vertical-offset="51" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="8" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.44894367" vertical-offset="697" max-vertical-offset="3247">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="903" selection-end="903" vertical-scroll-proportion="0.77816904" vertical-offset="0" max-vertical-offset="568">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/components/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="810" selection-end="810" vertical-scroll-proportion="0.77696526" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="223" selection-end="264" vertical-scroll-proportion="0.31161973" vertical-offset="27" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="30" selection-start="2560" selection-end="2560" vertical-scroll-proportion="0.5861423" vertical-offset="724" max-vertical-offset="1309">
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="38" selection-start="0" selection-end="143" vertical-scroll-proportion="0.23943663" vertical-offset="0" max-vertical-offset="568">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="16" selection-start="1387" selection-end="1387" vertical-scroll-proportion="-5.5" vertical-offset="741" max-vertical-offset="1819">
+        <state line="56" column="54" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.5510563" vertical-offset="639" max-vertical-offset="1887">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/password.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="228" selection-end="228" vertical-scroll-proportion="0.23943663" vertical-offset="0" max-vertical-offset="568">
+        <state line="41" column="11" selection-start="1177" selection-end="1247" vertical-scroll-proportion="0.5809859" vertical-offset="367" max-vertical-offset="1190">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/category/all.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="36" selection-start="2899" selection-end="2899" vertical-scroll-proportion="-13.076923" vertical-offset="1071" max-vertical-offset="1785">
+        <state line="1" column="42" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2447183" vertical-offset="707" max-vertical-offset="1275">
+        <state line="42" column="30" selection-start="990" selection-end="990" vertical-scroll-proportion="31.76923" vertical-offset="1540" max-vertical-offset="2108">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="355" selection-end="355" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="54" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.11971831" vertical-offset="816" max-vertical-offset="3298">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="318" selection-end="318" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1470" selection-end="1470" vertical-scroll-proportion="-8.5" vertical-offset="544" max-vertical-offset="1122">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_formupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="10" selection-start="1598" selection-end="1598" vertical-scroll-proportion="-8.115385" vertical-offset="537" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="49" selection-start="3295" selection-end="3295" vertical-scroll-proportion="-14.0" vertical-offset="1625" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="78" selection-start="273" selection-end="273" vertical-scroll-proportion="0.32922536" vertical-offset="0" max-vertical-offset="568">
+        <state line="67" column="20" selection-start="1841" selection-end="2011" vertical-scroll-proportion="0.46126762" vertical-offset="877" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>

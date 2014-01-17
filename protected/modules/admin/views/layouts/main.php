@@ -38,6 +38,7 @@
                 array('label' => 'Главная', 'url' => '/admin/default'),
                 array('label' => 'Страницы', 'url' => '/admin/page'),
                 array('label' => 'Категории', 'url' => '/admin/category'),
+                array('label' => 'Документы', 'url' => '/admin/doc'),
                 array('label' => 'Пользователи', 'url' => '/admin/user'),
                 array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => '/site/logout', 'visible' => !Yii::app()->user->isGuest)
             ),

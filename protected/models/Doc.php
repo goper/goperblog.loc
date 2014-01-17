@@ -1,35 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "{{category}}".
+ * This is the model class for table "{{doc}}".
  *
- * The followings are the available columns in table '{{category}}':
+ * The followings are the available columns in table '{{doc}}':
  * @property integer $id
- * @property integer $lft
- * @property integer $rgt
- * @property integer $level
  * @property string $name
+ * @property string $tiser
+ * @property string $body
+ * @property integer $category_id
  */
-class Category extends CActiveRecord
+class Doc extends CActiveRecord
 {
-    public function behaviors()
-    {
-        return array(
-            'nestedSetBehavior'=>array(
-                'class'=>'application.components.NestedSetBehavior',
-                'leftAttribute'=>'lft',
-                'rightAttribute'=>'rgt',
-                'levelAttribute'=>'level',
-            ),
-        );
-    }
-
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{category}}';
+		return '{{doc}}';
 	}
 
 	/**
@@ -40,12 +28,12 @@ class Category extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, alias', 'required'),
-			array('lft, rgt, level', 'numerical', 'integerOnly'=>true),
-			array('name', 'length', 'max'=>150),
+			array('category_id', 'numerical', 'integerOnly'=>true),
+			array('name', 'length', 'max'=>255),
+			array('tiser, body', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, lft, rgt, level, name, alias', 'safe', 'on'=>'search'),
+			array('id, name, tiser, body, category_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,8 +45,9 @@ class Category extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-            'page' => array(self::HAS_MANY, 'page', 'category_id')
-		);
+           // 'имя вызова в виде' => array(ТИП_СВЯЗИ, 'название таблицы к кот. привязываемся', 'имя поля для связи у привязанной таблицы')
+            'category'=>array(self::BELONGS_TO, 'category', 'category_id'),
+        );
 	}
 
 	/**
@@ -68,11 +57,10 @@ class Category extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'lft' => 'Lft',
-			'rgt' => 'Rgt',
-			'level' => 'Level',
-			'name' => 'Название',
-            'alias' => 'Alias',
+			'name' => 'Name',
+			'tiser' => 'Tiser',
+			'body' => 'Body',
+			'category_id' => 'Category',
 		);
 	}
 
@@ -95,11 +83,10 @@ class Category extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('lft',$this->lft);
-		$criteria->compare('rgt',$this->rgt);
-		$criteria->compare('level',$this->level);
 		$criteria->compare('name',$this->name,true);
-        $criteria->compare('alias',$this->alias,true);
+		$criteria->compare('tiser',$this->tiser,true);
+		$criteria->compare('body',$this->body,true);
+		$criteria->compare('category_id',$this->category_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -110,11 +97,12 @@ class Category extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Category the static model class
+	 * @return Doc the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
+
 
 }

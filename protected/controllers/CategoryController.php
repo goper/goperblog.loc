@@ -34,16 +34,32 @@ class CategoryController extends Controller {
 
 
     public function actionIndex($alias) {
-        $category1=new Category;
-        $category1->name='Ford';
-        $category1->alias='Ford';
-        $root=Category::model()->findByPk(3);
-        $category1->appendTo($root);
+        //$post = Category::model()->find('alias=:alias', array(':alias'=>$alias));
 
-        echo $alias;
+        $obj_id = Category::model()->find(array(
+            'select'=>'id',
+            'condition'=>'alias=:alias',
+            'params'=>array(':alias'=>$alias),
+        ));
+
+        $id = $obj_id->id;
+
+        $docs = Doc::model()->findAll('category_id=:category_id', array(':category_id'=>$id));
+
+        foreach ($docs as $doc){
+            echo $doc->name . '<br>';
+            echo $doc->category->name. '<br>';
+        }
+
+
     }
 
     public function actionAll() {
+        /*$d = Category::model()->findAll();
+        foreach ($d as $v){
+            html::pr($v->body);
+        }*/
+
 
         //html::pr($this->get_ancestors_alias('news'),1);
 

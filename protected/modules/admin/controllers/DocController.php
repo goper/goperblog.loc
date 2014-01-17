@@ -1,13 +1,7 @@
 <?php
 
-class PageController extends Controller
+class DocController extends Controller
 {
-	/**
-	 * @var string the index layout for the views. Defaults to '//layouts/column2', meaning
-	 * using two-column layout. See 'protected/views/layouts/column2.php'.
-	 */
-
-
 	/**
 	 * @return array action filters
 	 */
@@ -20,7 +14,7 @@ class PageController extends Controller
 	}
 
 	/**
-	 * Specifies the access control rutitleles.
+	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
@@ -29,11 +23,11 @@ class PageController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('admin'),
+				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
@@ -62,14 +56,14 @@ class PageController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Page;
+		$model=new Doc;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Page']))
+		if(isset($_POST['Doc']))
 		{
-			$model->attributes=$_POST['Page'];
+			$model->attributes=$_POST['Doc'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -91,9 +85,9 @@ class PageController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Page']))
+		if(isset($_POST['Doc']))
 		{
-			$model->attributes=$_POST['Page'];
+			$model->attributes=$_POST['Doc'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -122,7 +116,7 @@ class PageController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Page');
+		$dataProvider=new CActiveDataProvider('Doc');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +127,10 @@ class PageController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Page('search');
-		$model->unsetAttributes();  // clear any index values
-		if(isset($_GET['Page']))
-			$model->attributes=$_GET['Page'];
+		$model=new Doc('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Doc']))
+			$model->attributes=$_GET['Doc'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +141,12 @@ class PageController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Page the loaded model
+	 * @return Doc the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Page::model()->findByPk($id);
+		$model=Doc::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,14 +154,16 @@ class PageController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Page $model the model to be validated
+	 * @param Doc $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='page-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='doc-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
+
+
 }
