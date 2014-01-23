@@ -3,11 +3,6 @@
 class UserController extends Controller {
 
     /**
-     * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-     * using two-column layout. See 'protected/views/layouts/column2.php'.
-     */
-
-    /**
      * @return array action filters
      */
     public function filters() {
@@ -60,16 +55,20 @@ class UserController extends Controller {
     public function actionCreate() {
         $model = new User('create');
 
+
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['User'])) {
             //html::pr($_POST['User'],1);
             $model->attributes = $_POST['User'];
+
             //html::pr($model->attributes,1);
             if ($model->save()){
                 $this->redirect(array('view', 'id' => $model->id));
             }
+            var_dump($model->validate());
+            html::pr($model->getErrors(), 1);
         }
 
         $this->render('create', array(

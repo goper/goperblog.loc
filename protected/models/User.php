@@ -31,6 +31,7 @@ class User extends CActiveRecord {
         // will receive user inputs.
         return array(
             array('email, username', 'unique'),
+            array('username', 'filter', 'filter' => 'trim'),
             array('username', 'match', 'pattern'=>'/^[A-z][\w]+$/'),
             array('email', 'email'),
             array('username, password, email', 'required', 'on'=>'create,update'),

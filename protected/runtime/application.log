@@ -25269,3 +25269,91 @@ REQUEST_URI=/admin/doc/admin
 in D:\php\goperblog.loc\protected\modules\admin\views\doc\admin.php (55)
 in D:\php\goperblog.loc\protected\modules\admin\controllers\DocController.php (137)
 in D:\php\goperblog.loc\index.php (13)
+2014/01/23 10:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/23 10:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/23 10:17:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/01/27 13:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/27 13:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/29 12:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/29 12:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/01/29 12:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/29 12:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/01/29 12:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

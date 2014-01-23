@@ -19,8 +19,6 @@
 
     <?php echo $form->errorSummary($model); ?>
 
-
-
     <div class="row">
         <label for="User_password" class="required">Пароль <span class="required">*</span></label>
         <input size="60" maxlength="64" name="User[password]" id="User_password" type="password" value="">
