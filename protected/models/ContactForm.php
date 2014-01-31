@@ -24,7 +24,8 @@ class ContactForm extends CFormModel
 			// email has to be a valid email address
 			//array('email', 'email'),
 			// verifyCode needs to be entered correctly
-			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+            // если авторизован не проверять капчу
+			array('verifyCode', 'captcha', 'allowEmpty'=> Yii::app()->user->isGuest == false ? true : !CCaptcha::checkRequirements()),
 		);
 	}
 

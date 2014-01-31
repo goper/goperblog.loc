@@ -7,6 +7,7 @@ $this->breadcrumbs = array(
 <h1><?= $page_contact->name ?></h1>
 
 <article>
+    конетнет
     <?= $page_contact->content ?>
 </article>
 
@@ -15,7 +16,6 @@ $this->breadcrumbs = array(
         <?php echo Yii::app()->user->getFlash('contact'); ?>
     </div>
 <?php else: ?>
-
     <div class="form">
         <?php echo CHtml::beginForm(); ?>
 
@@ -24,6 +24,7 @@ $this->breadcrumbs = array(
         <div class="row">
             <?php echo CHtml::activeLabel($model, 'user'); ?>
             <?php echo CHtml::activeTextField($model, 'user'); ?>
+            <? // CHtml::error($model,'user'); ?>
         </div>
 
         <?php if (CCaptcha::checkRequirements() && Yii::app()->user->isGuest): ?>

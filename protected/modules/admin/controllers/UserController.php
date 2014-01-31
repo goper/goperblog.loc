@@ -67,8 +67,8 @@ class UserController extends Controller {
             if ($model->save()){
                 $this->redirect(array('view', 'id' => $model->id));
             }
-            var_dump($model->validate());
-            html::pr($model->getErrors(), 1);
+            //var_dump($model->validate());
+            //html::pr($model->getErrors(), 1);
         }
 
         $this->render('create', array(
