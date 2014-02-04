@@ -14,6 +14,10 @@
  */
 class User extends CActiveRecord {
 
+    const ROLE_ADMIN = 'admin';
+    const ROLE_USER = 'user';
+    const ROLE_BANNED = 'banned';
+
     public $password2;
 
     /**
@@ -38,7 +42,8 @@ class User extends CActiveRecord {
             array('password', 'required', 'on'=>'password'),
             array('password2', 'required', 'on'=>'create, password'),
             array('password', 'compare', 'compareAttribute'=>'password2', 'on'=>'create, password'),
-            array('date, role', 'numerical', 'integerOnly' => true),
+            array('role', 'match', 'pattern' => '/(admin|user)$/'),
+            array('date', 'numerical', 'integerOnly' => true),
             array('username, email', 'length', 'max' => 128),
             array('password', 'length', 'max' => 64),
             array('ban', 'safe'),

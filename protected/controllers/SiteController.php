@@ -2,6 +2,29 @@
 
 class SiteController extends Controller {
 
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow', // allow readers only access to the view file
+                'actions' => array('login', 'index', 'error', 'registration', 'captcha'),
+                'users' => array('*')
+                //'roles' => array('user')
+            ),
+            array('allow', // allow readers only access to the view file
+                'actions' => array('logout'),
+                'users' => array('@')
+            ),
+            array('deny', // deny everybody else
+                'users' => array('*')
+            ),
+        );
+    }
+
     /**
      * Declares class-based actions.
      */
@@ -43,33 +66,10 @@ class SiteController extends Controller {
     }
 
     /**
-     * Displays the contact page
-     */
-    public function actionContact() {
-        $model = new ContactForm;
-        if (isset($_POST['ContactForm'])) {
-            $model->attributes = $_POST['ContactForm'];
-            if ($model->validate()) {
-                $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
-                $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
-                $headers = "From: $name <{$model->email}>\r\n" .
-                        "Reply-To: {$model->email}\r\n" .
-                        "MIME-Version: 1.0\r\n" .
-                        "Content-Type: text/plain; charset=UTF-8";
-
-                mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
-                Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
-                $this->refresh();
-            }
-        }
-        $this->render('contact', array('model' => $model));
-    }
-
-    /**
      * Displays the login page
      */
     public function actionLogin() {
-        $model = new LoginForm;
+        $model = new Login;
 
         // if it is ajax validation request
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
@@ -78,23 +78,25 @@ class SiteController extends Controller {
         }
 
         // collect user input data
-        if (isset($_POST['LoginForm'])) {
-            $model->attributes = $_POST['LoginForm'];
+        if (isset($_POST['Login'])) {
+
+            $model->attributes = $_POST['Login'];
             // validate user input and redirect to the previous page if valid
-            if ($model->validate() && $model->login())
+            if ($model->validate() && $model->login()){
                 $this->redirect(Yii::app()->user->returnUrl);
+            }
         }
         // display the login form
         $this->render('login', array('model' => $model));
     }
 
     public function actionRegistration(){
-        $model = new RegistrationForm;
+        $model = new Registration;
 
-        if(isset($_POST['RegistrationForm'])){
+        if(isset($_POST['Registration'])){
 
             // Безопасное присваивание значений атрибутам
-            $model->attributes = $_POST['RegistrationForm'];
+            $model->attributes = $_POST['Registration'];
             $model->role = 3;
             $model->date = time();
             if($model->validate()){

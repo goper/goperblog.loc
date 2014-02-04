@@ -10,13 +10,8 @@ $this->menu=array(
  
 );
 ?>
-<p>Укажите новый пароль</p>
-<?php 
-//echo CHtml::form();
-//echo CHtml::textField('password');
-//echo CHtml::submitButton('Изменить');
-//echo CHtml::endForm();
-?>
+<p>Укажите новый пароль для пользователя <?=$model->username?></p>
+
 <?php $this->renderPartial('_form_password', array('model'=>$model)); ?>
 
 

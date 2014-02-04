@@ -63,6 +63,11 @@
         Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
         All Rights Reserved.<br/>
         <?php echo Yii::powered(); ?>
+
+        <?php
+        //$this->widget('ext.mywidgets.Goper');
+        ?>
+
     </footer>
 
 </div>

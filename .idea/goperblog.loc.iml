@@ -5,6 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/assets" />
       <excludeFolder url="file://$MODULE_DIR$/demos" />
+      <excludeFolder url="file://$MODULE_DIR$/framework" />
       <excludeFolder url="file://$MODULE_DIR$/nbproject" />
       <excludeFolder url="file://$MODULE_DIR$/protected/data" />
       <excludeFolder url="file://$MODULE_DIR$/protected/runtime" />

@@ -27,12 +27,10 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('role')); ?>:</b>
-    <? if($data->role == 1):?>
-        Администратор
-    <? elseif ($data->role == 2):?>
-        Менеджер
+    <? if($data->role == 'admin'):?>
+        Админ
     <? else:?>
-        Простой пользователь
+        Юзер
     <? endif;?>
 	<br />
 </div>

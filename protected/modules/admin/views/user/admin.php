@@ -43,10 +43,7 @@ $('.search-form form').submit(function(){
             'value' => 'date("d.m.Y", $data->date)',
             'filter' => false,
         ),
-        'email' => array(
-            'name' => 'email',
-            'filter' => false,
-        ),
+        'email',
         'ban' => array(
             'name' => 'ban',
             'value' => '($data->ban == 1 ? "Да" : "Нет")',
@@ -54,8 +51,8 @@ $('.search-form form').submit(function(){
         ),
         'role' => array(
             'name' => 'role',
-            'value' => '($data->role == 1 ? "Админ" : ($data->role == 2 ? "Менеджер" : "Никто"))',
-            'filter' => array(1 => "Админ", 2 => "Менеджер", 3 => "Простой юзер")
+            'value' => '($data->role == "admin" ? "Админ" : "Юзер")',
+            'filter' => array("admin" => "Админ", "user" => "Юзер")
         ),
 
 

@@ -1,10 +1,12 @@
 <?php
 
-class UserIdentity extends CUserIdentity {
+class UserIdentity extends CUserIdentity
+{
 
-    private $_id;
+    protected $_id;
 
-    public function authenticate() {
+    public function authenticate()
+    {
         $username = strtolower($this->username);
         $user = User::model()->find('LOWER(username)=?', array($username));
         if ($user === null)
@@ -19,7 +21,8 @@ class UserIdentity extends CUserIdentity {
         return $this->errorCode == self::ERROR_NONE;
     }
 
-    public function getId() {
+    public function getId()
+    {
         return $this->_id;
     }
 

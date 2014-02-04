@@ -5,7 +5,7 @@
  * LoginForm is the data structure for keeping
  * user login form data. It is used by the 'login' action of 'SiteController'.
  */
-class RegistrationForm extends CActiveRecord{
+class Registration extends CActiveRecord{
 
     public $username;
     public $email;
@@ -33,7 +33,7 @@ class RegistrationForm extends CActiveRecord{
             array('email', 'email'),
             array('username, password, email, password2', 'required'),
             array('password', 'compare', 'compareAttribute'=>'password2'),
-            array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+            array('verifyCode', 'captcha', 'allowEmpty'=>!Yii::app()->user->isGuest || !CCaptcha::checkRequirements(),),
         );
     }
 

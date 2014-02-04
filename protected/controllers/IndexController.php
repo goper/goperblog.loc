@@ -1,10 +1,29 @@
 <?php
 
 class IndexController extends Controller {
+
     public function actionIndex() {
-        $this->render('index', array(
-            'page' => $this->loadModel('main'),
-        ));
+
+        // actionIndex вызывается всегда, когда action не указан явно.
+
+        $input = Yii::app()->request->getPost('input');
+        // для примера будем приводить строку к верхнему регистру
+        $output = mb_strtoupper($input, 'utf-8');
+
+        // если запрос асинхронный, то нам нужно отдать только данные
+        if(Yii::app()->request->isAjaxRequest){
+            echo CHtml::encode($output);
+            // Завершаем приложение
+            Yii::app()->end();
+        }
+        else {
+            // если запрос не асинхронный, отдаём форму полностью
+            $this->render('index', array(
+                'input'=>$input,
+                'output'=>$output,
+            ));
+        }
+
     }
 
     /**

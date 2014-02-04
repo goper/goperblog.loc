@@ -5,7 +5,7 @@
  * LoginForm is the data structure for keeping
  * user login form data. It is used by the 'login' action of 'SiteController'.
  */
-class LoginForm extends CFormModel {
+class Login extends CFormModel {
 
     public $username;
     public $password;
@@ -21,6 +21,7 @@ class LoginForm extends CFormModel {
         return array(
             // username and password are required
             array('username, password', 'required'),
+            array('username', 'match', 'pattern' => '/^[0-9a-zA-Z\-\@\_\.]{1,}$/', 'message' => Yii::t('Front', 'Insert Your login using latin alphabet')),
             // rememberMe needs to be a boolean
             array('rememberMe', 'boolean'),
             // password needs to be authenticated

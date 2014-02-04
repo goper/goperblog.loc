@@ -37,7 +37,7 @@ $this->menu=array(
         'role' => array(
             'name' => 'role',
             'type'=>'html',
-            'value' => $model->role == 1 ? "Админ" : ($model->role == 2 ? "Менеджер" : "Никто"),
+            'value' => $model->role == 'admin' ? "Админ" : "Юзер",
         ),
 	),
 )); ?>

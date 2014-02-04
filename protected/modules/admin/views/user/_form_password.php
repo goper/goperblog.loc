@@ -31,8 +31,6 @@
     </div>
     <?php echo $form->error($model,'password2'); ?>
 
-
-
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
     </div>

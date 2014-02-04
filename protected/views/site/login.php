@@ -11,6 +11,8 @@ $this->breadcrumbs=array(
 
 <h1>Авторизация</h1>
 
+<p><a href="<?=$this->createUrl('site/registration')?>">Регистрация</a></p>
+
 <p>Заполните форму чтобы войти:</p>
 
 <div class="form">
@@ -29,19 +31,19 @@ $this->breadcrumbs=array(
 	<div class="row">
 		<?=$form->labelEx($model,'username'); ?>
 		<?=$form->textField($model,'username'); ?>
-		<? // $form->error($model,'username'); ?>
+		<?=$form->error($model,'username'); ?>
 	</div>
 
 	<div class="row">
 		<?=$form->labelEx($model,'password'); ?>
 		<?=$form->passwordField($model,'password'); ?>
-		<?php // $form->error($model,'password'); ?>
+		<?=$form->error($model,'password'); ?>
 	</div>
 
 	<div class="row rememberMe">
 		<?=$form->checkBox($model,'rememberMe'); ?>
 		<?=$form->label($model,'rememberMe'); ?>
-		<?php //$form->error($model,'rememberMe'); ?>
+		<?=$form->error($model,'rememberMe'); ?>
 	</div>
 
 	<div class="row buttons">

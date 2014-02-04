@@ -17,6 +17,8 @@ $this->breadcrumbs=array(
     </div>
 <?php endif; ?>
 
+<p><a href="<?=$this->createUrl('site/login')?>">Авторизация</a></p>
+
 <p>Заполните форму регистрации:</p>
 
 <div class="form">

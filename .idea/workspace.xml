@@ -2,9 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26ae0ee-4945-4d03-9a3c-b7936db71ecf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/components/BlogAdmin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/mywidgets/Goper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/mywidgets/views/goper.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/models/Category.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/CategoryController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/_form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/_search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/_view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/create.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/category/view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\nbproject\private\private.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\nbproject\private\private.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\nbproject\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\nbproject\project.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\controllers\CategoryController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\controllers\ContactController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\controllers\PageController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\models\ContactForm.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\models\Doc.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\models\Page.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\models\_ContactForm.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\models\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\controllers\DocController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\controllers\PageController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\doc\_form.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\doc\_search.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\doc\_view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\doc\admin.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\doc\create.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\doc\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\doc\update.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\doc\view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\page\_form.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\page\_search.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\page\_view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\page\admin.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\page\create.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\page\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\page\update.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\modules\admin\views\page\view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\category\all.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\comment\_form.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\comment\_search.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\comment\_view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\comment\admin.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\comment\create.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\comment\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\comment\update.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\comment\view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\contact\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\php\goperblog.loc\protected\views\page\index.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Controller.php" afterPath="$PROJECT_DIR$/protected/components/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/IndexController.php" afterPath="$PROJECT_DIR$/protected/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/User.php" afterPath="$PROJECT_DIR$/protected/models/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/UserIdentity.php" afterPath="$PROJECT_DIR$/protected/components/UserIdentity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/user/_form_create.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/user/_form_create.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/user/_form_password.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/user/_form_password.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/user/_view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/user/_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/user/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/user/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/index/index.php" afterPath="$PROJECT_DIR$/protected/views/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/login.php" afterPath="$PROJECT_DIR$/protected/views/site/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/user/password.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/user/password.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/registration.php" afterPath="$PROJECT_DIR$/protected/views/site/registration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/user/view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/user/view.php" />
+      <change type="MOVED" beforePath="D:\php\goperblog.loc\protected\models\LoginForm.php" afterPath="$PROJECT_DIR$/protected/models/form/Login.php" />
+      <change type="MOVED" beforePath="D:\php\goperblog.loc\protected\models\RegistrationForm.php" afterPath="$PROJECT_DIR$/protected/models/Registration.php" />
+      <change type="MOVED" beforePath="D:\php\goperblog.loc\protected\modules\admin\components\Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/components/AdminController.php" />
     </list>
     <ignored path="goperblog.loc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,52 +101,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php">
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="41" selection-start="2185" selection-end="2185" vertical-scroll-proportion="3.2692308" vertical-offset="765" max-vertical-offset="2737">
+            <state line="3" column="72" selection-start="132" selection-end="132" vertical-scroll-proportion="0.09586466" vertical-offset="0" max-vertical-offset="1241">
               <folding>
-                <element signature="e#54#101#0" expanded="false" />
-                <element signature="n#filters#0;n#UserController#0;n#!!top" expanded="false" />
-                <element signature="e#329#483#0" expanded="false" />
-                <element signature="n#accessRules#0;n#UserController#0;n#!!top" expanded="false" />
+                <marker date="1398326872070" expanded="true" signature="596:634" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form_password.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_form_password.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="-5.230769" vertical-offset="204" max-vertical-offset="799">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/site/registration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="47" selection-start="500" selection-end="511" vertical-scroll-proportion="-12.423077" vertical-offset="51" max-vertical-offset="1411">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactForm.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/models/ContactForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.43661973" vertical-offset="248" max-vertical-offset="816">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -95,22 +130,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/PageController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/doc/_view.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/category/admin.php" />
-        <option value="$PROJECT_DIR$/protected/extensions/jsTree/CjsTree.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/CategoryController.php" />
-        <option value="$PROJECT_DIR$/protected/views/category/all.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DocController.php" />
-        <option value="$PROJECT_DIR$/protected/models/Doc.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/doc/admin.php" />
         <option value="$PROJECT_DIR$/protected/models/Category.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/_form_password.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/category/index.php" />
+        <option value="$PROJECT_DIR$/protected/components/Controller.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/_form_create.php" />
         <option value="$PROJECT_DIR$/protected/models/User.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/view.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/_view.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/_form_password.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/password.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/admin.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/components/AdminController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
       </list>
     </option>
   </component>
@@ -128,7 +163,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -147,7 +182,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,29 +228,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goperblog.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goperblog.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -234,11 +250,127 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="contact" />
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,22 +406,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goperblog.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="6f70b653-db4c-44fd-aa2c-a792b8370bf5">
+        <serverdata />
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\php\goperblog.loc\protected\extensions\mywidgets" />
+      <recent name="D:\php\goperblog.loc\protected\extensions\zii\widgets\views" />
+      <recent name="D:\php\goperblog.loc\protected\models\form" />
+      <recent name="D:\php\goperblog.loc\protected\models" />
+    </key>
   </component>
   <component name="RunManager" selected="PHPUnit.user">
     <configuration default="false" name="user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -330,24 +514,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22474378" sideWeight="0.67096776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24545455" sideWeight="0.6716918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -365,120 +549,117 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/controllers/CategoryController.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/category/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="17" selection-start="1760" selection-end="1949" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="1751">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="524">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Page.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8080986" vertical-offset="459" max-vertical-offset="1785">
+        <state line="39" column="65" selection-start="1221" selection-end="1221" vertical-scroll-proportion="-15.692307" vertical-offset="255" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Doc.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/category/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="5" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1938">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="5" selection-start="1607" selection-end="1607" vertical-scroll-proportion="-0.59859157" vertical-offset="1377" max-vertical-offset="2142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_form_create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.44894367" vertical-offset="255" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/db/ar/CActiveRecord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="15" selection-start="2006" selection-end="2019" vertical-scroll-proportion="0.34774774" vertical-offset="351" max-vertical-offset="41395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="41" selection-start="2185" selection-end="2185" vertical-scroll-proportion="3.2692308" vertical-offset="765" max-vertical-offset="2737">
-          <folding>
-            <element signature="e#54#101#0" expanded="false" />
-            <element signature="n#filters#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="e#329#483#0" expanded="false" />
-            <element signature="n#accessRules#0;n#UserController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.39921722" vertical-offset="204" max-vertical-offset="782">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="58" selection-start="868" selection-end="868" vertical-scroll-proportion="28.5" vertical-offset="1302" max-vertical-offset="2329">
+        <state line="44" column="67" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.5515267" vertical-offset="459" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="321" selection-end="321" vertical-scroll-proportion="0.38931298" vertical-offset="0" max-vertical-offset="524">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_form_password.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="-5.230769" vertical-offset="204" max-vertical-offset="799">
+        <state line="31" column="51" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.71374047" vertical-offset="153" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.692308" vertical-offset="486" max-vertical-offset="1258">
+        <state line="32" column="12" selection-start="925" selection-end="925" vertical-scroll-proportion="0.99816513" vertical-offset="0" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/RegistrationForm.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.35915494" vertical-offset="204" max-vertical-offset="1020">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="571">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/registration.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/_form_create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="47" selection-start="500" selection-end="511" vertical-scroll-proportion="-12.423077" vertical-offset="51" max-vertical-offset="1411">
+        <state line="54" column="76" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.5614679" vertical-offset="612" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/contact/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/config/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="406" selection-end="449" vertical-scroll-proportion="0.005484461" vertical-offset="354" max-vertical-offset="901">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.012844036" vertical-offset="7" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3985375" vertical-offset="765" max-vertical-offset="1530">
+        <state line="4" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/ContactForm.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.43661973" vertical-offset="248" max-vertical-offset="816">
+        <state line="3" column="1" selection-start="57" selection-end="57" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="2550">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="2635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="16" selection-start="994" selection-end="994" vertical-scroll-proportion="0.4678899" vertical-offset="510" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/components/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="32" selection-start="142" selection-end="142" vertical-scroll-proportion="0.18715596" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="72" selection-start="132" selection-end="132" vertical-scroll-proportion="0.09586466" vertical-offset="0" max-vertical-offset="1241">
+          <folding>
+            <marker date="1398326872070" expanded="true" signature="596:634" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

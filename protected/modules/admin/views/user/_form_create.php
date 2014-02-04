@@ -51,9 +51,9 @@
 
 
     <div class="row">
-        <?php echo $form->labelEx($model,'role'); ?>
-        <?php echo $form->dropDownList($model, 'role', array('1' => 'Админ', '2' => 'Менеджер', '3' => 'Никто')); ?>
-        <?php echo $form->error($model,'role'); ?>
+        <?php echo $form->labelEx($model, 'role'); ?>
+        <?php echo $form->dropDownList($model, 'role', array('user' => 'Юзер', 'admin' => 'Админ')); ?>
+        <?php echo $form->error($model, 'role'); ?>
     </div>
 
 
