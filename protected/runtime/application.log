@@ -32487,3 +32487,1057 @@ Stack trace:
 REQUEST_URI=/css/style.css
 HTTP_REFERER=http://goperblog.loc/admin/doc
 ---
+2014/04/24 16:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/04/24 16:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/04/28 09:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/04/28 09:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/04/28 09:08:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/04/28 09:08:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/04/28 09:08:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/04/28 09:08:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/04/28 09:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/04/28 09:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/04/28 09:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/04/28 09:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/04/28 09:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/04/28 09:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/04/28 09:08:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/28 09:44:26 [error] [php] explode() expects parameter 2 to be string, array given (D:\php\goperblog.loc\protected\modules\admin\views\category\view.php:45)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#1 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#2 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#3 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(27): CategoryController->render()
+#4 unknown(0): CategoryController->actionView()
+#5 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#12 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#15 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/view/id/2
+in D:\php\goperblog.loc\protected\modules\admin\views\category\view.php (45)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (27)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 09:44:35 [error] [php] explode() expects parameter 2 to be string, array given (D:\php\goperblog.loc\protected\modules\admin\views\category\view.php:45)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#1 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#2 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#3 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(27): CategoryController->render()
+#4 unknown(0): CategoryController->actionView()
+#5 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#12 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#15 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/view/id/2
+in D:\php\goperblog.loc\protected\modules\admin\views\category\view.php (45)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (27)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:27:17 [error] [php] Undefined variable: arr_ancestors (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:25)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#3 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#6 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#9 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#10 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/view/id/1
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (25)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:40:17 [error] [php] Declaration of CategoryController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:41:20 [error] [php] Declaration of CategoryController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:41:51 [error] [php] Declaration of CategoryController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:41:59 [error] [php] Declaration of CategoryController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:43:44 [error] [php] Declaration of CategoryController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:43:45 [error] [php] Declaration of CategoryController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:44:07 [error] [php] Declaration of CategoryController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:45:32 [error] [php] Declaration of AdminController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\components\AdminController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(4): spl_autoload_call()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(354): require()
+#2 D:\php\goperblog.loc\framework\web\CWebApplication.php(338): CWebApplication->createController()
+#3 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category
+in D:\php\goperblog.loc\protected\modules\admin\components\AdminController.php (4)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:45:48 [error] [php] Declaration of AdminController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\components\AdminController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(4): spl_autoload_call()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(354): require()
+#2 D:\php\goperblog.loc\framework\web\CWebApplication.php(338): CWebApplication->createController()
+#3 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category
+in D:\php\goperblog.loc\protected\modules\admin\components\AdminController.php (4)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 13:47:33 [error] [php] Declaration of CategoryController::beforeAction() should be compatible with CController::beforeAction($action) (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:4)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (4)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 14:02:06 [error] [php] Undefined variable: root (D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php:84)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\protected\modules\admin\views\category\update.php(21): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require()
+#3 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#4 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#5 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#6 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(76): CategoryController->render()
+#7 unknown(0): CategoryController->actionUpdate()
+#8 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#12 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#15 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#18 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#19 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/update/id/2
+in D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php (84)
+in D:\php\goperblog.loc\protected\modules\admin\views\category\update.php (21)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (76)
+2014/04/28 14:02:24 [error] [php] Undefined variable: root (D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php:84)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\protected\modules\admin\views\category\create.php(18): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require()
+#3 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#4 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#5 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#6 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(56): CategoryController->render()
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php (84)
+in D:\php\goperblog.loc\protected\modules\admin\views\category\create.php (18)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (56)
+2014/04/28 14:04:16 [error] [php] Undefined variable: category (D:\php\goperblog.loc\protected\modules\admin\views\category\create.php:18)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(56): CategoryController->render()
+#3 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#4 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#6 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#12 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#13 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\views\category\create.php (18)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (56)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 14:05:00 [error] [php] Undefined variable: post (D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php:87)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\protected\modules\admin\views\category\create.php(18): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require()
+#3 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#4 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#5 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#6 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(56): CategoryController->render()
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php (87)
+in D:\php\goperblog.loc\protected\modules\admin\views\category\create.php (18)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (56)
+2014/04/28 14:05:51 [error] [exception.CException] exception 'CException' with message 'Property "Category.parent" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(145): CComponent->__get('parent')
+#1 D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php(87): CActiveRecord->__get('parent')
+#2 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require('D:\php\goperblo...')
+#3 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\php\goperblo...', Array, true)
+#4 D:\php\goperblog.loc\framework\web\CController.php(869): CBaseController->renderFile('D:\php\goperblo...', Array, true)
+#5 D:\php\goperblog.loc\protected\modules\admin\views\category\create.php(18): CController->renderPartial('_form', Array)
+#6 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require('D:\php\goperblo...')
+#7 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\php\goperblo...', Array, true)
+#8 D:\php\goperblog.loc\framework\web\CController.php(869): CBaseController->renderFile('D:\php\goperblo...', Array, true)
+#9 D:\php\goperblog.loc\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(56): CController->render('create', Array)
+#11 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#12 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category/...')
+#22 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/admin/category/create/
+HTTP_REFERER=http://goperblog.loc/admin/category/
+---
+2014/04/28 14:06:10 [error] [php] Undefined index: parent (D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php:87)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\protected\modules\admin\views\category\create.php(18): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require()
+#3 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#4 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#5 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#6 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(56): CategoryController->render()
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php (87)
+in D:\php\goperblog.loc\protected\modules\admin\views\category\create.php (18)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (56)
+2014/04/28 14:06:56 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 14:26:13 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 14:26:13 [error] [php] Trying to get property of non-object (D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php:87)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\protected\modules\admin\views\category\create.php(18): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require()
+#3 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#4 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#5 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#6 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(56): CategoryController->render()
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php (87)
+in D:\php\goperblog.loc\protected\modules\admin\views\category\create.php (18)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (56)
+2014/04/28 14:29:21 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/04/28 14:29:21 [error] [php] Trying to get property of non-object (D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php:87)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\protected\modules\admin\views\category\create.php(18): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require()
+#3 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#4 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#5 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#6 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(56): CategoryController->render()
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php (87)
+in D:\php\goperblog.loc\protected\modules\admin\views\category\create.php (18)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (56)
+2014/04/28 14:36:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1030 Got error 28 from storage engine. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_user`.
+in D:\php\goperblog.loc\protected\components\WebUser.php (17)
+in D:\php\goperblog.loc\protected\components\WebUser.php (8)
+in D:\php\goperblog.loc\protected\components\PhpAuthManager.php (17)
+2014/04/28 14:36:42 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{user}}" for active record class "User" cannot be found in the database.' in D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1485): CActiveRecord->getTableSchema()
+#3 D:\php\goperblog.loc\protected\components\WebUser.php(17): CActiveRecord->findByPk('1', Array)
+#4 D:\php\goperblog.loc\protected\components\WebUser.php(8): WebUser->getModel()
+#5 D:\php\goperblog.loc\framework\base\CComponent.php(111): WebUser->getRole()
+#6 D:\php\goperblog.loc\framework\web\auth\CWebUser.php(146): CComponent->__get('role')
+#7 D:\php\goperblog.loc\protected\components\PhpAuthManager.php(17): CWebUser->__get('role')
+#8 D:\php\goperblog.loc\framework\base\CModule.php(387): PhpAuthManager->init()
+#9 D:\php\goperblog.loc\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#10 D:\php\goperblog.loc\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#11 D:\php\goperblog.loc\framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('admin')
+#12 D:\php\goperblog.loc\framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(WebUser))
+#13 D:\php\goperblog.loc\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(WebUser), Object(CategoryController), Object(CInlineAction), '127.0.0.1', 'POST')
+#14 D:\php\goperblog.loc\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#15 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category/...')
+#22 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/admin/category/create/
+HTTP_REFERER=http://goperblog.loc/admin/category/create/
+---
+2014/04/28 14:37:41 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 09:10:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/05/02 09:10:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/
+---
+2014/05/02 09:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/05/02 09:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/index
+---
+2014/05/02 09:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/05/02 09:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://goperblog.loc/site/login
+---
+2014/05/02 09:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\goperblog.loc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/05/02 09:11:58 [error] [php] Undefined variable: root (D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php:84)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\protected\modules\admin\views\category\update.php(21): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\framework\web\CBaseController.php(126): require()
+#3 D:\php\goperblog.loc\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#4 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#5 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#6 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(76): CategoryController->render()
+#7 unknown(0): CategoryController->actionUpdate()
+#8 D:\php\goperblog.loc\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#12 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#15 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#18 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#19 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/update/id/2
+in D:\php\goperblog.loc\protected\modules\admin\views\category\_form.php (84)
+in D:\php\goperblog.loc\protected\modules\admin\views\category\update.php (21)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (76)
+2014/05/02 09:17:47 [error] [php] Trying to get property of non-object (D:\php\goperblog.loc\protected\modules\admin\views\category\index.php:16)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\CController.php(869): CategoryController->renderFile()
+#1 D:\php\goperblog.loc\framework\web\CController.php(782): CategoryController->renderPartial()
+#2 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(98): CategoryController->render()
+#3 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#4 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#6 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#12 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#13 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category
+in D:\php\goperblog.loc\protected\modules\admin\views\category\index.php (16)
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (98)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:02:22 [error] [exception.CException] exception 'CException' with message 'Property "CategoryController.root" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(95): CComponent->__get('root')
+#1 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#2 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category')
+#12 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/category
+HTTP_REFERER=http://goperblog.loc/admin/category/create/
+---
+2014/05/02 10:08:58 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:08:58 [warning] [application] Failed to set unsafe attribute "parent" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:10:50 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:10:50 [error] [exception.CException] exception 'CException' with message 'Property "Category.parent" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(161): CComponent->__set('parent', '24')
+#1 D:\php\goperblog.loc\framework\base\CModel.php(472): CActiveRecord->__set('parent', '24')
+#2 D:\php\goperblog.loc\framework\base\CComponent.php(152): CModel->setAttributes(Array)
+#3 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(47): CActiveRecord->__set('attributes', Array)
+#5 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#6 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category/...')
+#16 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#18 {main}
+REQUEST_URI=/admin/category/create/
+HTTP_REFERER=http://goperblog.loc/admin/category/create/
+---
+2014/05/02 10:12:34 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:13:04 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (47)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:13:50 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:17:55 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:19:34 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:20:53 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:21:42 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:24:16 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:26:12 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:26:12 [warning] [application] Failed to set unsafe attribute "txt" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:26:53 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:26:53 [warning] [application] Failed to set unsafe attribute "txt" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:27:15 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:27:15 [warning] [application] Failed to set unsafe attribute "txt" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:27:37 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:28:09 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:29:43 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:47:50 [error] [exception.CException] exception 'CException' with message 'Category has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in D:\php\goperblog.loc\framework\base\CModel.php:289
+Stack trace:
+#0 D:\php\goperblog.loc\framework\base\CModel.php(260): CModel->createValidators()
+#1 D:\php\goperblog.loc\framework\base\CModel.php(547): CModel->getValidators()
+#2 D:\php\goperblog.loc\framework\base\CModel.php(468): CModel->getSafeAttributeNames()
+#3 D:\php\goperblog.loc\framework\base\CComponent.php(152): CModel->setAttributes(Array)
+#4 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#5 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(48): CActiveRecord->__set('attributes', Array)
+#6 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#7 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category/...')
+#17 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/admin/category/create/
+HTTP_REFERER=http://goperblog.loc/admin/category/create/
+---
+2014/05/02 10:48:18 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:48:32 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:49:00 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:49:12 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:49:12 [error] [exception.CDbException] exception 'CDbException' with message 'You should not use CActiveRecord::save() method when NestedSetBehavior attached.' in D:\php\goperblog.loc\protected\components\NestedSetBehavior.php:555
+Stack trace:
+#0 D:\php\goperblog.loc\framework\base\CComponent.php(561): NestedSetBehavior->beforeSave(Object(CModelEvent))
+#1 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(840): CComponent->raiseEvent('onBeforeSave', Object(CModelEvent))
+#2 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(942): CActiveRecord->onBeforeSave(Object(CModelEvent))
+#3 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(1071): CActiveRecord->beforeSave()
+#4 D:\php\goperblog.loc\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(50): CActiveRecord->save()
+#6 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#7 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category/...')
+#17 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/admin/category/create/
+HTTP_REFERER=http://goperblog.loc/admin/category/create/
+---
+2014/05/02 10:49:36 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:53:18 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:56:41 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 10:58:53 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:00:29 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:00:32 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:00:57 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:00:57 [warning] [application] Failed to set unsafe attribute "txt" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:05:54 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:06:05 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:06:55 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:07:08 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:07:27 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:07:27 [warning] [application] Failed to set unsafe attribute "parent" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (48)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:07:44 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:07:44 [warning] [application] Failed to set unsafe attribute "parent" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:08:15 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:08:15 [warning] [application] Failed to set unsafe attribute "parent" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:08:35 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:10:32 [error] [exception.CException] exception 'CException' with message 'Event "Category.onBeforeSave" is not defined.' in D:\php\goperblog.loc\framework\base\CComponent.php:478
+Stack trace:
+#0 D:\php\goperblog.loc\framework\base\CComponent.php(516): CComponent->getEventHandlers('onBeforeSave')
+#1 D:\php\goperblog.loc\framework\base\CBehavior.php(111): CComponent->attachEventHandler('onBeforeSave', Array)
+#2 D:\php\goperblog.loc\framework\base\CBehavior.php(51): CBehavior->_attachEventHandlers()
+#3 D:\php\goperblog.loc\framework\base\CComponent.php(331): CBehavior->attach(Object(Category))
+#4 D:\php\goperblog.loc\framework\base\CComponent.php(298): CComponent->attachBehavior('nestedSetBehavi...', Array)
+#5 D:\php\goperblog.loc\framework\web\CFormModel.php(40): CComponent->attachBehaviors(Array)
+#6 D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php(38): CFormModel->__construct()
+#7 D:\php\goperblog.loc\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#8 D:\php\goperblog.loc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\php\goperblog.loc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\php\goperblog.loc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CController->run('create')
+#17 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category/...')
+#18 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\php\goperblog.loc\index.php(14): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin/category/create/
+HTTP_REFERER=http://goperblog.loc/admin/category/create/
+---
+2014/05/02 11:10:55 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:12:08 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:12:08 [warning] [application] Failed to set unsafe attribute "txt" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:12:08 [warning] [application] Failed to set unsafe attribute "parent_id" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:12:34 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:15:38 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:15:38 [error] [php] Indirect modification of overloaded property Category::$attributes has no effect (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:50)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#1 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:16:01 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:16:01 [error] [php] Indirect modification of overloaded property Category::$attributes has no effect (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:50)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#1 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:16:09 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:21:22 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:21:22 [error] [php] Undefined index: parent_id (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:50)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#1 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:21:34 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:22:01 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (49)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:23:03 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:23:28 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:25:00 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:25:16 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:28:26 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:28:26 [error] [php] Indirect modification of overloaded property Category::$attributes has no effect (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:51)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#1 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (51)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:28:43 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:28:43 [error] [php] Indirect modification of overloaded property Category::$attributes has no effect (D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php:51)
+Stack trace:
+#0 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#1 D:\php\goperblog.loc\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\goperblog.loc\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\goperblog.loc\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 D:\php\goperblog.loc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\goperblog.loc\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\goperblog.loc\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#7 D:\php\goperblog.loc\framework\web\CWebApplication.php(282): CategoryController->run()
+#8 D:\php\goperblog.loc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\goperblog.loc\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\goperblog.loc\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/category/create/
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (51)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:51:16 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)
+2014/05/02 11:51:28 [warning] [application] Failed to set unsafe attribute "meta_d" of "Category".
+in D:\php\goperblog.loc\protected\modules\admin\controllers\CategoryController.php (50)
+in D:\php\goperblog.loc\index.php (14)

@@ -6,7 +6,6 @@ class AdminController extends Controller
 	public $menu = array();
 	public $breadcrumbs = array();
 
-
     /**
      * @return array action filters
      */
@@ -16,7 +15,6 @@ class AdminController extends Controller
             'postOnly + delete', // we only allow deletion via POST request
         );
     }
-
 
     public function accessRules()
     {
