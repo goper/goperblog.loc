@@ -1,28 +1,22 @@
+<div class="admin category index">
 <?php
 /* @var $this CategoryController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Категории',
+	'Дерево категорий',
 );
 
 $this->menu=array(
-	array('label'=>'Create Category', 'url'=>array('create')),
-	array('label'=>'Manage Category', 'url'=>array('admin')),
+	array('label'=>'Создать', 'url'=>array('create')),
+	array('label'=>'Менеджер', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Categories</h1>
+<h1>Дерево категорий</h1>
 [<?=$root->id?>] <?=$root->name?>
-<a class="view" title="View" href="/admin/category/view/id/<?=$root->id?>">
-    <img src="/assets/b2105d5d/gridview/view.png" alt="View">
-</a>
-<a class="update" title="Update" href="/admin/category/update/id/<?=$root->id?>">
-    <img src="/assets/b2105d5d/gridview/update.png" alt="Update">
-</a>
-<a class="delete" title="Delete" href="/admin/category/delete/id/<?=$root->id?>">
-    <img src="/assets/b2105d5d/gridview/delete.png" alt="Delete">
-</a>
+<a class="view" title="View" href="<?=Yii::app()->createUrl('/admin/category/view', array('id'=>$root->id))?>"><img src="/assets/b2105d5d/gridview/view.png" alt="View"></a>
+<a class="update" title="Update" href="<?=Yii::app()->createUrl('/admin/category/update', array('id'=>$root->id))?>"><img src="/assets/b2105d5d/gridview/update.png" alt="Update"></a>
+    <?php echo CHtml::link('<img src="/assets/b2105d5d/gridview/delete.png" alt="Delete">',"#", array("submit"=>array('delete', 'id'=>$root->id), 'confirm' => 'Are you sure?')); ?>
     <?
     $level=0;
     foreach($categories as $n=>$category)
@@ -44,15 +38,9 @@ $this->menu=array(
     ?>
     <li>
         [<?=$category->id?>] <?=$category->name?>
-        <a class="view" title="View" href="/admin/category/view/id/<?=$category->id?>">
-            <img src="/assets/b2105d5d/gridview/view.png" alt="View">
-        </a>
-        <a class="update" title="Update" href="/admin/category/update/id/<?=$category->id?>">
-            <img src="/assets/b2105d5d/gridview/update.png" alt="Update">
-        </a>
-        <a class="delete" title="Delete" href="/admin/category/delete/id/<?=$category->id?>">
-            <img src="/assets/b2105d5d/gridview/delete.png" alt="Delete">
-        </a>
+        <a class="view" title="View" href="<?=Yii::app()->createUrl('/admin/category/view', array('id'=>$category->id))?>"><img src="/assets/b2105d5d/gridview/view.png" alt="View"></a>
+        <a class="update" title="Update" href="<?=Yii::app()->createUrl('/admin/category/update', array('id'=>$category->id))?>"><img src="/assets/b2105d5d/gridview/update.png" alt="Update"></a>
+        <?php echo CHtml::link('<img src="/assets/b2105d5d/gridview/delete.png" alt="Delete">',"#", array("submit"=>array('delete', 'id'=>$category->id), 'confirm' => 'Are you sure?')); ?>
         <?
         $level=$category->level;
         }
@@ -62,7 +50,4 @@ $this->menu=array(
     </li>
     </ul>
 <? endfor;?>
-    <div class="add">
-        <a href="<?= Yii::app()->createUrl('/admin/category/create') . '/' ?>" class="btn ">Добавить категорию</a>
-    </div>
-
+</div>

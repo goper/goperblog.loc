@@ -79,19 +79,21 @@
 		<?php echo $form->error($model,'htmlview'); ?>
 	</div>
 
-
-
     <div class="row">
+
+        <?php echo $form->labelEx($model,'parent_id'); ?>
         <select name="Category[parent_id]" id="Category_parent">
             <option value="<?=$root->id ?>"><?=$root->name?></option>
             <? if (!empty($categories)) : ?>
                 <? foreach ($categories as $category) : ?>
-                    <option value="<?=$category->id ?>" <?=!empty($_POST['parent']) && $_POST['parent']==$category->id  ? 'selected="selected"' : ''?>><?=str_repeat('-', $category->level), $category->name?></option>
+                        <option value="<?=$category->id ?>"
+                            <?=!empty($_POST['parent']) && $_POST['parent']== $category->id || $parent_id == $category->id? 'selected="selected"' : ''?>>
+                            <?=str_repeat('-', $category->level), $category->name?>
+                        </option>
                 <? endforeach; ?>
             <? endif;?>
         </select>
     </div>
-
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

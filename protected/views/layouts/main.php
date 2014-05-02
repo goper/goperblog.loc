@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
-    <?php Yii::app()->bootstrap->register(); ?>
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <link rel="icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico" type="image/x-icon">
     <meta name="description" content="<?php echo empty($this->metaDescription) ? '' : $this->metaDescription?>" />
@@ -56,8 +54,6 @@
     <?php endif ?>
 
     <?php echo $content; ?>
-
-
 
     <footer style="clear: both">
         Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>

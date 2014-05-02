@@ -3,8 +3,7 @@
 class AdminController extends Controller
 {
 	public $layout = '/layouts/column2';
-	public $menu = array();
-	public $breadcrumbs = array();
+
 
     /**
      * @return array action filters
@@ -12,7 +11,7 @@ class AdminController extends Controller
     public function filters() {
         return array(
             'accessControl', // perform access control for CRUD operations
-            'postOnly + delete', // we only allow deletion via POST request
+            //'postOnly + delete', // we only allow deletion via POST request
         );
     }
 
@@ -30,5 +29,19 @@ class AdminController extends Controller
         );
     }
 
+    protected function beforeAction($action)
+    {
+        parent::beforeAction($action);
+        // подключаем клиентские скрипты
+        $cs = Yii::app()->clientScript;
 
+        $cs->registerCssFile(Yii::app()->request->baseUrl . '/css/core/libs/jquery.treeview.css');
+        $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/core/libs/functions.js',CClientScript::POS_END);
+        $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/core/libs/jquery.cookie.js',CClientScript::POS_END);
+        $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/core/libs/jquery.treeview.js',CClientScript::POS_END);
+        $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/core/admin/plugins.js',CClientScript::POS_END);
+        $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/core/admin/script.js',CClientScript::POS_END);
+
+        return true;
+    }
 }

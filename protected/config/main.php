@@ -15,7 +15,7 @@ return array(
     'defaultController' => 'index', // Контроллер, загружаемый по умолчанию
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log','bootstrap'),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -40,6 +40,10 @@ return array(
 
 	// application components
 	'components'=>array(
+       // 'request'=>array(
+            // проверка на атаки
+            //'enableCsrfValidation'=>true,
+       // ),
         'authManager' => array(
             // Будем использовать свой менеджер авторизации
             'class' => 'PhpAuthManager',
@@ -114,5 +118,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'goper@tut.by',
+        'debug' => $_SERVER["REMOTE_ADDR"] == '127.0.0.1',
 	),
 );

@@ -1,6 +1,6 @@
 <?php
 
-class SiteController extends Controller {
+class SiteController extends FrontController {
 
     public function filters() {
         return array(
@@ -79,7 +79,6 @@ class SiteController extends Controller {
 
         // collect user input data
         if (isset($_POST['Login'])) {
-
             $model->attributes = $_POST['Login'];
             // validate user input and redirect to the previous page if valid
             if ($model->validate() && $model->login()){

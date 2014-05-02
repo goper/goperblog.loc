@@ -6,10 +6,6 @@ class CategoryController extends AdminController
     //private $root = array();
     //private $descendants = array();
 
-	public function beforeAction($action){
-        return true;
-    }
-
     public function actionView($id)
 	{
 
@@ -36,7 +32,6 @@ class CategoryController extends AdminController
 	public function actionCreate()
 	{
 		$model = new Category;
-
         $root = Category::getRoot($model);
         $descendants = $root->descendants()->findAll();
 
@@ -45,51 +40,80 @@ class CategoryController extends AdminController
 
 		if(isset($_POST['Category']))
 		{
-           // html::pr($_POST['Category']);
-            //$model->parent_id = $_POST['Category']['parent_id'];
-			$model->attributes = $_POST['Category'];
-
-
-            html::pr($model->attributes,1);
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
+            $parent_id = (int)$_POST['Category']['parent_id'];
+            $root = Category::model()->findByPk($parent_id);
+            $model->attributes = $_POST['Category'];
+            if($model->appendTo($root)){
+                $this->redirect(array('view','id'=>$model->id));
+            }
+        }
 
 		$this->render('create',array(
 			'model'=>$model,
             'root' => $root,
             'categories' => $descendants,
+            'parent_id' => null,
+            'id' => null,
 		));
 	}
 
 
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+        $root = Category::getRoot(new Category);
+        $descendants = $root->descendants()->findAll();
+
+		$model = $this->loadModel($id);
+
+        $parent = $model->parent()->find();
+        $parent_id = $parent ? $parent->id : null;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Category']))
 		{
-			$model->attributes=$_POST['Category'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            $parent_id = (int)$_POST['Category']['parent_id'];
+
+            $node = Category::model()->findByPk($parent_id);
+
+			$model->attributes = $_POST['Category'];
+
+            if($model->lft == 1 || $model->id == $node->id){
+                if($model->saveNode()){
+                    Yii::app()->user->setFlash('category_error', "Родитель не может стать потомком себя самого! Структура дерева не изменена.");
+                    $this->redirect(array('view','id'=>$model->id));
+                }
+            }
+            else{
+                if($model->saveNode()){
+                    if($node->isDescendantOf($model)){
+                        Yii::app()->user->setFlash('category_error', "Родитель не может стать потомком своих детей! Структура дерева не изменена.");
+                    }
+                    else{
+                        $model->moveAsLast($node);
+                    }
+                    $this->redirect(array('view','id'=>$model->id));
+                }
+            }
 		}
 
 		$this->render('update',array(
-			'model'=>$model,
+			'model'=> $model,
+            'root' => $root,
+            'categories' => $descendants,
+            'parent_id' => $parent_id,
+            'id' => $id,
 		));
 	}
 
 
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
-
+		$this->loadModel($id)->deleteNode();
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 	}
 
 

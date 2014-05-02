@@ -1,25 +1,5 @@
 <?php
 
-/**
- * This is the model class for table "{{category}}".
- *
- * The followings are the available columns in table '{{category}}':
- * @property integer $id
- * @property integer $lft
- * @property integer $rgt
- * @property integer $level
- * @property string $name
- * @property string $alias
- * @property string $title
- * @property string $meta_k
- * @property string $meta_d
- * @property string $img
- * @property integer $order
- * @property integer $show
- * @property string $txt
- * @property string $cssclass
- * @property string $htmlview
- */
 class Category extends CActiveRecord
 {
     public $parent_id;
@@ -53,10 +33,14 @@ class Category extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+            array('alias,name', 'required'),
+            array('parent_id', 'numerical', 'integerOnly'=>true),
+            array('alias', 'match', 'pattern' => '/^[A-z\-\_]+$/'),
+            array('alias','unique',
+                'caseSensitive'=>true,
+                'allowEmpty'=>false,
+            ),
             array('txt', 'safe'),
-            array('parent_id', 'length', 'max'=>1),
-            array('parent_id', 'safe'),
-			array('name, alias', 'required'),
             //array('parent','length', 'max'=>1),
 			array('lft, rgt, level, order, show', 'numerical', 'integerOnly'=>true),
 			array('name, alias, title', 'length', 'max'=>150),

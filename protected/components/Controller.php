@@ -2,7 +2,15 @@
 
 class Controller extends CController
 {
-	public $layout='//layouts/column1';
-	public $menu=array();
-	public $breadcrumbs=array();
+    public $menu = array();
+    public $breadcrumbs = array();
+
+    protected function beforeAction($action)
+    {
+        parent::beforeAction($action);
+
+        Yii::app()->getClientScript()->registerCoreScript('jquery');
+
+        return true;
+    }
 }
