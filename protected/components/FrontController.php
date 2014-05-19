@@ -12,6 +12,7 @@ class FrontController extends Controller
         $cs = Yii::app()->clientScript;
 
         if(YII_DEBUG){
+            $cs->registerCssFile(Yii::app()->request->baseUrl . '/css/widget.css');
             $cs->registerCssFile(Yii::app()->request->baseUrl . '/css/style.css');
             $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/core/libs/functions.js', CClientScript::POS_END);
             $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/plugins.js', CClientScript::POS_END);
